@@ -1,0 +1,384 @@
+.buy-cartContainer{
+    background-color: #F3F5F7;
+    position: relative;
+}
+// 区域选择
+.city {
+    // float: left;
+    height: 50px;
+    line-height: 50px;
+    // padding: 0 15px;
+    // margin: 17px 0 0 15px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    background: transparent;
+    .all-city {
+        position: absolute;
+        background-color: white;
+        left: -7px;
+        z-index: 1;
+    }
+    .city-curr {
+        line-height: 50px;
+        font-size: 14px;
+        margin: 0;
+        cursor: pointer;
+    }
+    .city-curr i {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+    }
+    .city-box, .white-line {
+        display: none;
+    }
+    .city-box dl.bdb-s {
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .city-box dl {
+        padding: 0px 15px;
+        overflow: hidden;
+        border-bottom: 1px dashed #e6e6e6;
+        margin: 0;
+    }
+    .city-box dt.green-tit {
+        color: #22ac38;
+    }
+    .city-box dt {
+        float: left;
+        width: 50px;
+        line-height: 46px;
+        color: #a5abb2;
+        font-size: 14px;
+    }
+    .city-box dd {
+        width: 680px;
+        line-height: 46px;
+    }
+    .city-box a {
+        float: left;
+        color: #495056;
+        font-size: 14px;
+        margin-right: 25px;
+        white-space: nowrap;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.city:hover {
+    .all-city {
+        display: block;
+        box-shadow: 0 1px 4px 0 green;
+    }
+}
+// 面包屑
+.crumbs{
+    height: 40px;
+    line-height: 40px;
+    color: #22ac38;
+    background-color: #c2f7c8;
+    // margin-top: 44px;
+    a {
+        margin-left: 20px;
+    }
+    a:hover {
+        color: #fff;
+        background: #22ac38;
+        text-decoration: none;
+    }
+    span {
+        width: 50px;
+        height: 100%;
+        box-sizing: border-box;
+        display: none;
+    }
+    button {
+        width: 50px;
+        height: 100%;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    input{
+        width: 300px;
+        height: 40px;
+        font-size: 18px;
+        padding-left: 10px;
+        border:1px solid #ddd;
+    }
+}
+.screen{
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    dl {
+        display: block;
+        // -webkit-margin-before: 1em;
+        // -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 0px; 
+        min-height: 50px;
+        position: relative;
+    }
+    dt {
+        float: left;
+        width: 70px;
+        height: 100%;
+        position: absolute;
+        line-height: 50px;
+        font-size: 14px;
+        color: #7a838d;
+        text-align: center;
+        background: #fafafa;
+    }
+    dd {
+        float: right;
+        width: 1166px;
+        .dd-top {
+            height: 20px;
+            padding: 15px 0 15px 6px;
+        }
+        .dd-top .a-box {
+            float: left;
+            width: 940px;
+            height: 20px;
+            overflow: hidden;
+            span {
+                border:1px solid #bbb;
+                margin-left:4px; 
+                padding: 1px;
+                i{
+                    font-size: 12px;
+                    color: gray;
+                    padding-left: 4px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .dd-top a.active {
+            color: #fff;
+            background: #22ac38;
+            text-decoration: none;
+        }
+        .dd-top a {
+            float: left;
+            height: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 6px;
+            color: #495056;
+            margin: 0 8px;
+        }
+        .dd-btn {
+            float: right;
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            padding: 0 7px;
+            color: #495056;
+            cursor: pointer;
+            i {
+                display: inline-block;
+                width: 11px;
+                height: 6px;
+                margin-left: 2px;
+                color: rgb(46, 40, 40);
+            }
+        }
+        .dd-btn:hover{
+            color: #22ac38;
+            i {
+                color: #22ac38;
+            }
+        }
+    }
+    // 显示所有的车型 样式 开始
+    .dd-all {
+        width: 1166px;
+        border-top: 1px solid #e6e6e6;
+        margin-top: 20px;
+    }
+    .dd-all ul {
+        width: 350px;
+        padding: 0px 0 0 50px;
+        float: left;
+    }
+    .dd-all li {
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+    .dd-all label {
+        float: left;
+        width: 20px;
+        height: 24px;
+        line-height: 24px;
+        color: #22ac38;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .dd-all p {
+        float: left;
+        width: 330px;
+    }
+    .dd-all a {
+        float: left;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 15px;
+        font-size: 14px;
+        color: #495056;
+    }
+    // 显示所有的车型 样式 结束
+} 
+// 已选条件
+.alreadySelect{
+    height: 30px;
+    line-height: 30px;
+    
+    span:nth-of-type(1){
+        padding-left: 10px;
+    }
+    .selectSpan {
+        margin-left: 13px;
+        span {
+            border:1px solid rgba(32,206,156,1);;
+            margin-right: 5px;
+            padding: 2px;
+            i {
+                
+                cursor: pointer;
+                color:rgba(32,206,156,1);;
+            }
+            .glyphicon{
+                top:2px;
+            }
+        }
+    }
+    button {
+        border:none;
+        background-color: white;;
+    }
+}  
+// 筛选 排序
+.list-filter{
+    height: 57px;
+    line-height: 57px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    .list-sort {
+        height: 28px;
+        margin-top: 12px;
+    }
+    
+}
+.list-filter a {
+    margin-left: 20px;
+}
+.list-filter a:hover {
+    color: #22ac38;
+    text-decoration: none;    
+}
+// 车车列表展示
+ul.carlist {
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+.carlist {
+    
+}
+.carlist li {
+    float: left;
+    margin-bottom: 10px;
+    padding: 9px 8px;
+    .infoDescribe{
+        width: 287px;
+        box-sizing: border-box;
+    }
+}
+.carlist li a {
+    display: block;
+    width: 280px;
+    // height: 287px;
+    // padding: 9px 8px;
+    border: 1px solid transparent;
+    position: relative;
+}
+.carlist img {
+    width: 280px;
+    height: 190px;
+    border: 1px solid #e9e9e9;
+}
+.carlist li a.car-a .t {
+    font-size: 17px;
+    color: #495056;
+    font-weight: 400;
+    padding: 1px 0 6px 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// 底部分页页面导航nav s
+.pageNav{
+    .pageLink {
+        // margin: 0 0 30px;
+        clear: both;
+        text-align: center;
+    }
+    .pageLink li {
+        display: inline;
+        margin: 0 0 0 5px;
+    }
+    .pageLink li a {
+        background: #fafafa;
+        border: 1px solid #e6e6e6;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        color: #495056;
+        text-align: center;
+        vertical-align: top;
+        display: inline-block;
+        font-weight: 400;
+    }
+    .pageLink li a:hover {
+        border-color: #22ac38;
+        background: #22ac38;        
+        color: #fff;
+        text-decoration: none;
+    }
+    .pageLink li.link-on a {
+        border: 1px solid #fff;
+        background: #fff;
+        color: #22ac38;
+    }
+    .pageLink li a span {
+        background: none;
+        border: none;
+        display: inline-block;
+    }
+    .pageLink li.point a, .pageLink li.point a:hover {
+        border: none;
+        background: none;
+        color: #495056;
+    }
+    .pageLink li a.next, .pageLink li a.prev {
+        width: 83px;
+    }
+    .pageLink li a.next em, .pageLink li a.prev em {
+        font-family: simsun;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .pageLink li a.next em {
+        margin-left: 6px;
+    }
+}

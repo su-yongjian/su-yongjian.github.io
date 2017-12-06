@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情信息</title>
+    <link rel="shortcut icon" type="image/x-icon" href="faviconytc.ico" class="ico" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../assets/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/lib/jquery-2.1.4.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- Swiper JS -->
+    <script src="../assets/swiper/js/swiper.min.js"></script>
+</head>
+
+<body>
+    <div class="cartContainer">
+        <div class="top w1240">
+            <h1 class="topLogo">
+                <a href="#" title="易淘车">易淘车</a>
+            </h1>
+            <!--菜单 nav-->
+            <div class="right">
+                <ul class="topNav">
+                    <li>
+                        <a href="../index.html" class="home cartActive">首页</a>
+                    </li>
+                    <li>
+                        <a href="./buyCart.html" class="buyCar">我要买车</a>
+                    </li>
+                    <li class="activeBottom">
+                        <a href="./cartDetails.html" class="carDeitel">商品页</a>
+                    </li>
+                    <li>
+                        <a href="./attractInvestment.html" class="attractInvestment">商家入驻</a>
+                    </li>
+                    <li>
+                        <a href="./aboutUs.html" class="aboutUslink">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- 车详情页内容 -->
+        <div class="cartDetails w1240">
+            <!-- 面包屑导航  ：如果是自营店则将其隐藏 -->
+            <div class="crumbs w1240">
+                <a class="active" href="../index.html">首页</a>
+                > &nbsp大众旗舰店
+            </div>
+
+            <div class="cartDetails-cartInfo w1240">
+                <!-- 轮播图 -->
+                <div class="cartDetails-banner">
+                    <div class="image-banner">
+                        <!-- Swiper -->
+                        <div class="cartDetails-swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://image.guazistatic.com/gz01171128/18/09/930753e123440766c2ddfc8274708b8f.jpg@base@tag=imgScale" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://image.guazistatic.com/gz01171128/18/12/d478d64e3049f8ec9f7bfb3cb49feac5.jpg@base@tag=imgScale" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://image.guazistatic.com/gz01171128/18/09/5cebdbbdc3088ba927a5745ef0feb55d.jpg@base@tag=imgScale" />
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 参数介绍 -->
+                <div class="cartDetails-parameterInfo">
+                    <div class="parameterInfo">
+                        <!-- 参数介绍 -->
+                        <div class="Cartoption">
+                            <p>
+                                <span>大众 POLO 2016款 1.4L </span>
+                                <span>自动风尚型</span>
+                            </p>
+                            <p>
+                                <span>厂商指导价：</span>19.8万
+                            </p>
+                        </div>
+                        <!-- 付款方式 -->
+                        <div class="payStyle">
+                            <div class="firstPay">
+                                <p>首付</p>
+                                <p>1.07万</p>
+                            </div>
+                            <div class="monthPay">
+                                <p>月供</p>
+                                <p>2098元</p>
+                            </div>
+                            <div class="expectCount">
+                                <p>期数</p>
+                                <p>12期</p>
+                            </div>
+                        </div>
+                        <!-- 动态添加  购车优惠-->
+                        <div class="discounts">
+                            <span>含购置税</span>
+                            <span>送一年车险</span>
+                        </div>
+                        <div class="getCartAD">
+                            <span>提车地点：</span>
+                            广东深圳
+                        </div>
+                        <div class="appointmentAndConsult">
+                            <!-- Indicates a successful or positive action -->
+                            <button type="button" onclick="immediatelyAppointment()" class="btn btn-success">立即预约</button>
+                            <span>免费咨询电话：4008111111</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 立即预约的弹窗 -->
+            <div class="modal fade" id="immediatelyAppointment" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- <h4 class="modal-title">手机快速预约</h4> -->
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="appointmentBuyCart">
+                                <h4>手机快速预约</h4>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control"  placeholder="请输入手机号">
+                                    </div>
+                                    <div class="form-group verificationCode">
+                                        <input type="password" class="form-control"  placeholder="请输入验证码">
+                                        <button class="btn btn-default">获取验证码</button>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">立即预约</button>
+                                    <p><i class="glyphicon glyphicon-asterisk"></i>提交信息后将有专人与您联系，请保持电话畅通</p>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+
+            <!-- 购车优势 车辆配置 车型亮点 购车说明  tab 切换  -->
+            <div class="aboutBuyCart">
+                <ul class="nav nav-tabs tabToggle">
+                    <li role="presentation" class="active">
+                        <a href="#">购车优势</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">车辆配置</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">车型亮点</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">购车说明</a>
+                    </li>
+                </ul>
+                <div class="tabContainer">
+                    <!-- 购车优势 -->
+                    <div class="buyCartAdvantage">
+
+                    </div>
+                    <!-- 车辆配置 -->
+                    <div class="buyCartOption">
+
+                    </div>
+                    <!-- 车辆亮点 -->
+                    <div class="buyCartBrightSpot ">
+
+                    </div>
+                    <!-- 购车说明 -->
+                    <div class="buyCartExplain">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 购车流程 -->
+        <div class="detais-buyFlow w1240">
+            <span>购车流程</span>
+
+            <div class="flow">
+                <ul class="clearfix">
+                    <li>
+                        <div>
+                            <img src="../images/mudu.png" alt="">
+                        </div>
+
+                        <p>预约看车</p>
+                        <p>留下您的联系方式，
+                            <br> 预约成功后会有市场人员跟您联系</p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../images/mudu.png" alt="">
+                        </div>
+                        <p>挑选爱车</p>
+                        <p>专人陪同挑选心仪车辆</p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../images/mudu.png" alt="">
+                        </div>
+                        <p>签订合同</p>
+                        <p>签署合同并支付定金</p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../images/mudu.png" alt="">
+                        </div>
+                        <p>预约看车</p>
+                        <p>市场人员陪同过户，
+                            <br> 好车开回家</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- 底部区域 -->
+        <footer>
+            <div class="w1240">
+                <!-- 上部分 -->
+                <div class="footLayout">
+                    <!-- 左边 -->
+                    <div class="footLogoLeft">
+                        <div>
+                            <img src="../images/ytc_logo.jpg" alt="">
+                            <!-- 下部分   备案号 -->
+                            <p>CopyRight © 2017 版权所有 粤ICP备17020340号-1</p>
+                        </div>
+
+                    </div>
+                    <div class="footLogoCenter">
+                        <span>
+                            <img src="../images/weixin.jpg" alt="">
+                            <span>关注微信号</span>
+                        </span>
+                        <span>
+                            <img src="../images/gzNum.jpg" alt="">
+                            <span>关注微信号</span>
+                        </span>
+
+                    </div>
+                    <div class="footLogoRight">
+                        <h2>400-863-3378</h2>
+                        <p>服务时间：9:00-17:30 </p>
+                        <div class="companyLocation">
+                            <p>深圳市东方快车投资管理有限公司</p>
+                            <p>深圳市南山区大冲商务中心1栋2号楼1808室</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+<script src="../js/cartDetails.js"></script>
+
+</html>

@@ -1,0 +1,1647 @@
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.activeBg {
+  color: #fff;
+  background: #22ac38;
+  text-decoration: none;
+}
+
+.activeColor {
+  color: #22ac38;
+  text-decoration: none;
+}
+
+.cartContainer {
+  width: 100%;
+  background-color: white;
+  font-family: "PingFang SC";
+}
+
+.topStyle {
+  background-color: white;
+}
+
+.top {
+  position: relative;
+  height: 60px;
+  top: 0;
+  line-height: 60px;
+  background-color: white;
+}
+
+.topLogo {
+  float: left;
+  width: 120px;
+  height: 60px;
+  text-indent: -9999px;
+  margin: 0;
+  padding: 0;
+  background: url("../images/ytc_logo.jpg") no-repeat;
+}
+
+.top ul.topNav {
+  height: 50px;
+  margin: 0 auto;
+}
+
+.top ul.topNav li {
+  float: left;
+  margin-left: 64px;
+  height: 60px;
+  font-size: 16px;
+}
+.top ul.topNav li a {
+  color: #666666;
+  font-family: "PingFang SC";
+}
+
+.top ul.topNav li a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+.top ul.topNav li.activeBottom {
+  border-bottom: 4px solid green;
+}
+.top ul.topNav li.activeBottom a {
+  color: green;
+}
+
+footer {
+  width: 100%;
+  margin-top: 140px;
+  height: 260px;
+  background: #333333;
+  opacity: 0.6;
+}
+
+.footLayout {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.footLayout > div {
+  width: 33.333%;
+}
+.footLayout .footLogoLeft div img {
+  display: block;
+  width: 170px;
+  height: 83px;
+}
+.footLayout .footLogoLeft div p {
+  padding-top: 31px;
+  font-size: 18px;
+  width: 240px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footLayout .footLogoCenter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.footLayout .footLogoCenter span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footLayout .footLogoCenter span img {
+  width: 120px;
+  height: 120px;
+}
+.footLayout .footLogoCenter span span {
+  padding-top: 19px;
+  font-size: 22px;
+  font-family: "PongFang SC";
+}
+.footLayout .footLogoRight {
+  text-align: right;
+}
+.footLayout .footLogoRight h2 {
+  font-size: 42px;
+  margin: 0;
+}
+.footLayout .footLogoRight > p {
+  padding-top: 20px;
+  margin: 0;
+  opacity: 0.5;
+}
+.footLayout .footLogoRight .companyLocation {
+  padding-top: 43px;
+}
+.footLayout .footLogoRight .companyLocation p {
+  font-family: "PongFang SC";
+  font-size: 18px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.buy-cartContainer {
+  background-color: #F3F5F7;
+  position: relative;
+}
+
+.city {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  background: transparent;
+}
+.city .all-city {
+  position: absolute;
+  background-color: white;
+  left: -7px;
+  z-index: 1;
+}
+.city .city-curr {
+  line-height: 50px;
+  font-size: 14px;
+  margin: 0;
+  cursor: pointer;
+}
+.city .city-curr i {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+.city .city-box, .city .white-line {
+  display: none;
+}
+.city .city-box dl.bdb-s {
+  border-bottom: 1px solid #e6e6e6;
+}
+.city .city-box dl {
+  padding: 0px 15px;
+  overflow: hidden;
+  border-bottom: 1px dashed #e6e6e6;
+  margin: 0;
+}
+.city .city-box dt.green-tit {
+  color: #22ac38;
+}
+.city .city-box dt {
+  float: left;
+  width: 50px;
+  line-height: 46px;
+  color: #a5abb2;
+  font-size: 14px;
+}
+.city .city-box dd {
+  width: 680px;
+  line-height: 46px;
+}
+.city .city-box a {
+  float: left;
+  color: #495056;
+  font-size: 14px;
+  margin-right: 25px;
+  white-space: nowrap;
+}
+.city a {
+  text-decoration: none;
+}
+
+.city:hover .all-city {
+  display: block;
+  box-shadow: 0 1px 4px 0 green;
+}
+
+.crumbs {
+  height: 40px;
+  line-height: 40px;
+  color: #22ac38;
+  background-color: #c2f7c8;
+}
+.crumbs a {
+  margin-left: 20px;
+}
+.crumbs a:hover {
+  color: #fff;
+  background: #22ac38;
+  text-decoration: none;
+}
+.crumbs span {
+  width: 50px;
+  height: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+.crumbs button {
+  width: 50px;
+  height: 100%;
+}
+.crumbs button:hover {
+  cursor: pointer;
+}
+.crumbs input {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 10px;
+  border: 1px solid #ddd;
+}
+
+.screen {
+  border: 1px solid #e6e6e6;
+  background-color: white;
+}
+.screen dl {
+  display: block;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 0px;
+  min-height: 50px;
+  position: relative;
+}
+.screen dt {
+  float: left;
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  line-height: 50px;
+  font-size: 14px;
+  color: #7a838d;
+  text-align: center;
+  background: #fafafa;
+}
+.screen dd {
+  float: right;
+  width: 1166px;
+}
+.screen dd .dd-top {
+  height: 20px;
+  padding: 15px 0 15px 6px;
+}
+.screen dd .dd-top .a-box {
+  float: left;
+  width: 940px;
+  height: 20px;
+  overflow: hidden;
+}
+.screen dd .dd-top .a-box span {
+  border: 1px solid #bbb;
+  margin-left: 4px;
+  padding: 1px;
+}
+.screen dd .dd-top .a-box span i {
+  font-size: 12px;
+  color: gray;
+  padding-left: 4px;
+  cursor: pointer;
+}
+.screen dd .dd-top a.active {
+  color: #fff;
+  background: #22ac38;
+  text-decoration: none;
+}
+.screen dd .dd-top a {
+  float: left;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 6px;
+  color: #495056;
+  margin: 0 8px;
+}
+.screen dd .dd-btn {
+  float: right;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0 7px;
+  color: #495056;
+  cursor: pointer;
+}
+.screen dd .dd-btn i {
+  display: inline-block;
+  width: 11px;
+  height: 6px;
+  margin-left: 2px;
+  color: #2e2828;
+}
+.screen dd .dd-btn:hover {
+  color: #22ac38;
+}
+.screen dd .dd-btn:hover i {
+  color: #22ac38;
+}
+.screen .dd-all {
+  width: 1166px;
+  border-top: 1px solid #e6e6e6;
+  margin-top: 20px;
+}
+.screen .dd-all ul {
+  width: 350px;
+  padding: 0px 0 0 50px;
+  float: left;
+}
+.screen .dd-all li {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.screen .dd-all label {
+  float: left;
+  width: 20px;
+  height: 24px;
+  line-height: 24px;
+  color: #22ac38;
+  font-size: 14px;
+  font-weight: 700;
+}
+.screen .dd-all p {
+  float: left;
+  width: 330px;
+}
+.screen .dd-all a {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #495056;
+}
+
+.alreadySelect {
+  height: 30px;
+  line-height: 30px;
+}
+.alreadySelect span:nth-of-type(1) {
+  padding-left: 10px;
+}
+.alreadySelect .selectSpan {
+  margin-left: 13px;
+}
+.alreadySelect .selectSpan span {
+  border: 1px solid #20ce9c;
+  margin-right: 5px;
+  padding: 2px;
+}
+.alreadySelect .selectSpan span i {
+  cursor: pointer;
+  color: #20ce9c;
+}
+.alreadySelect .selectSpan span .glyphicon {
+  top: 2px;
+}
+.alreadySelect button {
+  border: none;
+  background-color: white;
+}
+
+.list-filter {
+  height: 57px;
+  line-height: 57px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+.list-filter .list-sort {
+  height: 28px;
+  margin-top: 12px;
+}
+
+.list-filter a {
+  margin-left: 20px;
+}
+
+.list-filter a:hover {
+  color: #22ac38;
+  text-decoration: none;
+}
+
+ul.carlist {
+  margin-left: 8px;
+  margin-bottom: 20px;
+}
+
+.carlist li {
+  float: left;
+  margin-bottom: 10px;
+  padding: 9px 8px;
+}
+.carlist li .infoDescribe {
+  width: 287px;
+  box-sizing: border-box;
+}
+
+.carlist li a {
+  display: block;
+  width: 280px;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.carlist img {
+  width: 280px;
+  height: 190px;
+  border: 1px solid #e9e9e9;
+}
+
+.carlist li a.car-a .t {
+  font-size: 17px;
+  color: #495056;
+  font-weight: 400;
+  padding: 1px 0 6px 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pageNav .pageLink {
+  clear: both;
+  text-align: center;
+}
+.pageNav .pageLink li {
+  display: inline;
+  margin: 0 0 0 5px;
+}
+.pageNav .pageLink li a {
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #495056;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  font-weight: 400;
+}
+.pageNav .pageLink li a:hover {
+  border-color: #22ac38;
+  background: #22ac38;
+  color: #fff;
+  text-decoration: none;
+}
+.pageNav .pageLink li.link-on a {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #22ac38;
+}
+.pageNav .pageLink li a span {
+  background: none;
+  border: none;
+  display: inline-block;
+}
+.pageNav .pageLink li.point a, .pageNav .pageLink li.point a:hover {
+  border: none;
+  background: none;
+  color: #495056;
+}
+.pageNav .pageLink li a.next, .pageNav .pageLink li a.prev {
+  width: 83px;
+}
+.pageNav .pageLink li a.next em, .pageNav .pageLink li a.prev em {
+  font-family: simsun;
+  font-size: 15px;
+  font-weight: 700;
+}
+.pageNav .pageLink li a.next em {
+  margin-left: 6px;
+}
+
+.about-cartContainer {
+  width: 100%;
+  background-color: #F3F5F7;
+}
+
+.aboutUs {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.aboutUsDescribe {
+  margin-top: 50px;
+  background-color: white;
+}
+.aboutUsDescribe > p {
+  width: 1140px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "PingFang SC";
+  padding: 29px 50px 48px 50px;
+}
+.aboutUsDescribe h2 {
+  margin-left: 50px;
+  font-size: 26px;
+  color: #20ce9c;
+}
+
+.companyProfile {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.companyProfile img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+.companyProfile .companyADR, .companyProfile .companyNUM, .companyProfile .companyEmail {
+  width: 400px;
+  height: 372px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+.companyProfile .companyADR > p:nth-of-type(1), .companyProfile .companyNUM > p:nth-of-type(1), .companyProfile .companyEmail > p:nth-of-type(1) {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.companyProfile .companyADR > p:nth-of-type(2), .companyProfile .companyNUM > p:nth-of-type(2), .companyProfile .companyEmail > p:nth-of-type(2) {
+  font-size: 16px;
+  margin: 20px 0px;
+  line-height: 30px;
+}
+.companyProfile .companyADR, .companyProfile .companyNUM {
+  margin-right: 20px;
+}
+.companyProfile .companyADR img {
+  width: 84px;
+  height: 104px;
+}
+.companyProfile .companyNUM img {
+  width: 76px;
+  height: 100px;
+}
+.companyProfile .companyEmail img {
+  width: 105px;
+  height: 75px;
+}
+
+.cartDetails {
+  font-family: "PingFang SC";
+}
+.cartDetails .cartDetails-cartInfo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-banner {
+  width: 675px;
+  height: 480px;
+  position: relative;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .cartDetails-swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .cartDetails-swiper-container img {
+  width: 100%;
+  height: 100%;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .swiper-pagination {
+  text-align: right;
+  padding-right: 20px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .swiper-button-prev, .cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .swiper-button-next {
+  display: none;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-banner:hover .swiper-button-prev, .cartDetails .cartDetails-cartInfo .cartDetails-banner:hover .swiper-button-next {
+  display: block;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo {
+  width: 675px;
+  height: 480px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo {
+  margin: 0 auto;
+  margin-left: 60px;
+  margin-top: 64px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .Cartoption {
+  width: 505px;
+  border-bottom: 1px solid #f3f5f7;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .Cartoption p {
+  font-size: 26px;
+  color: #333333;
+  line-height: 30px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .Cartoption p:nth-of-type(2) {
+  font-size: 14px;
+  color: #999999;
+  line-height: 30px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle {
+  width: 505px;
+  height: 80px;
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: #f3f5f7;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .firstPay, .cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .monthPay, .cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .expectCount {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .firstPay p, .cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .monthPay p, .cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .expectCount p {
+  margin: 0;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .firstPay p:nth-of-type(1), .cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .monthPay p:nth-of-type(1), .cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .expectCount p:nth-of-type(1) {
+  font-size: 14px;
+  color: #666666;
+  line-height: 30px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .firstPay p:nth-of-type(2), .cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .monthPay p:nth-of-type(2), .cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .payStyle .expectCount p:nth-of-type(2) {
+  font-size: 26px;
+  color: #ff6156;
+  line-height: 30px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .discounts {
+  margin-top: 26px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .discounts span {
+  border-radius: 4px;
+  padding: 4px;
+  margin-right: 15px;
+  color: white;
+  background-color: #20ce9c;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .getCartAD {
+  margin-top: 36px;
+  font-size: 14px;
+  color: #999999;
+  line-height: 30px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .appointmentAndConsult {
+  margin-top: 60px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .appointmentAndConsult button {
+  width: 250px;
+  height: 54px;
+  background: #20ce9c;
+  border-radius: 6px;
+  font-size: 18px;
+  color: white;
+  line-height: 30px;
+  margin-right: 35px;
+}
+.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo .parameterInfo .appointmentAndConsult span {
+  font-size: 14px;
+  color: #666666;
+  line-height: 30px;
+}
+
+#immediatelyAppointment .modal-content {
+  width: 560px;
+  height: 500px;
+  border: none;
+  background: white;
+}
+#immediatelyAppointment .modal-body {
+  margin: 80px;
+  padding: 0;
+}
+#immediatelyAppointment .verificationCode input {
+  display: inline-block;
+  width: 245px;
+  height: 40px;
+  margin-right: 20px;
+}
+#immediatelyAppointment .verificationCode button {
+  width: 130px;
+  height: 40px;
+}
+
+.aboutBuyCart {
+  margin-top: 130px;
+}
+.aboutBuyCart ul li {
+  font-size: 30px;
+  color: #333333;
+  margin-left: 60px;
+}
+
+.detais-buyFlow {
+  font-family: "PingFang SC";
+  position: relative;
+}
+.detais-buyFlow .flow {
+  margin-top: 20px;
+}
+.detais-buyFlow .flow ul li {
+  width: 295px;
+  height: 257px;
+  margin-right: 20px;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.detais-buyFlow .flow ul li img {
+  width: 85px;
+  height: 81px;
+}
+.detais-buyFlow .flow ul li p {
+  font-size: 18px;
+  color: #666666;
+}
+.detais-buyFlow .flow ul li p:nth-of-type(1) {
+  font-size: 22px;
+  color: #333333;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+.detais-buyFlow .flow ul li:nth-of-type(4) {
+  margin-right: 0px;
+}
+.detais-buyFlow .flow ul li div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200px;
+  border: 1px solid green;
+  right: -47px;
+  top: 17%;
+  width: 80px;
+}
+.detais-buyFlow .flow ul li:nth-of-type(4) div::after {
+  content: "";
+  position: absolute;
+  border: 0px solid green;
+}
+
+.joinUs-cartContainer {
+  background-color: #F3F5F7;
+}
+
+.attractInvestment {
+  margin-top: 50px;
+}
+
+.attractInvestmentInfo {
+  background-color: white;
+  margin-bottom: 80px;
+}
+
+.attractInvestmentInfo > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.attractInvestmentInfo > div .imgStyle {
+  background-color: #F3F5F7;
+}
+.attractInvestmentInfo > div span {
+  width: 620px;
+  height: 420px;
+  display: inline-block;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.attractInvestmentInfo > div span p:nth-of-type(1) {
+  height: 30px;
+  font-size: 30px;
+  font-family: "PingFang SC";
+  color: #333333;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+.attractInvestmentInfo > div span p:nth-of-type(2) {
+  height: 22px;
+  font-size: 22px;
+  font-family: "PingFang SC";
+  color: #666666;
+  line-height: 30px;
+}
+
+.joinUs, .linkUs {
+  margin: 80px auto;
+}
+.joinUs > p, .linkUs > p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 80px 0;
+  font-size: 30px;
+  color: #333333;
+}
+.joinUs > p::before, .linkUs > p::before {
+  content: "";
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  position: absolute;
+  left: 100px;
+  top: 95px;
+}
+.joinUs > p::after, .linkUs > p::after {
+  content: "";
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  position: absolute;
+  right: 100px;
+  top: 95px;
+}
+
+.joinUs .joinUsInfo {
+  background-color: white;
+}
+
+.joinUsFlow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.joinUsFlow .qualificationExamination {
+  position: relative;
+}
+.joinUsFlow div:nth-of-type(2)::before {
+  content: "";
+  width: 100px;
+  border: 1px dotted #72af7d;
+  font-family: 'Arial Normal', 'Arial';
+  border-radius: 2px;
+  position: absolute;
+  left: -108px;
+  top: 76px;
+}
+.joinUsFlow div:nth-of-type(2)::after {
+  content: "";
+  width: 100px;
+  border: 1px dotted #72af7d;
+  font-family: 'Arial Normal', 'Arial';
+  border-radius: 2px;
+  position: absolute;
+  right: -108px;
+  top: 76px;
+}
+.joinUsFlow img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+.joinUsFlow .freeOnApplication, .joinUsFlow .qualificationExamination, .joinUsFlow .modilFamily {
+  width: 295px;
+  height: 257px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.joinUsFlow .freeOnApplication > p:nth-of-type(1), .joinUsFlow .qualificationExamination > p:nth-of-type(1), .joinUsFlow .modilFamily > p:nth-of-type(1) {
+  font-size: 22px;
+  color: #333333;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.joinUsFlow .freeOnApplication > p:nth-of-type(2), .joinUsFlow .qualificationExamination > p:nth-of-type(2), .joinUsFlow .modilFamily > p:nth-of-type(2) {
+  font-size: 18px;
+  color: #666666;
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+.merchantInfoSubmit {
+  width: 518px;
+  height: 400px;
+  margin: 64px auto;
+  background-color: white;
+}
+.merchantInfoSubmit .SubmitForm {
+  margin: 80px;
+  padding-top: 64px;
+}
+.merchantInfoSubmit .formSubmit > div {
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+.merchantInfoSubmit .formSubmit > div span {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  font-size: 22px;
+  padding-right: 22px;
+}
+.merchantInfoSubmit .formSubmit > div input {
+  width: 243px;
+  height: 44px;
+  display: inline-block;
+}
+.merchantInfoSubmit button {
+  margin: 50px auto;
+  margin-bottom: 20px;
+  width: 350px;
+  height: 44px;
+  display: block;
+}
+.merchantInfoSubmit p {
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+}
+.merchantInfoSubmit p i {
+  color: red;
+  top: -2px;
+}
+
+.link-container {
+  background-color: white;
+}
+
+.linkUs {
+  margin: 0 auto;
+  margin-bottom: -140px;
+}
+.linkUs .linkUsStyle {
+  padding-bottom: 78px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.linkUs .linkUsStyle .mail span, .linkUs .linkUsStyle .AttractPhone span {
+  font-size: 22px;
+  line-height: 30px;
+}
+.linkUs .linkUsStyle .mail span i, .linkUs .linkUsStyle .AttractPhone span i {
+  color: #20ce9c;
+  padding-right: 10px;
+  top: 4px;
+}
+.linkUs .linkUsStyle .mail span:nth-of-type(1), .linkUs .linkUsStyle .AttractPhone span:nth-of-type(1) {
+  color: #666666;
+}
+.linkUs .linkUsStyle .mail span:nth-of-type(2), .linkUs .linkUsStyle .AttractPhone span:nth-of-type(2) {
+  color: #333333;
+  margin: 0  50px 0 0;
+}
+
+#banner {
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+  position: relative;
+}
+#banner .carousel-indicators {
+  bottom: 60px !important;
+}
+#banner img {
+  width: 100%;
+  height: 100%;
+}
+#banner .swiper-container {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  left: -875px;
+  margin-left: 50%;
+}
+#banner .swiper-pagination {
+  bottom: -20px;
+  right: 100px;
+}
+#banner .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  margin: 32px 4px;
+}
+#banner .swiper-button-prev, #banner .swiper-button-next {
+  display: none;
+}
+
+#banner:hover .swiper-button-prev, #banner:hover .swiper-button-next {
+  display: block;
+}
+
+#banner .carousel-control {
+  display: none;
+}
+
+#banner .bannerAdvertising:hover .carousel-control {
+  display: block;
+}
+
+.brandCart {
+  position: relative;
+  z-index: 3;
+  margin-top: -80px;
+  font-size: 14px;
+  height: 316px;
+  border-top: 0;
+  box-shadow: 0 1px 4px 0 rgba(88, 100, 117, 0.2);
+  border-radius: 6px;
+  background-color: white;
+}
+.brandCart .brandListInfo {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.brandCart .brandListInfo .cartList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 788px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.brandCart .brandListInfo .cartList .moreBrand {
+  width: 100%;
+  height: 100%;
+  margin-left: 80px;
+  cursor: pointer;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand {
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand span a {
+  color: green;
+  text-decoration: none;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand i {
+  color: green;
+  padding-right: 80px;
+  line-height: 60px;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand span:nth-of-type(2):hover {
+  color: green;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand span:nth-of-type(2):hover i {
+  color: green;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand-dd {
+  padding: 32px 0px 0 0;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li {
+  border-radius: 2px;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li a {
+  text-decoration: none;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li a p {
+  width: 50px;
+  height: 40px;
+  font-size: 14px;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li img {
+  width: 50px;
+  height: 50px;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li:hover {
+  box-shadow: 0px 0px 2px green;
+}
+.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li:hover a {
+  color: green;
+}
+.brandCart .brandListInfo .cartList .moreBrand .moneyScope {
+  padding-top: 37px;
+}
+.brandCart .brandListInfo .cartList .moreBrand .moneyScope ul li {
+  float: left;
+  padding-right: 32px;
+}
+.brandCart .brandListInfo .cartList .moreBrand .moneyScope ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333333;
+}
+.brandCart .brandListInfo .cartList .moreBrand .moneyScope ul li a:hover {
+  color: green;
+}
+.brandCart .brandListInfo .zeroBuyCart {
+  width: 452px;
+  height: 100%;
+  background: #f1fffb;
+  text-align: center;
+}
+.brandCart .brandListInfo .zeroBuyCart h4 {
+  width: 285px;
+  font-size: 26px;
+  font-family: "PingFang SC";
+  color: #333333;
+  text-align: center;
+  margin: 62px  auto;
+  margin-bottom: 50px;
+}
+.brandCart .brandListInfo .zeroBuyCart input {
+  width: 248px;
+  height: 45px;
+  padding-left: 10px;
+  background: #f1fffb;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+.brandCart .brandListInfo .zeroBuyCart button {
+  width: 160px;
+  height: 40px;
+  font-size: 18px;
+  color: #fefefe;
+  margin-top: 30px;
+}
+
+.cartActive {
+  color: green;
+}
+
+.hotActivity {
+  width: 100%;
+}
+.hotActivity .activity {
+  height: 740px;
+}
+.hotActivity .activity .activityList li {
+  float: left;
+  width: 610px;
+  height: 360px;
+  line-height: 360px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "PingFang SC";
+}
+.hotActivity .activity .activityList li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hotActivity .activity .activityList li:nth-of-type(1) {
+  background-color: #20ce9c;
+  margin: 0px 20px 20px 0;
+}
+.hotActivity .activity .activityList li:nth-of-type(2) {
+  background-color: #ff6156;
+  margin: 0px 0px 20px 0;
+}
+.hotActivity .activity .activityList li:nth-of-type(3) {
+  background-color: #ffa56b;
+  margin: 0px 20px 0px 0;
+}
+.hotActivity .activity .activityList li:nth-of-type(4) {
+  background-color: #76c9de;
+}
+
+.hotcar h2, .buyersShow > p {
+  text-align: center;
+}
+
+.hotcar h2, .hotActivity h2, .buyersShow > p, .buyPattern > span, .detais-buyFlow > span {
+  margin-bottom: 80px;
+  margin-top: 130px;
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  font-family: "PingFang SC";
+}
+
+.hotcar, .hotActivity, .buyersShow, .buyFlow, .buyPattern {
+  position: relative;
+}
+
+.hotcar h2::before, .hotActivity h2::before, .buyersShow > p::before, .buyPattern > span::before, .detais-buyFlow > span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../images/flower.jpg");
+  background-repeat: no-repeat;
+  width: 35%;
+  height: 20px;
+  border-radius: 250px 40px 260px 60px;
+}
+
+.hotcar h2::after, .hotActivity h2::after, .buyersShow > p::after, .buyPattern > span::after, .detais-buyFlow > span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../images/flower.jpg");
+  background-repeat: no-repeat;
+  width: 35%;
+  height: 20px;
+  right: 0px;
+  top: 0px;
+  border-radius: 250px 40px 260px 60px;
+}
+
+.hotCart-list li, .buyersShow-list li {
+  float: left;
+  width: 295px;
+  height: 370px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px gray;
+}
+.hotCart-list li img, .buyersShow-list li img {
+  width: 100%;
+  height: 210px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.hotCart-list li .cartDescribe, .buyersShow-list li .cartDescribe {
+  width: 235px;
+  height: 160px;
+  margin: 0px auto;
+}
+.hotCart-list li .cartDescribe > p, .buyersShow-list li .cartDescribe > p {
+  padding-top: 28px;
+  margin: 0;
+  font-size: 22px;
+  color: #333333;
+}
+.hotCart-list li .cartDescribe .cartDescribe-ks, .buyersShow-list li .cartDescribe .cartDescribe-ks {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hotCart-list li .cartDescribe .cartDescribe-ks span, .buyersShow-list li .cartDescribe .cartDescribe-ks span {
+  padding-top: 26px;
+  font-size: 18px;
+  color: #666666;
+  display: inline-block;
+}
+.hotCart-list li .cartDescribe > div.monthPay, .buyersShow-list li .cartDescribe > div.monthPay {
+  margin-top: 17px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hotCart-list li .cartDescribe > div.monthPay span, .buyersShow-list li .cartDescribe > div.monthPay span {
+  font-size: 14px;
+  color: #999999;
+}
+.hotCart-list li .cartDescribe > div.monthPay span:nth-of-type(1), .buyersShow-list li .cartDescribe > div.monthPay span:nth-of-type(1) {
+  font-size: 18px;
+  color: #ff6156;
+}
+.hotCart-list li .cartDescribe > div.monthPay span:nth-of-type(1) i, .buyersShow-list li .cartDescribe > div.monthPay span:nth-of-type(1) i {
+  font-size: 18px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.hotCart-list li:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hotCart-list li:nth-child(4n), .buyersShow-list li:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.buyersShow-list li .carterInfo {
+  width: 248px;
+  margin: 0 auto;
+}
+.buyersShow-list li .carterInfo .carterName {
+  padding-top: 18px;
+  font-size: 18px;
+  color: #333333;
+}
+.buyersShow-list li .carterInfo .getCartAd, .buyersShow-list li .carterInfo .getCarTime, .buyersShow-list li .carterInfo .comment {
+  font-size: 14px;
+  color: #666666;
+}
+.buyersShow-list li .carterInfo .getCartAd {
+  padding-right: 95px;
+}
+.buyersShow-list li .carterInfo .comment {
+  padding-top: 20px;
+}
+
+.buyProcedure {
+  width: 100%;
+  background-color: #F3F5F7;
+}
+
+.buyFlow > span {
+  margin-bottom: 80px;
+  padding-top: 130px;
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  font-family: "PingFang SC";
+}
+
+.buyFlow, .buyPattern {
+  text-align: center;
+}
+.buyFlow > span, .buyPattern > span {
+  font-size: 30px;
+  font-weight: 500;
+  display: block;
+}
+.buyFlow .flow, .buyPattern .flow {
+  margin-top: 20px;
+}
+.buyFlow .flow ul li, .buyPattern .flow ul li {
+  width: 295px;
+  height: 257px;
+  margin-right: 20px;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.buyFlow .flow ul li img, .buyPattern .flow ul li img {
+  width: 85px;
+  height: 81px;
+}
+.buyFlow .flow ul li p, .buyPattern .flow ul li p {
+  font-size: 18px;
+  color: #666666;
+}
+.buyFlow .flow ul li p:nth-of-type(1), .buyPattern .flow ul li p:nth-of-type(1) {
+  font-size: 22px;
+  font-family: "PingFang SC";
+  color: #333333;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+.buyFlow .flow ul li:nth-of-type(4), .buyPattern .flow ul li:nth-of-type(4) {
+  margin-right: 0px;
+}
+.buyFlow .flow ul li div::after, .buyPattern .flow ul li div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200px;
+  border: 1px solid green;
+  right: -47px;
+  top: 17%;
+  width: 80px;
+}
+.buyFlow .flow ul li:nth-of-type(4) div::after, .buyPattern .flow ul li:nth-of-type(4) div::after {
+  content: "";
+  position: absolute;
+  border: 0px solid green;
+}
+
+.buyPattern {
+  background-color: white;
+}
+
+.Pattern {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.Pattern .shreeModul {
+  margin: 30px 0px;
+  margin-bottom: 85px;
+  color: white;
+}
+.Pattern .shreeModul > span {
+  display: inline-block;
+  width: 400px;
+  height: 120px;
+  background: #20ce9c;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 26px;
+  font-family: "PingFang SC";
+  text-align: center;
+}
+.Pattern .shreeModul > span:nth-of-type(1) {
+  padding-top: 25px;
+}
+.Pattern .shreeModul > span:nth-of-type(2) {
+  line-height: 120px;
+}
+.Pattern .shreeModul > span:nth-of-type(3) {
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-top: 25px;
+}
+.Pattern .fourAdvantage {
+  width: 100%;
+}
+.Pattern .fourAdvantage ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.Pattern .fourAdvantage ul li {
+  width: 610px;
+  height: 225px;
+  text-align: center;
+  margin: 0 20px 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f1fffb;
+}
+.Pattern .fourAdvantage ul li p:nth-of-type(1) {
+  font-size: 26px;
+  padding-bottom: 34px;
+  font-weight: bold;
+  margin: 0;
+}
+.Pattern .fourAdvantage ul li p:nth-of-type(2) {
+  font-size: 22px;
+  margin: 0;
+}
+.Pattern .fourAdvantage ul li:nth-of-type(2n) {
+  margin: 0 0px 20px 0;
+}

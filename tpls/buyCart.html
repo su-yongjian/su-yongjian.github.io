@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我要买车html</title>
+    <link rel="shortcut icon" type="image/x-icon" href="faviconytc.ico" class="ico" />
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- <link rel="stylesheet" href="./css/common.css"> -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
+    <script src="../js/lib/jquery-2.1.4.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/buyCart/buyCart.js"></script>
+
+</head>
+
+<body>
+    <div class="buy-cartContainer">
+        <div class="top w1240">
+            <h1 class="topLogo">
+                <a href="#" title="易淘车">易淘车</a>
+            </h1>
+
+            <div class="city">
+                <!-- 鼠标悬停 .city添加class名active -->
+                <p class="city-curr">
+                    深圳
+                    <i class="glyphicon glyphicon-menu-down"></i>
+                </p>
+                <div class="white-line"></div>
+                <!--        class:all-city的作用是局部滚动不影响整体滚动-->
+                <div class="city-box all-city" style="">
+                    <dl class="bdb-s">
+                        <dt class="green-tit">热门</dt>
+                        <dd>
+                            <a baidu_alog="pc_index_city&amp;click&amp;pc_index_quanguo_c" data-gzlog="tracking_type=click&amp;eventid=0020060000000021"
+                                href="/www/" title="全国二手车">全国 </a>
+                            <a baidu_alog="pc_index_city&amp;click&amp;pc_index_hot_city_c" data-gzlog="tracking_type=click&amp;eventid=0020060000000019&amp;select_city=bj"
+                                href="/bj/" title="北京二手车">北京 </a>
+                            <a baidu_alog="pc_index_city&amp;click&amp;pc_index_hot_city_c" data-gzlog="tracking_type=click&amp;eventid=0020060000000019&amp;select_city=sh"
+                                href="/sh/" title="上海二手车">上海 </a>
+                            <a baidu_alog="pc_index_city&amp;click&amp;pc_index_hot_city_c" data-gzlog="tracking_type=click&amp;eventid=0020060000000019&amp;select_city=gz"
+                                href="/gz/" title="广州二手车">广州 </a>
+                            <a baidu_alog="pc_index_city&amp;click&amp;pc_index_hot_city_c" data-gzlog="tracking_type=click&amp;eventid=0020060000000019&amp;select_city=sz"
+                                class="on" href="/sz/" title="深圳二手车">深圳 </a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="green-tit">A</dt>
+                        <dd>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anqing" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/anqing/" title="安庆二手车">安庆 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anshan" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/anshan/" title="鞍山二手车">鞍山 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anyang" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/anyang/" title="安阳二手车">安阳 </a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="green-tit">B</dt>
+                        <dd>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=baoding" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/baoding/" title="保定二手车">保定 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=baotou" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/baotou/" title="包头二手车">包头 </a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="green-tit">C</dt>
+                        <dd>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=cangzhou" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/cangzhou/" title="沧州二手车">沧州 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=cc" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/cc/" title="长春二手车">长春 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=changde" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/changde/" title="常德二手车">常德 </a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="green-tit">D</dt>
+                        <dd>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=dl" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/dl/" title="大连二手车">大连 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=daqing" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/daqing/" title="大庆二手车">大庆 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=datong" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/datong/" title="大同二手车">大同 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=dazhou" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/dazhou/" title="达州二手车">达州 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=deyang" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/deyang/" title="德阳二手车">德阳 </a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="green-tit">E</dt>
+                        <dd>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=eerduosi" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/eerduosi/" title="鄂尔多斯二手车">鄂尔多斯 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=ezhou" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/ezhou/" title="鄂州二手车">鄂州 </a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="green-tit">F</dt>
+                        <dd>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=foshan" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/foshan/" title="佛山二手车">佛山 </a>
+                            <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=fushun" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c"
+                                href="/fushun/" title="抚顺二手车">抚顺 </a>
+                        </dd>
+                    </dl>
+
+                </div>
+            </div>
+            <!--菜单 nav-->
+            <div class="right">
+                <ul class="topNav">
+                    <li>
+                        <a href="../index.html" class="home cartActive">首页</a>
+                    </li>
+                    <li class="activeBottom">
+                        <a href="./buyCart.html" class="buyCar">我要买车</a>
+                    </li>
+                    <li>
+                        <a href="./cartDetails.html" class="carDeitel">商品页</a>
+                    </li>
+                    <li>
+                        <a href="./attractInvestment.html" class="attractInvestment">商家入驻</a>
+                    </li>
+                    <li>
+                        <a href="./aboutUs.html" class="aboutUslink">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 面包屑导航以及搜索框 -->
+        <div class="crumbs w1240">
+            <a class="active" href="../index.html">首页</a>
+            >&nbsp我要买车
+            <span>
+                <button class="btn btn-default fr" type="button">Go!</button>
+                <input type="text" class="form-control fr" placeholder="请输入您的车型">
+            </span>
+
+
+        </div>
+        <div class="screen w1240">
+            <!-- 品牌 -->
+            <dl class="clearfix">
+                <dt>品牌</dt>
+                <dd>
+                    <div class="dd-top">
+                        <span class="a-box">
+                            <!-- 不限 -->
+                            <a class="active" href="/sz/buy/#bread">不限</a>
+                            <!-- 热门品牌 -->
+                            <a href="/sz/dazhong/#bread">大众</a>
+                            <a href="/sz/ford/#bread">福特</a>
+                            <a href="/sz/toyota/#bread">丰田</a>
+                            <a href="/sz/hyundai/#bread">现代</a>
+                            <a href="/sz/honda/#bread">本田</a>
+                            <a href="/sz/byd/#bread">比亚迪</a>
+
+                        </span>
+                        <span class="dd-btn showAllCartBtn ">
+                            全部
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </span>
+                    </div>
+                    <div class="dd-all clearfix showCartInfo" style="display:none">
+                        <ul>
+                            <li>
+                                <label>A</label>
+                                <p>
+                                    <a href="/sz/audi/#bread">奥迪</a>
+                                    <a href="/sz/alfaromeo/#bread">阿尔法·罗密欧</a>
+                                    <a href="/sz/ankai/#bread">安凯客车</a>
+                                    <a href="/sz/astonmartin/#bread">阿斯顿·马丁</a>
+                                    <a href="/sz/anchi/#bread">安驰</a>
+                                    <a href="/sz/ac-schnitzer/#bread">AC Schnitzer</a>
+                                    <a href="/sz/alpina/#bread">Alpina</a>
+                                </p>
+                            </li>
+                            <li>
+                                <label>B</label>
+                                <p>
+                                    <a href="/sz/honda/#bread">本田</a>
+                                    <a href="/sz/byd/#bread">比亚迪</a>
+                                    <a href="/sz/buick/#bread">别克</a>
+                                    <a href="/sz/bmw/#bread">宝马</a>
+                                    <a href="/sz/benz/#bread">奔驰</a>
+
+                                </p>
+                            </li>
+                            <li>
+                                <label>C</label>
+                                <p>
+                                    <a href="/sz/changanshangyong/#bread">长安商用</a>
+                                    <a href="/sz/changan/#bread">长安</a>
+                                    <a href="/sz/chuanqi1/#bread">传祺</a>
+                                    <a href="/sz/changcheng/#bread">长城</a>
+                                    <a href="/sz/changhe/#bread">昌河</a>
+                                    <a href="/sz/chuanqiyema/#bread">川汽野马</a>
+                                    <a href="/sz/kuayue/#bread">长安跨越</a>
+                                    <a href="/sz/caos/#bread">长安欧尚</a>
+                                    <a href="/sz/chenggong/#bread">成功汽车</a>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>A</label>
+                                <p>
+                                    <a href="/sz/audi/#bread">奥迪</a>
+                                    <a href="/sz/alfaromeo/#bread">阿尔法·罗密欧</a>
+                                    <a href="/sz/ankai/#bread">安凯客车</a>
+                                    <a href="/sz/astonmartin/#bread">阿斯顿·马丁</a>
+                                    <a href="/sz/anchi/#bread">安驰</a>
+                                    <a href="/sz/ac-schnitzer/#bread">AC Schnitzer</a>
+                                    <a href="/sz/alpina/#bread">Alpina</a>
+                                </p>
+                            </li>
+                            <li>
+                                <label>B</label>
+                                <p>
+                                    <a href="/sz/honda/#bread">本田</a>
+                                    <a href="/sz/byd/#bread">比亚迪</a>
+                                    <a href="/sz/buick/#bread">别克</a>
+                                    <a href="/sz/bmw/#bread">宝马</a>
+                                    <a href="/sz/benz/#bread">奔驰</a>
+
+                                </p>
+                            </li>
+                            <li>
+                                <label>C</label>
+                                <p>
+                                    <a href="/sz/changanshangyong/#bread">长安商用</a>
+                                    <a href="/sz/changan/#bread">长安</a>
+                                    <a href="/sz/chuanqi1/#bread">传祺</a>
+                                    <a href="/sz/changcheng/#bread">长城</a>
+                                    <a href="/sz/changhe/#bread">昌河</a>
+                                    <a href="/sz/chuanqiyema/#bread">川汽野马</a>
+                                    <a href="/sz/kuayue/#bread">长安跨越</a>
+                                    <a href="/sz/caos/#bread">长安欧尚</a>
+                                    <a href="/sz/chenggong/#bread">成功汽车</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+            <!-- 车价 -->
+            <dl class="clearfix">
+                <dt>车价</dt>
+                <dd>
+                    <div class="dd-top">
+                        <span class="a-box">
+                            <a class="active" href="#">不限</a>
+                            <a href="#">10万以下</a>
+                            <a href="#">10-15万</a>
+                            <a href="#">15-20万</a>
+                            <a href="#">20万以上</a>
+                        </span>
+                    </div>
+                    <!-- 如有需求  也增加全部显示隐藏 -->
+                    <div class="dd-car js-tag js-option-hid-info" style="display: none;">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+            <!-- 首付 -->
+            <dl class="clearfix">
+                <dt>首付</dt>
+                <dd>
+                    <div class="dd-top">
+                        <span class="a-box">
+                            <a class="active" href="#">不限</a>
+                            <a href="#">1万以下</a>
+                            <a href="#">1-2万</a>
+                            <a href="#">2万以上</a>
+                        </span>
+                    </div>
+                    <!-- 如有需求  也增加全部显示隐藏 -->
+                    <div class="dd-car js-tag js-option-hid-info" style="display: none;">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+            <!-- 月供 -->
+            <dl class="clearfix">
+                <dt>月供</dt>
+                <dd>
+                    <div class="dd-top">
+                        <span class="a-box">
+                            <a class="active" href="#">不限</a>
+                            <a href="#">2000元以内</a>
+                            <a href="#">2000-3000元</a>
+                            <a href="#">3000-4000元</a>
+                            <a href="#">4000-5000元</a>
+                            <a href="#">5000元以上</a>
+                        </span>
+                    </div>
+                    <!-- 如有需求  也增加全部显示隐藏 -->
+                    <div class="dd-car js-tag js-option-hid-info" style="display: none;">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+            <!-- 已选条件 -->
+            <div class="alreadySelect">
+                <span>已选条件:</span>
+
+                <span class="selectSpan">
+                    <!-- 这里的要动态生成添加 -->
+                    <span>大众
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </span>
+                    <span>10-15万
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </span>
+                </span>
+                <!-- Standard button -->
+                <button type="button" class="btn btn-default btn-sm">重置条件</button>
+
+            </div>
+        </div>
+
+        <!-- 筛选排序 -->
+        <div class="list-filter w1240 clearfix">
+            <div class="list-sort clearfix fr">
+                <a class="sort-a active fl" href="/sz/buy/#bread">默认排序</a>
+                <a class="fl" href="#">首付
+                    <i class="glyphicon glyphicon-arrow-up"></i>
+                </a>
+                <a class="fl" href="#">月供
+                    <i class="glyphicon glyphicon-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+        <!-- 车车展示 -->
+        <div class="w1240">
+
+            <ul class="hotCart-list clearfix">
+
+                <li class="list-item">
+                    <a class="l-img" href="#" target="_blank">
+                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
+                        <div class="ltips">
+                        </div>
+                    </a>
+                    <div class="cartDescribe">
+                        <p>大众POLO</p>
+                        <div class="cartDescribe-ks">
+                            <span>2016款 1.4L</span> &nbsp&nbsp
+                            <span>自动风尚型</span>
+                        </div>
+
+                        <div class="monthPay">
+                            <span>首付
+                                <i>1.76</i> 万</span>
+                            <span>月供1998元</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a class="l-img" href="#" target="_blank">
+                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
+                        <div class="ltips">
+                        </div>
+                    </a>
+                    <div class="cartDescribe">
+                        <p>大众POLO</p>
+                        <div class="cartDescribe-ks">
+                            <span>2016款 1.4L</span> &nbsp&nbsp
+                            <span>自动风尚型</span>
+                        </div>
+
+                        <div class="monthPay">
+                            <span>首付
+                                <i>1.76</i> 万</span>
+                            <span>月供1998元</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a class="l-img" href="#" target="_blank">
+                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
+                        <div class="ltips">
+                        </div>
+                    </a>
+                    <div class="cartDescribe">
+                        <p>大众POLO</p>
+                        <div class="cartDescribe-ks">
+                            <span>2016款 1.4L</span> &nbsp&nbsp
+                            <span>自动风尚型</span>
+                        </div>
+
+                        <div class="monthPay">
+                            <span>首付
+                                <i>1.76</i> 万</span>
+                            <span>月供1998元</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a class="l-img" href="#" target="_blank">
+                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
+                        <div class="ltips">
+                        </div>
+                    </a>
+                    <div class="cartDescribe">
+                        <p>大众POLO</p>
+                        <div class="cartDescribe-ks">
+                            <span>2016款 1.4L</span> &nbsp&nbsp
+                            <span>自动风尚型</span>
+                        </div>
+
+                        <div class="monthPay">
+                            <span>首付
+                                <i>1.76</i> 万</span>
+                            <span>月供1998元</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a class="l-img" href="#" target="_blank">
+                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
+                        <div class="ltips">
+                        </div>
+                    </a>
+                    <div class="cartDescribe">
+                        <p>大众POLO</p>
+                        <div class="cartDescribe-ks">
+                            <span>2016款 1.4L</span> &nbsp&nbsp
+                            <span>自动风尚型</span>
+                        </div>
+
+                        <div class="monthPay">
+                            <span>首付
+                                <i>1.76</i> 万</span>
+                            <span>月供1998元</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a class="l-img" href="#" target="_blank">
+                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
+                        <div class="ltips">
+                        </div>
+                    </a>
+                    <div class="cartDescribe">
+                        <p>大众POLO</p>
+                        <div class="cartDescribe-ks">
+                            <span>2016款 1.4L</span> &nbsp&nbsp
+                            <span>自动风尚型</span>
+                        </div>
+
+                        <div class="monthPay">
+                            <span>首付
+                                <i>1.76</i> 万</span>
+                            <span>月供1998元</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a class="l-img" href="#" target="_blank">
+                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
+                        <div class="ltips">
+                        </div>
+                    </a>
+                    <div class="cartDescribe">
+                        <p>大众POLO</p>
+                        <div class="cartDescribe-ks">
+                            <span>2016款 1.4L</span> &nbsp&nbsp
+                            <span>自动风尚型</span>
+                        </div>
+
+                        <div class="monthPay">
+                            <span>首付
+                                <i>1.76</i> 万</span>
+                            <span>月供1998元</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a class="l-img" href="#" target="_blank">
+                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
+                        <div class="ltips">
+                        </div>
+                    </a>
+                    <div class="cartDescribe">
+                        <p>大众POLO</p>
+                        <div class="cartDescribe-ks">
+                            <span>2016款 1.4L</span> &nbsp&nbsp
+                            <span>自动风尚型</span>
+                        </div>
+
+                        <div class="monthPay">
+                            <span>首付
+                                <i>1.76</i> 万</span>
+                            <span>月供1998元</span>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+
+            <div class="pageNav" data-widget="app/ms_v2/common/list_page.js#pagination">
+                <ul class="pageLink clearfix">
+                    <li class="link-on">
+                        <a>
+                            <span>1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sz/buy/o2/#bread" data-gzlog="tracking_type=click&amp;eventid=0060000000000060&amp;pageno=2">
+                            <span>2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sz/buy/o3/#bread" data-gzlog="tracking_type=click&amp;eventid=0060000000000060&amp;pageno=3">
+                            <span>3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sz/buy/o4/#bread" data-gzlog="tracking_type=click&amp;eventid=0060000000000060&amp;pageno=4">
+                            <span>4</span>
+                        </a>
+                    </li>
+                  
+                    <li class="point">
+                        <a>
+                            <span>...</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sz/buy/o120/#bread" data-gzlog="tracking_type=click&amp;eventid=0060000000000060&amp;pageno=120">
+                            <span>120</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sz/buy/o2/#bread" data-gzlog="tracking_type=click&amp;eventid=0060000000000059" class="next">
+                            <span>下一页</span>
+                            <em>&gt;</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 底部区域 -->
+        <footer>
+            <div class="w1240">
+                <!-- 上部分 -->
+                <div class="footLayout">
+                    <!-- 左边 -->
+                    <div class="footLogoLeft">
+                        <div>
+                            <img src="../images/ytc_logo.jpg" alt="">
+                            <!-- 下部分   备案号 -->
+                            <p>CopyRight © 2017 版权所有 粤ICP备17020340号-1</p>
+                        </div>
+
+                    </div>
+                    <div class="footLogoCenter">
+                        <span>
+                            <img src="../images/weixin.jpg" alt="">
+                            <span>关注微信号</span>
+                        </span>
+                        <span>
+                            <img src="../images/gzNum.jpg" alt="">
+                            <span>关注微信号</span>
+                        </span>
+
+                    </div>
+                    <div class="footLogoRight">
+                        <h2>400-863-3378</h2>
+                        <p>服务时间：9:00-17:30 </p>
+                        <div class="companyLocation">
+                            <p>深圳市东方快车投资管理有限公司</p>
+                            <p>深圳市南山区大冲商务中心1栋2号楼1808室</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script>
+</script>
+
+</html>

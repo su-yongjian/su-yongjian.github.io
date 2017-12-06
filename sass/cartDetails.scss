@@ -1,0 +1,218 @@
+.cartDetails {
+       font-family: "PingFang SC";
+    // 车详情说明
+    .cartDetails-cartInfo {
+        display: flex;
+        justify-content: space-around;
+        .cartDetails-banner{
+            width: 675px;
+            height: 480px;
+            position: relative;
+            // 轮播图
+            .image-banner{
+                width: 100%;
+                // margin: 15px auto;
+                height: 100%;
+                overflow: hidden;
+                .cartDetails-swiper-container{
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .swiper-pagination{
+                    text-align: right;
+                    padding-right: 20px;
+                }
+                .swiper-button-prev , .swiper-button-next {
+                    display:none ;
+                }
+            }
+        }
+        .cartDetails-banner:hover {
+            .swiper-button-prev , .swiper-button-next {
+                display:block ;
+            }
+        }
+        .cartDetails-parameterInfo {
+            width: 675px;
+            height: 480px; 
+            .parameterInfo {
+                
+                margin: 0 auto;
+                margin-left: 60px;
+                margin-top: 64px;
+                .Cartoption{
+                    width:505px;
+                    border-bottom: 1px solid rgba(243,245,247,1);
+                    p {
+                        font-size:26px;
+                        color:rgba(51,51,51,1);
+                        line-height:30px;
+                    }
+                    p:nth-of-type(2){
+                        font-size:14px;
+                        color:rgba(153,153,153,1);
+                        line-height:30px;
+                    }
+                }
+                .payStyle {
+                    width: 505px;
+                    height: 80px;
+                    margin-top: 24px;
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: rgba(243,245,247,1);
+                    .firstPay , .monthPay , .expectCount {
+                        display: flex ; 
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            margin: 0;
+                        }
+                        p:nth-of-type(1) {
+                            font-size:14px;
+                            color:rgba(102,102,102,1);
+                            line-height:30px;
+                        }
+                        p:nth-of-type(2) {
+                            font-size:26px;
+                            color:rgba(255,97,86,1);
+                            line-height:30px;
+                        }
+                    }
+                }
+                .discounts {
+                    margin-top: 26px;
+                    span {
+                        border-radius: 4px;
+                        padding: 4px;
+                        margin-right: 15px;
+                        color: white;
+                        background-color: rgba(32,206,156,1);
+                    }
+                }
+                .getCartAD {
+                    margin-top: 36px;
+                    font-size:14px;
+                    color:rgba(153,153,153,1);
+                    line-height:30px;
+                }
+                .appointmentAndConsult {
+                    margin-top: 60px;
+                    button {
+                        width:250px;
+                        height:54px; 
+                        background:rgba(32,206,156,1);
+                        border-radius: 6px ; 
+                        font-size:18px;
+                        color:rgba(255,255,255,1);
+                        line-height:30px;
+                        margin-right: 35px;
+                    }
+                    span {
+                        font-size:14px;
+                        color:rgba(102,102,102,1);
+                        line-height:30px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+// 立即预约弹窗
+#immediatelyAppointment{
+    .modal-content{
+        width:560px;
+        height:500px; 
+        border:none;
+        background:rgba(255,255,255,1);
+    }
+    .modal-body{
+        margin: 80px;
+        
+        padding: 0;
+    }
+    .verificationCode {
+        input {
+            display: inline-block ;
+            width: 245px;
+            height: 40px;
+            margin-right: 20px;
+        }
+        button {
+            width: 130px;
+            height: 40px;
+        }
+    }
+}
+
+
+
+// 购车优势
+.aboutBuyCart{
+    margin-top: 130px;
+    ul li {
+        font-size:30px;
+        color:rgba(51,51,51,1);
+        margin-left: 60px;
+    }
+}
+
+// 购车流程
+.detais-buyFlow {
+    font-family: "PingFang SC";
+    position: relative;
+    .flow{
+        margin-top: 20px;
+    }
+    .flow ul li{
+        width: 295px;
+        height: 257px;
+        margin-right: 20px;
+        float: left;
+        // margin: 15px 20px;
+        text-align: center;
+        position: relative;
+        img{
+            width: 85px;
+            height: 81px;
+        }
+        p {
+            font-size:18px;
+            color:rgba(102,102,102,1);
+        }
+        p:nth-of-type(1) {
+            font-size:22px;
+            color:rgba(51,51,51,1);
+            font-weight: bold;
+            padding:20px 0px;
+        }
+    }
+    .flow ul li:nth-of-type(4) {
+        margin-right: 0px;
+
+    }
+    .flow ul li div::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 200px;
+        border:1px solid green;
+        right: -47px;
+        top: 17%;
+        width: 80px;
+    }
+    .flow ul li:nth-of-type(4) div::after{
+        content: "";
+
+        position: absolute;
+
+        border:0px solid green;
+
+    }
+}

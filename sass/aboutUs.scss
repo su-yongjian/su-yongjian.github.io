@@ -1,0 +1,74 @@
+
+.about-cartContainer {
+    width: 100%;
+    background-color: #F3F5F7;
+}
+.aboutUs {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.aboutUsDescribe{
+    margin-top: 50px;
+    background-color: white;
+    >p {
+        width: 1140px;
+        font-size:18px;
+        line-height:30px;
+        font-family: "PingFang SC";
+        padding: 29px 50px 48px 50px;
+    }
+    h2 {
+        margin-left: 50px;
+        font-size:26px;
+        color:rgba(32,206,156,1);
+    }  
+}
+.companyProfile{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    // background-color: white;
+    img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .companyADR , .companyNUM , .companyEmail {
+        width: 400px;
+        height: 372px;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center ;
+        background-color: white;
+        >p:nth-of-type(1) {
+            margin-top:20px;
+            font-size:18px;
+            font-weight: bold;
+
+        }
+        >p:nth-of-type(2) {
+            font-size:16px;
+            margin:20px 0px;
+            line-height:30px;
+        }
+    }
+    .companyADR , .companyNUM {
+        margin-right: 20px;
+    }
+    .companyADR img {
+        width: 84px;
+        height: 104px;
+    }
+    .companyNUM img {
+        width: 76px;
+        height: 100px;
+    }
+    .companyEmail img {
+        width: 105px;
+        height: 75px;
+    }
+}

@@ -1,0 +1,84 @@
+footer {
+  width: 100%;
+  margin-top: 140px;
+  height: 260px;
+  background: #333333;
+  opacity: 0.6;
+}
+
+.footLayout {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-around;
+}
+
+.footLayout > div {
+  width: 33.333%;
+}
+
+.footLayout .footLogoLeft div img {
+  display: block;
+  width: 170px;
+  height: 83px;
+}
+
+.footLayout .footLogoLeft div p {
+  padding-top: 31px;
+  font-size: 18px;
+  width: 240px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footLayout .footLogoCenter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footLayout .footLogoCenter span {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footLayout .footLogoCenter span img {
+  width: 120px;
+  height: 120px;
+}
+
+.footLayout .footLogoCenter span span {
+  padding-top: 19px;
+  font-size: 22px;
+  font-family: "PongFang SC";
+}
+
+.footLayout .footLogoRight {
+  text-align: right;
+}
+
+.footLayout .footLogoRight h2 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.footLayout .footLogoRight > p {
+  padding-top: 20px;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.footLayout .footLogoRight .companyLocation {
+  padding-top: 43px;
+}
+
+.footLayout .footLogoRight .companyLocation p {
+  font-family: "PongFang SC";
+  font-size: 18px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding-bottom: 10px;
+}

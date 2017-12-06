@@ -1,0 +1,238 @@
+.joinUs-cartContainer {
+  background-color: #F3F5F7;
+}
+
+.attractInvestment {
+  margin-top: 50px;
+}
+
+.attractInvestmentInfo {
+  background-color: white;
+  margin-bottom: 80px;
+}
+
+.attractInvestmentInfo > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.attractInvestmentInfo > div .imgStyle {
+  background-color: #F3F5F7;
+}
+
+.attractInvestmentInfo > div span {
+  width: 620px;
+  height: 420px;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.attractInvestmentInfo > div span p:nth-of-type(1) {
+  height: 30px;
+  font-size: 30px;
+  font-family: "PingFang SC";
+  color: #333333;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+
+.attractInvestmentInfo > div span p:nth-of-type(2) {
+  height: 22px;
+  font-size: 22px;
+  font-family: "PingFang SC";
+  color: #666666;
+  line-height: 30px;
+}
+
+.joinUs, .linkUs {
+  margin: 80px auto;
+}
+
+.joinUs > p, .linkUs > p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 80px 0;
+  font-size: 30px;
+  color: #333333;
+}
+
+.joinUs > p::before, .linkUs > p::before {
+  content: "";
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  position: absolute;
+  left: 100px;
+  top: 95px;
+}
+
+.joinUs > p::after, .linkUs > p::after {
+  content: "";
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  position: absolute;
+  right: 100px;
+  top: 95px;
+}
+
+.joinUs .joinUsInfo {
+  background-color: white;
+}
+
+.joinUsFlow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.joinUsFlow .qualificationExamination {
+  position: relative;
+}
+
+.joinUsFlow div:nth-of-type(2)::before {
+  content: "";
+  width: 100px;
+  border: 1px dotted #72af7d;
+  font-family: 'Arial Normal', 'Arial';
+  border-radius: 2px;
+  position: absolute;
+  left: -108px;
+  top: 76px;
+}
+
+.joinUsFlow div:nth-of-type(2)::after {
+  content: "";
+  width: 100px;
+  border: 1px dotted #72af7d;
+  font-family: 'Arial Normal', 'Arial';
+  border-radius: 2px;
+  position: absolute;
+  right: -108px;
+  top: 76px;
+}
+
+.joinUsFlow img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.joinUsFlow .freeOnApplication, .joinUsFlow .qualificationExamination, .joinUsFlow .modilFamily {
+  width: 295px;
+  height: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinUsFlow .freeOnApplication > p:nth-of-type(1), .joinUsFlow .qualificationExamination > p:nth-of-type(1), .joinUsFlow .modilFamily > p:nth-of-type(1) {
+  font-size: 22px;
+  color: #333333;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.joinUsFlow .freeOnApplication > p:nth-of-type(2), .joinUsFlow .qualificationExamination > p:nth-of-type(2), .joinUsFlow .modilFamily > p:nth-of-type(2) {
+  font-size: 18px;
+  color: #666666;
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+.merchantInfoSubmit {
+  width: 518px;
+  height: 400px;
+  margin: 64px auto;
+  background-color: white;
+}
+
+.merchantInfoSubmit .SubmitForm {
+  margin: 80px;
+  padding-top: 64px;
+}
+
+.merchantInfoSubmit .formSubmit > div {
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+
+.merchantInfoSubmit .formSubmit > div span {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  font-size: 22px;
+  padding-right: 22px;
+}
+
+.merchantInfoSubmit .formSubmit > div input {
+  width: 243px;
+  height: 44px;
+  display: inline-block;
+}
+
+.merchantInfoSubmit button {
+  margin: 50px auto;
+  margin-bottom: 20px;
+  width: 350px;
+  height: 44px;
+  display: block;
+}
+
+.merchantInfoSubmit p {
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+}
+
+.merchantInfoSubmit p i {
+  color: red;
+  top: -2px;
+}
+
+.link-container {
+  background-color: white;
+}
+
+.linkUs {
+  margin: 0 auto;
+  margin-bottom: -140px;
+}
+
+.linkUs .linkUsStyle {
+  padding-bottom: 78px;
+  display: flex;
+  justify-content: center;
+}
+
+.linkUs .linkUsStyle .mail span, .linkUs .linkUsStyle .AttractPhone span {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.linkUs .linkUsStyle .mail span i, .linkUs .linkUsStyle .AttractPhone span i {
+  color: #20ce9c;
+  padding-right: 10px;
+  top: 4px;
+}
+
+.linkUs .linkUsStyle .mail span:nth-of-type(1), .linkUs .linkUsStyle .AttractPhone span:nth-of-type(1) {
+  color: #666666;
+}
+
+.linkUs .linkUsStyle .mail span:nth-of-type(2), .linkUs .linkUsStyle .AttractPhone span:nth-of-type(2) {
+  color: #333333;
+  margin: 0  50px 0 0;
+}

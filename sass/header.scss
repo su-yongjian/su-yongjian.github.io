@@ -1,0 +1,55 @@
+.cartContainer {
+    width: 100%;
+    background-color: white;
+    font-family: "PingFang SC";
+}
+.topStyle {
+    background-color: white;
+}
+.top {
+    position: relative;
+    ;
+    height: 60px;
+    top: 0;
+    line-height: 60px;
+    background-color: white;
+}
+
+.topLogo {
+    // display: inline-block;
+    float: left;
+    width: 120px;
+    height: 60px;
+    text-indent: -9999px;
+    margin: 0;
+    padding: 0; // background-position: -181px -32px;
+    background: url("../images/ytc_logo.jpg") no-repeat;
+}
+
+.top ul.topNav {
+    height: 50px;
+    margin: 0 auto; // line-height: 50px;
+}
+
+.top ul.topNav li {
+    float: left;
+    margin-left: 64px;
+    height: 60px;
+    font-size: 16px;
+    a {
+        color: rgba(102, 102, 102, 1);
+        font-family: "PingFang SC";
+    }
+}
+
+.top ul.topNav li a:hover {
+    text-decoration: none;
+    color: green;
+}
+
+.top ul.topNav li.activeBottom {
+    a {
+        color: green;
+    }
+    border-bottom: 4px solid green;
+}
