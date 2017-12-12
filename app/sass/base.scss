@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body ,html {
+    font-family: "PingFang SC";
+    color: #000;
+}
+// 去除下划线 点击高亮
+a,span {
+    text-decoration: none;
+    // 点击高亮
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+// 输入框
+input {
+    border: none;
+    outline: none;
+}
+
+// img 变为块
+img {
+    display: block;
+}
+
+//rem转换
+@function  p2r($size){
+    @return  ($size/75*1rem)
+};
+
+
+// 快速浮动
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after,{
+    content: '';
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+
+

@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我要买车车</title>
+    <script>
+        document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
+    </script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" type="text/css" href="../lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+<!--引JS-->
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/template.js"></script>
+
+<body>
+    <div class="buyCar-container">
+        <div class="buyCar-contain">
+            <!-- 遮罩层 -->
+            <div class="mark"></div>
+            <header class="aui-bar aui-bar-nav">买车</header>
+            <!-- 条件筛选 -->
+            <ul class="conditionScreen">
+                <li class="select-brand">
+                    <span>不限品牌</span>
+                    <i class="mui-icon mui-icon-arrowdown"></i>
+                </li>
+                <li class="select-price">
+                    <span>不限车价</span>
+                    <i class="mui-icon mui-icon-arrowdown"></i>
+                </li>
+                <li class="select-pay">
+                    <span>首付</span>
+                    <i class="mui-icon mui-icon-arrowdown"></i>
+                </li>
+                <li class="select-month">
+                    <span>不限月供</span>
+                    <i class="mui-icon mui-icon-arrowdown"></i>
+                </li>
+            </ul>
+            <div class="unlimited">
+                <!-- 不限品牌 -->
+                <div class="unlimited-brand">
+                    <div class="unlimited-item">
+                        <ul class="clearfix">
+                            <li class="active">
+                                <a class="" href="javascript:void(0)">
+                                    <i class="mui-icon mui-icon-list"></i>
+                                    <p>不限</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 不限车价 -->
+                <div class="unlimited-price">
+                    <div class="unlimited-item">
+                        <ul class="cleadfix">
+                            <li class="active">不限车价</li>
+                            <li>5万以下</li>
+                            <li>5-10万</li>
+                            <li>10-15万</li>
+                            <li>15-20万</li>
+                            <li>20-25万</li>
+                            <li>25万以上</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 不限首付 -->
+                <div class="unlimited-firstpay">
+                    <div class="unlimited-item">
+                        <ul class="cleadfix">
+                            <li>不限首付</li>
+                            <li>0首付</li>
+                            <li>1-2成首付</li>
+                            <li>3成首付</li>
+                            <li>1万以下</li>
+                            <li>1-2万</li>
+                            <li>2万以上</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 不限月供 -->
+                <div class="unlimited-month">
+                    <div class="unlimited-item">
+                        <ul class="cleadfix">
+                            <li>不限月供</li>
+                            <li>1000元以内</li>
+                            <li>1000-2000元</li>
+                            <li>2000-3000元</li>
+                            <li>3000-4000元</li>
+                            <li>4000元以上</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <main> -->
+            <div class="carList">
+                <div class="carList-item">
+                    <a href="./carDetail.html" class="item-info">
+                        <img class="item-l" src="https://image.guazistatic.com/gz01171204/21/39/5768feb3a6f0691f6322aabdebd56c69.jpg@base@tag=imgScale&w=750&h=375&q=88"
+                            alt="">
+                        <div class="item-r">
+                            <!-- 参数介绍 -->
+                            <div class="carOptions">
+                                <span>大众 POLO 2016款 1.4L 自动风尚型</span>
+                            </div>
+                            <p class="guidePrice">厂商指导价：19.8万</p>
+                            <div class="payStyle">
+                                <span class="firstPay">
+                                    首付
+                                    <i>1.76</i>&nbsp万
+                                </span>
+                                <span class="monthPay fr">月供1998元</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="carList-item">
+                    <a class="item-info">
+                        <img class="item-l" src="https://image.guazistatic.com/gz01171204/21/39/5768feb3a6f0691f6322aabdebd56c69.jpg@base@tag=imgScale&w=750&h=375&q=88"
+                            alt="">
+                        <div class="item-r">
+                            <!-- 参数介绍 -->
+                            <div class="carOptions">
+                                <span>大众 POLO 2016款 1.4L 自动风尚型</span>
+                            </div>
+                            <p class="guidePrice">厂商指导价：19.8万</p>
+                            <div class="payStyle">
+                                <span class="firstPay">
+                                    首付
+                                    <i>1.76</i>&nbsp万
+                                </span>
+                                <span class="monthPay fr">月供1998元</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="carList-item">
+                    <a class="item-info">
+                        <img class="item-l" src="https://image.guazistatic.com/gz01171204/21/39/5768feb3a6f0691f6322aabdebd56c69.jpg@base@tag=imgScale&w=750&h=375&q=88"
+                            alt="">
+                        <div class="item-r">
+                            <!-- 参数介绍 -->
+                            <div class="carOptions">
+                                <span>大众 POLO 2016款 1.4L 自动风尚型</span>
+                            </div>
+                            <p class="guidePrice">厂商指导价：19.8万</p>
+                            <div class="payStyle">
+                                <span class="firstPay">
+                                    首付
+                                    <i>1.76</i>&nbsp万
+                                </span>
+                                <span class="monthPay fr">月供1998元</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="carList-item">
+                    <a class="item-info">
+                        <img class="item-l" src="https://image.guazistatic.com/gz01171204/21/39/5768feb3a6f0691f6322aabdebd56c69.jpg@base@tag=imgScale&w=750&h=375&q=88"
+                            alt="">
+                        <div class="item-r">
+                            <!-- 参数介绍 -->
+                            <div class="carOptions">
+                                <span>大众 POLO 2016款 1.4L 自动风尚型</span>
+                            </div>
+                            <p class="guidePrice">厂商指导价：19.8万</p>
+                            <div class="payStyle">
+                                <span class="firstPay">
+                                    首付
+                                    <i>1.76</i>&nbsp万
+                                </span>
+                                <span class="monthPay fr">月供1998元</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="carList-item">
+                    <a class="item-info">
+                        <img class="item-l" src="https://image.guazistatic.com/gz01171204/21/39/5768feb3a6f0691f6322aabdebd56c69.jpg@base@tag=imgScale&w=750&h=375&q=88"
+                            alt="">
+                        <div class="item-r">
+                            <!-- 参数介绍 -->
+                            <div class="carOptions">
+                                <span>大众 POLO 2016款 1.4L 自动风尚型</span>
+                            </div>
+                            <p class="guidePrice">厂商指导价：19.8万</p>
+                            <div class="payStyle">
+                                <span class="firstPay">
+                                    首付
+                                    <i>1.76</i>&nbsp万
+                                </span>
+                                <span class="monthPay fr">月供1998元</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--下拉刷新容器-->
+                <!-- <div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <div class="loadingMore">
+                                
+                            </div>
+                        </div>
+                    </div> -->
+
+            </div>
+            <!-- </main> -->
+        </div>
+        <footer>
+            <nav class="mui-bar mui-bar-tab">
+                <a class="mui-tab-item" href="../index.html">
+                    <span class="mui-icon mui-icon-home"></span>
+                    <span class="mui-tab-label">首页</span>
+                </a>
+                <a class="mui-tab-item activeGREEN" href="./buyCart.html">
+                    <span class="mui-icon mui-icon-contact"></span>
+                    <span class="mui-tab-label">买车</span>
+                </a>
+                <a class="mui-tab-item" href="./mine.html">
+                    <span class="mui-icon mui-icon-gear"></span>
+                    <span class="mui-tab-label">我的</span>
+                </a>
+            </nav>
+        </footer>
+
+
+    </div>
+</body>
+<!-- <script src="../statics/lib/mui/js/mui.min.js"></script> -->
+<script src="../js/buyCart.js"></script>
+<script>
+</script>
+
+</html>
