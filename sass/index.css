@@ -1,1563 +1,1027 @@
-.left {
-  float: left;
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
-.right {
-  float: right;
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
 }
 
-.activeBg {
-  color: #fff;
-  background: #22ac38;
-  text-decoration: none;
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-.activeColor {
-  color: #22ac38;
-  text-decoration: none;
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
 }
 
-.cartContainer {
-  width: 100%;
-  background-color: white;
-  font-family: "PingFang SC";
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
 }
 
-.topStyle {
-  background-color: white;
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
-.top {
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
   position: relative;
-  height: 60px;
-  top: 0;
-  line-height: 60px;
-  background-color: white;
+  vertical-align: baseline;
 }
 
-.topLogo {
-  float: left;
-  width: 120px;
-  height: 60px;
-  text-indent: -9999px;
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
   margin: 0;
   padding: 0;
-  background: url("../images/ytc_logo.jpg") no-repeat;
+  box-sizing: border-box;
 }
 
-.top ul.topNav {
-  height: 50px;
-  margin: 0 auto;
-}
-
-.top ul.topNav li {
-  float: left;
-  margin-left: 64px;
-  height: 60px;
-  font-size: 16px;
-}
-
-.top ul.topNav li a {
-  color: #666666;
+body, html {
   font-family: "PingFang SC";
+  color: #000;
 }
 
-.top ul.topNav li a:hover {
+a, span {
   text-decoration: none;
-  color: green;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.top ul.topNav li.activeBottom {
-  border-bottom: 4px solid green;
+ul, ol {
+  list-style: none;
 }
 
-.top ul.topNav li.activeBottom a {
-  color: green;
-}
-
-footer {
-  width: 100%;
-  margin-top: 140px;
-  height: 260px;
-  background: #333333;
-  opacity: 0.6;
-}
-
-.footLayout {
-  color: white;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  padding-top: 50px;
-  justify-content: space-around;
-}
-
-.footLayout > div {
-  width: 33.333%;
-}
-
-.footLayout .footLogoLeft div img {
-  display: block;
-  width: 170px;
-  height: 83px;
-}
-
-.footLayout .footLogoLeft div p {
-  padding-top: 31px;
-  font-size: 18px;
-  width: 240px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.footLayout .footLogoCenter {
-  display: flex;
-  justify-content: space-around;
-}
-
-.footLayout .footLogoCenter span {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footLayout .footLogoCenter span img {
-  width: 120px;
-  height: 120px;
-}
-
-.footLayout .footLogoCenter span span {
-  padding-top: 19px;
-  font-size: 22px;
-  font-family: "PongFang SC";
-}
-
-.footLayout .footLogoRight {
-  text-align: right;
-}
-
-.footLayout .footLogoRight h2 {
-  font-size: 42px;
-  margin: 0;
-}
-
-.footLayout .footLogoRight > p {
-  padding-top: 20px;
-  margin: 0;
-  opacity: 0.5;
-}
-
-.footLayout .footLogoRight .companyLocation {
-  padding-top: 43px;
-}
-
-.footLayout .footLogoRight .companyLocation p {
-  font-family: "PongFang SC";
-  font-size: 18px;
-  text-align: right;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-.buy-cartContainer {
-  background-color: #F3F5F7;
-  position: relative;
-}
-
-.city {
-  height: 50px;
-  line-height: 50px;
-  position: relative;
-  display: inline-block;
-  border-radius: 2px;
-  border: 2px solid transparent;
-  background: transparent;
-}
-
-.city .all-city {
-  position: absolute;
-  background-color: white;
-  left: -7px;
-  z-index: 1;
-}
-
-.city .city-curr {
-  line-height: 50px;
-  font-size: 14px;
-  margin: 0;
-  cursor: pointer;
-}
-
-.city .city-curr i {
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  vertical-align: middle;
-}
-
-.city .city-box, .city .white-line {
-  display: none;
-}
-
-.city .city-box dl.bdb-s {
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.city .city-box dl {
-  padding: 0px 15px;
-  overflow: hidden;
-  border-bottom: 1px dashed #e6e6e6;
-  margin: 0;
-}
-
-.city .city-box dt.green-tit {
-  color: #22ac38;
-}
-
-.city .city-box dt {
-  float: left;
-  width: 50px;
-  line-height: 46px;
-  color: #a5abb2;
-  font-size: 14px;
-}
-
-.city .city-box dd {
-  width: 680px;
-  line-height: 46px;
-}
-
-.city .city-box a {
-  float: left;
-  color: #495056;
-  font-size: 14px;
-  margin-right: 25px;
-  white-space: nowrap;
-}
-
-.city a {
-  text-decoration: none;
-}
-
-.city:hover .all-city {
-  display: block;
-  box-shadow: 0 1px 4px 0 green;
-}
-
-.crumbs {
-  height: 40px;
-  line-height: 40px;
-  background-color: #c2f7c8;
-}
-
-.crumbs a {
-  margin-left: 20px;
-}
-
-.crumbs a:hover {
-  color: #fff;
-  background: #22ac38;
-  text-decoration: none;
-}
-
-.crumbs span {
-  width: 50px;
-  height: 100%;
-  box-sizing: border-box;
-  display: none;
-}
-
-.crumbs button {
-  width: 50px;
-  height: 100%;
-}
-
-.crumbs button:hover {
-  cursor: pointer;
-}
-
-.crumbs input {
-  width: 300px;
-  height: 40px;
-  font-size: 18px;
-  padding-left: 10px;
-  border: 1px solid #ddd;
-}
-
-.screen {
-  border: 1px solid #e6e6e6;
-  background-color: white;
-}
-
-.screen dl {
-  display: block;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 0px;
-  min-height: 50px;
-  position: relative;
-}
-
-.screen dt {
-  float: left;
-  width: 70px;
-  height: 100%;
-  position: absolute;
-  line-height: 50px;
-  font-size: 14px;
-  color: #7a838d;
-  text-align: center;
-  background: #fafafa;
-}
-
-.screen dd {
-  float: right;
-  width: 1166px;
-}
-
-.screen dd .dd-top {
-  height: 20px;
-  padding: 15px 0 15px 6px;
-}
-
-.screen dd .dd-top .a-box {
-  float: left;
-  width: 940px;
-  height: 20px;
-  overflow: hidden;
-}
-
-.screen dd .dd-top .a-box span {
-  border: 1px solid #bbb;
-  margin-left: 4px;
-  padding: 1px;
-}
-
-.screen dd .dd-top .a-box span i {
-  font-size: 12px;
-  color: gray;
-  padding-left: 4px;
-  cursor: pointer;
-}
-
-.screen dd .dd-top a.active {
-  color: #fff;
-  background: #22ac38;
-  text-decoration: none;
-}
-
-.screen dd .dd-top a {
-  float: left;
-  height: 20px;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0 6px;
-  color: #495056;
-  margin: 0 8px;
-}
-
-.screen dd .dd-btn {
-  float: right;
-  height: 20px;
-  line-height: 20px;
-  font-size: 14px;
-  padding: 0 7px;
-  color: #495056;
-  cursor: pointer;
-}
-
-.screen dd .dd-btn i {
-  display: inline-block;
-  width: 11px;
-  height: 6px;
-  margin-left: 2px;
-  color: #2e2828;
-}
-
-.screen dd .dd-btn:hover {
-  color: #22ac38;
-}
-
-.screen dd .dd-btn:hover i {
-  color: #22ac38;
-}
-
-.screen .dd-all {
-  width: 1166px;
-  border-top: 1px solid #e6e6e6;
-  margin-top: 20px;
-}
-
-.screen .dd-all ul {
-  width: 350px;
-  padding: 0px 0 0 50px;
-  float: left;
-}
-
-.screen .dd-all li {
-  overflow: hidden;
-  padding-bottom: 20px;
-}
-
-.screen .dd-all label {
-  float: left;
-  width: 20px;
-  height: 24px;
-  line-height: 24px;
-  color: #22ac38;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.screen .dd-all p {
-  float: left;
-  width: 330px;
-}
-
-.screen .dd-all a {
-  float: left;
-  height: 24px;
-  line-height: 24px;
-  margin-right: 15px;
-  font-size: 14px;
-  color: #495056;
-}
-
-.alreadySelect {
-  height: 30px;
-  line-height: 30px;
-}
-
-.alreadySelect span:nth-of-type(1) {
-  padding-left: 10px;
-}
-
-.alreadySelect .selectSpan {
-  margin-left: 13px;
-}
-
-.alreadySelect .selectSpan span {
-  border: 1px solid #20ce9c;
-  margin-right: 5px;
-  padding: 2px;
-}
-
-.alreadySelect .selectSpan span i {
-  cursor: pointer;
-  color: #20ce9c;
-}
-
-.alreadySelect .selectSpan span .glyphicon {
-  top: 2px;
-}
-
-.alreadySelect button {
+input {
   border: none;
-  background-color: white;
+  outline: none;
 }
 
-.list-filter {
-  height: 57px;
-  line-height: 57px;
-  padding-top: 5px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #e6e6e6;
-  box-sizing: border-box;
-}
-
-.list-filter .list-sort {
-  height: 28px;
-  margin-top: 12px;
-}
-
-.list-filter a {
-  margin-left: 20px;
-}
-
-.list-filter a:hover {
-  color: #22ac38;
-  text-decoration: none;
-}
-
-ul.carlist {
-  margin-left: 8px;
-  margin-bottom: 20px;
-}
-
-.carlist li {
-  float: left;
-  margin-bottom: 10px;
-  padding: 9px 8px;
-}
-
-.carlist li .infoDescribe {
-  width: 287px;
-  box-sizing: border-box;
-}
-
-.carlist li a {
+img {
   display: block;
-  width: 280px;
-  border: 1px solid transparent;
-  position: relative;
 }
 
-.carlist img {
-  width: 280px;
-  height: 190px;
-  border: 1px solid #e9e9e9;
+.fl {
+  float: left;
 }
 
-.carlist li a.car-a .t {
-  font-size: 17px;
-  color: #495056;
-  font-weight: 400;
-  padding: 1px 0 6px 4px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.fr {
+  float: right;
 }
 
-.pageNav .pageLink {
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
   clear: both;
-  text-align: center;
 }
 
-.pageNav .pageLink li {
-  display: inline;
-  margin: 0 0 0 5px;
-}
-
-.pageNav .pageLink li a {
-  background: #fafafa;
-  border: 1px solid #e6e6e6;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
-  font-size: 14px;
-  color: #495056;
-  text-align: center;
-  vertical-align: top;
-  display: inline-block;
-  font-weight: 400;
-}
-
-.pageNav .pageLink li a:hover {
-  border-color: #22ac38;
-  background: #22ac38;
-  color: #fff;
-  text-decoration: none;
-}
-
-.pageNav .pageLink li.link-on a {
-  border: 1px solid #fff;
-  background: #fff;
-  color: #22ac38;
-}
-
-.pageNav .pageLink li a span {
-  background: none;
-  border: none;
-  display: inline-block;
-}
-
-.pageNav .pageLink li.point a, .pageNav .pageLink li.point a:hover {
-  border: none;
-  background: none;
-  color: #495056;
-}
-
-.pageNav .pageLink li a.next, .pageNav .pageLink li a.prev {
-  width: 83px;
-}
-
-.pageNav .pageLink li a.next em, .pageNav .pageLink li a.prev em {
-  font-family: simsun;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.pageNav .pageLink li a.next em {
-  margin-left: 6px;
-}
-
-.about-cartContainer {
-  width: 100%;
-  background-color: #F3F5F7;
-}
-
-.aboutUs {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
-  margin-top: 50px;
-  background-color: white;
-}
-
-.aboutUsDescribe {
-  margin-top: 50px;
-  background-color: white;
-}
-
-.aboutUsDescribe > p {
-  width: 1140px;
-  font-size: 18px;
-  line-height: 30px;
-  font-family: "PingFang SC";
-  padding: 29px 50px 48px 50px;
-}
-
-.aboutUsDescribe h2 {
-  margin-left: 50px;
-  font-size: 26px;
-  color: #20ce9c;
-}
-
-.companyProfile {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.companyProfile img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
-}
-
-.companyProfile .companyADR, .companyProfile .companyNUM, .companyProfile .companyEmail {
-  width: 400px;
-  height: 372px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
-.companyProfile .companyADR > p:nth-of-type(1), .companyProfile .companyNUM > p:nth-of-type(1), .companyProfile .companyEmail > p:nth-of-type(1) {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.companyProfile .companyADR > p:nth-of-type(2), .companyProfile .companyNUM > p:nth-of-type(2), .companyProfile .companyEmail > p:nth-of-type(2) {
-  font-size: 16px;
-  margin: 20px 0px;
-  line-height: 30px;
-}
-
-.companyProfile .companyADR, .companyProfile .companyNUM {
-  margin-right: 20px;
-}
-
-.companyProfile .companyADR img {
-  width: 84px;
-  height: 104px;
-}
-
-.companyProfile .companyNUM img {
-  width: 76px;
-  height: 100px;
-}
-
-.companyProfile .companyEmail img {
-  width: 105px;
-  height: 75px;
-}
-
-.cartDetails {
-  font-family: "PingFang SC";
-}
-
-.cartDetails .cartDetails-cartInfo {
-  display: flex;
-  justify-content: space-around;
-}
-
-.cartDetails .cartDetails-cartInfo .cartDetails-banner {
-  width: 675px;
-  height: 480px;
-  position: relative;
-}
-
-.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner {
-  width: 100%;
+.buyCar-container {
   height: 100%;
-  overflow: hidden;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 0.21333rem;
 }
 
-.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .cartDetails-swiper-container {
-  width: 100%;
+.buyCar-container .buyCar-contain {
   height: 100%;
-}
-
-.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .cartDetails-swiper-container img {
   width: 100%;
-  height: 100%;
+  background-color: #F0F0F0;
 }
 
-.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .swiper-pagination {
-  text-align: right;
-  padding-right: 20px;
-}
-
-.cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .swiper-button-prev, .cartDetails .cartDetails-cartInfo .cartDetails-banner .image-banner .swiper-button-next {
-  display: none;
-}
-
-.cartDetails .cartDetails-cartInfo .cartDetails-banner:hover .swiper-button-prev, .cartDetails .cartDetails-cartInfo .cartDetails-banner:hover .swiper-button-next {
-  display: block;
-}
-
-.cartDetails .cartDetails-cartInfo .cartDetails-parameterInfo {
-  width: 50%;
-}
-
-.cartDetails .aboutBuyCart {
-  margin-top: 40px;
-}
-
-.detais-buyFlow {
-  font-family: "PingFang SC";
-  position: relative;
-}
-
-.detais-buyFlow .flow {
-  margin-top: 20px;
-}
-
-.detais-buyFlow .flow ul li {
-  width: 295px;
-  height: 257px;
-  margin-right: 20px;
-  float: left;
-  text-align: center;
-  position: relative;
-}
-
-.detais-buyFlow .flow ul li img {
-  width: 85px;
-  height: 81px;
-}
-
-.detais-buyFlow .flow ul li p {
-  font-size: 18px;
-  color: #666666;
-}
-
-.detais-buyFlow .flow ul li p:nth-of-type(1) {
-  font-size: 22px;
-  color: #333333;
-  font-weight: bold;
-  padding: 20px 0px;
-}
-
-.detais-buyFlow .flow ul li:nth-of-type(4) {
-  margin-right: 0px;
-}
-
-.detais-buyFlow .flow ul li div::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 200px;
-  border: 1px solid green;
-  right: -47px;
-  top: 17%;
-  width: 80px;
-}
-
-.detais-buyFlow .flow ul li:nth-of-type(4) div::after {
-  content: "";
-  position: absolute;
-  border: 0px solid green;
-}
-
-.joinUs-cartContainer {
-  background-color: #F3F5F7;
-}
-
-.attractInvestment {
-  margin-top: 50px;
-}
-
-.attractInvestmentInfo {
-  background-color: white;
-  margin-bottom: 80px;
-}
-
-.attractInvestmentInfo > div {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.attractInvestmentInfo > div .imgStyle {
-  background-color: #F3F5F7;
-}
-
-.attractInvestmentInfo > div span {
-  width: 620px;
-  height: 420px;
-  display: inline-block;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.attractInvestmentInfo > div span p:nth-of-type(1) {
-  height: 30px;
-  font-size: 30px;
-  font-family: "PingFang SC";
-  color: #333333;
-  line-height: 30px;
-  padding-bottom: 50px;
-}
-
-.attractInvestmentInfo > div span p:nth-of-type(2) {
-  height: 22px;
-  font-size: 22px;
-  font-family: "PingFang SC";
-  color: #666666;
-  line-height: 30px;
-}
-
-.joinUs, .linkUs {
-  margin: 80px auto;
-}
-
-.joinUs > p, .linkUs > p {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  background-color: white;
-  height: 30px;
-  line-height: 30px;
-  margin: 0;
-  padding: 80px 0;
-  font-size: 30px;
-  color: #333333;
-}
-
-.joinUs > p::before, .linkUs > p::before {
-  content: "";
-  width: 400px;
-  border: 1px solid #ddd;
-  border-radius: 1px;
-  position: absolute;
-  left: 100px;
-  top: 95px;
-}
-
-.joinUs > p::after, .linkUs > p::after {
-  content: "";
-  width: 400px;
-  border: 1px solid #ddd;
-  border-radius: 1px;
-  position: absolute;
-  right: 100px;
-  top: 95px;
-}
-
-.joinUs .joinUsInfo {
-  background-color: white;
-}
-
-.joinUsFlow {
-  display: flex;
-  justify-content: space-around;
-}
-
-.joinUsFlow .qualificationExamination {
-  position: relative;
-}
-
-.joinUsFlow div:nth-of-type(2)::before {
-  content: "";
-  width: 100px;
-  border: 1px dotted #72af7d;
-  font-family: 'Arial Normal', 'Arial';
-  border-radius: 2px;
-  position: absolute;
-  left: -108px;
-  top: 76px;
-}
-
-.joinUsFlow div:nth-of-type(2)::after {
-  content: "";
-  width: 100px;
-  border: 1px dotted #72af7d;
-  font-family: 'Arial Normal', 'Arial';
-  border-radius: 2px;
-  position: absolute;
-  right: -108px;
-  top: 76px;
-}
-
-.joinUsFlow img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
-}
-
-.joinUsFlow .freeOnApplication, .joinUsFlow .qualificationExamination, .joinUsFlow .modilFamily {
-  width: 295px;
-  height: 257px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.joinUsFlow .freeOnApplication > p:nth-of-type(1), .joinUsFlow .qualificationExamination > p:nth-of-type(1), .joinUsFlow .modilFamily > p:nth-of-type(1) {
-  font-size: 22px;
-  color: #333333;
-  padding-bottom: 20px;
-  margin: 0;
-}
-
-.joinUsFlow .freeOnApplication > p:nth-of-type(2), .joinUsFlow .qualificationExamination > p:nth-of-type(2), .joinUsFlow .modilFamily > p:nth-of-type(2) {
-  font-size: 18px;
-  color: #666666;
-  margin: 0;
-  text-align: center;
-  line-height: 30px;
-}
-
-.merchantInfoSubmit {
-  width: 518px;
-  height: 400px;
-  margin: 64px auto;
-  background-color: white;
-}
-
-.merchantInfoSubmit .SubmitForm {
-  margin: 80px;
-  padding-top: 64px;
-}
-
-.merchantInfoSubmit .formSubmit > div {
-  padding-top: 30px;
-  margin-bottom: 0px;
-}
-
-.merchantInfoSubmit .formSubmit > div span {
-  display: inline-block;
-  height: 44px;
-  line-height: 44px;
-  font-size: 22px;
-  padding-right: 22px;
-}
-
-.merchantInfoSubmit .formSubmit > div input {
-  width: 243px;
-  height: 44px;
-  display: inline-block;
-}
-
-.merchantInfoSubmit button {
-  margin: 50px auto;
-  margin-bottom: 20px;
-  width: 350px;
-  height: 44px;
-  display: block;
-}
-
-.merchantInfoSubmit p {
-  text-align: center;
-  font-size: 12px;
-  color: #999999;
-}
-
-.merchantInfoSubmit p i {
-  color: red;
-  top: -2px;
-}
-
-.link-container {
-  background-color: white;
-}
-
-.linkUs {
-  margin: 0 auto;
-  margin-bottom: -140px;
-}
-
-.linkUs .linkUsStyle {
-  padding-bottom: 78px;
-  display: flex;
-  justify-content: center;
-}
-
-.linkUs .linkUsStyle .mail span, .linkUs .linkUsStyle .AttractPhone span {
-  font-size: 22px;
-  line-height: 30px;
-}
-
-.linkUs .linkUsStyle .mail span i, .linkUs .linkUsStyle .AttractPhone span i {
-  color: #20ce9c;
-  padding-right: 10px;
-  top: 4px;
-}
-
-.linkUs .linkUsStyle .mail span:nth-of-type(1), .linkUs .linkUsStyle .AttractPhone span:nth-of-type(1) {
-  color: #666666;
-}
-
-.linkUs .linkUsStyle .mail span:nth-of-type(2), .linkUs .linkUsStyle .AttractPhone span:nth-of-type(2) {
-  color: #333333;
-  margin: 0  50px 0 0;
-}
-
-#banner {
-  width: 100%;
-  height: 460px;
-  overflow: hidden;
-  position: relative;
-}
-
-#banner .carousel-indicators {
-  bottom: 60px !important;
-}
-
-#banner img {
-  width: 100%;
-  height: 100%;
-}
-
-#banner .swiper-container {
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  left: -875px;
-  margin-left: 50%;
-}
-
-#banner .swiper-pagination {
-  bottom: -20px;
-  right: 100px;
-}
-
-#banner .swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
-  background: #fff;
-  margin: 32px 4px;
-}
-
-#banner .swiper-button-prev, #banner .swiper-button-next {
-  display: none;
-}
-
-#banner:hover .swiper-button-prev, #banner:hover .swiper-button-next {
-  display: block;
-}
-
-#banner .carousel-control {
-  display: none;
-}
-
-#banner .bannerAdvertising:hover .carousel-control {
-  display: block;
-}
-
-.brandCart {
-  position: relative;
+.buyCar-container .buyCar-contain header {
   z-index: 3;
-  margin-top: -80px;
-  font-size: 14px;
-  height: 316px;
-  border-top: 0;
-  box-shadow: 0 1px 4px 0 rgba(88, 100, 117, 0.2);
-  border-radius: 6px;
-  background-color: white;
-}
-
-.brandCart .brandListInfo {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.brandCart .brandListInfo .cartList {
-  display: flex;
-  justify-content: space-around;
-  width: 788px;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand {
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  text-align: center;
   width: 100%;
-  height: 100%;
-  margin-left: 80px;
-  cursor: pointer;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand {
-  height: 60px;
-  line-height: 60px;
-  font-size: 18px;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand span a {
-  color: green;
-  text-decoration: none;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand i {
-  color: green;
-  padding-right: 80px;
-  line-height: 60px;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand span:nth-of-type(2):hover {
-  color: green;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand span:nth-of-type(2):hover i {
-  color: green;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand-dd {
-  padding: 32px 0px 0 0;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li {
-  border-radius: 2px;
-  float: left;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li a {
-  text-decoration: none;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li a p {
-  width: 50px;
-  height: 40px;
-  font-size: 14px;
-  padding: 20px 0 0 0;
-  margin: 0;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li img {
-  width: 50px;
-  height: 50px;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li:hover {
-  box-shadow: 0px 0px 2px green;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .brand-dd ul li:hover a {
-  color: green;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .moneyScope {
-  padding-top: 37px;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .moneyScope ul li {
-  float: left;
-  padding-right: 32px;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .moneyScope ul li a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #333333;
-}
-
-.brandCart .brandListInfo .cartList .moreBrand .moneyScope ul li a:hover {
-  color: green;
-}
-
-.brandCart .brandListInfo .zeroBuyCart {
-  width: 452px;
-  height: 100%;
-  background: #f1fffb;
-  text-align: center;
-}
-
-.brandCart .brandListInfo .zeroBuyCart h4 {
-  width: 285px;
-  font-size: 26px;
+  position: fixed;
+  top: 0;
+  font-size: 0.45333rem;
   font-family: "PingFang SC";
-  color: #333333;
-  text-align: center;
-  margin: 62px  auto;
-  margin-bottom: 50px;
+  color: #20ce9c;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(177, 172, 172, 0.6);
 }
 
-.brandCart .brandListInfo .zeroBuyCart input {
-  width: 248px;
-  height: 45px;
-  padding-left: 10px;
-  background: #f1fffb;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.buyCar-container .buyCar-contain .conditionScreen {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  top: 1.17333rem;
+  height: 1.04rem;
+  line-height: 1.04rem;
+  display: flex;
+  font-size: 0.34667rem;
+  color: #666666;
+  font-family: "PingFang SC";
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.buyCar-container .buyCar-contain .unlimited {
+  width: 100%;
+}
+
+.buyCar-container .buyCar-contain .unlimited-brand {
+  display: none;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  top: 2.21333rem;
+  border-bottom: 1px solid #F0F0F0;
+  z-index: 3;
+}
+
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item {
+  margin-top: 0.4rem;
+}
+
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item ul {
+  width: 9.6rem;
   margin: 0 auto;
 }
 
-.brandCart .brandListInfo .zeroBuyCart button {
-  width: 160px;
-  height: 40px;
-  font-size: 18px;
-  color: #fefefe;
-  margin-top: 30px;
-}
-
-.cartActive {
-  color: green;
-}
-
-.hotActivity {
-  width: 100%;
-}
-
-.hotActivity .activity {
-  height: 740px;
-}
-
-.hotActivity .activity .activityList li {
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item ul li {
   float: left;
-  width: 610px;
-  height: 360px;
-  line-height: 360px;
-  text-align: center;
-  font-size: 48px;
-  font-family: "PingFang SC";
+  width: 1.30667rem;
+  height: 1.6rem;
+  margin: 0 0.13333rem;
 }
 
-.hotActivity .activity .activityList li a {
-  color: white;
-  text-decoration: none;
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item ul li a {
   display: block;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.hotActivity .activity .activityList li:nth-of-type(1) {
-  background-color: #20ce9c;
-  margin: 0px 20px 20px 0;
-}
-
-.hotActivity .activity .activityList li:nth-of-type(2) {
-  background-color: #ff6156;
-  margin: 0px 0px 20px 0;
-}
-
-.hotActivity .activity .activityList li:nth-of-type(3) {
-  background-color: #ffa56b;
-  margin: 0px 20px 0px 0;
-}
-
-.hotActivity .activity .activityList li:nth-of-type(4) {
-  background-color: #76c9de;
-}
-
-.hotcar h2, .buyersShow > p {
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item ul li a i {
   text-align: center;
+  line-height: 0.53333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  margin-top: 0.13333rem;
 }
 
-.hotcar h2, .hotActivity h2, .buyersShow > p, .buyPattern > span, .detais-buyFlow > span {
-  margin-bottom: 80px;
-  margin-top: 130px;
-  text-align: center;
-  font-size: 30px;
-  display: block;
-  font-family: "PingFang SC";
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item ul li a img {
+  margin-top: 0.13333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
 }
 
-.hotcar, .hotActivity, .buyersShow, .buyFlow, .buyPattern {
-  position: relative;
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item ul li a p {
+  padding-top: 0.26667rem;
+  margin-bottom: 0;
 }
 
-.hotcar h2::before, .hotActivity h2::before, .buyersShow > p::before, .buyPattern > span::before, .detais-buyFlow > span::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: url("../images/flower.jpg");
-  background-repeat: no-repeat;
-  width: 35%;
-  height: 20px;
-  border-radius: 250px 40px 260px 60px;
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item ul li.active {
+  border: 1px solid #20CE9C;
 }
 
-.hotcar h2::after, .hotActivity h2::after, .buyersShow > p::after, .buyPattern > span::after, .detais-buyFlow > span::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: url("../images/flower.jpg");
-  background-repeat: no-repeat;
-  width: 35%;
-  height: 20px;
-  right: 0px;
-  top: 0px;
-  border-radius: 250px 40px 260px 60px;
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item ul li.active a {
+  color: #20CE9C;
 }
 
-.hotCart-list li, .buyersShow-list li {
-  float: left;
-  width: 295px;
-  height: 370px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0px 0px 15px gray;
+.buyCar-container .buyCar-contain .unlimited-brand .unlimited-item ul li.active p {
+  color: #20CE9C;
 }
 
-.hotCart-list li img, .buyersShow-list li img {
+.buyCar-container .buyCar-contain .unlimited-price,
+.buyCar-container .buyCar-contain .unlimited-firstpay,
+.buyCar-container .buyCar-contain .unlimited-month {
+  display: none;
+}
+
+.buyCar-container .buyCar-contain .unlimited-firstpay,
+.buyCar-container .buyCar-contain .unlimited-price,
+.buyCar-container .buyCar-contain .unlimited-month {
   width: 100%;
-  height: 210px;
-  transition: all 0.3s;
+  position: fixed;
+  background-color: #ffffff;
+  top: 2.21333rem;
+  border-bottom: 1px solid #F0F0F0;
+  z-index: 3;
 }
 
-.hotCart-list li .cartDescribe, .buyersShow-list li .cartDescribe {
-  width: 235px;
-  height: 160px;
-  margin: 0px auto;
+.buyCar-container .buyCar-contain .unlimited-firstpay .unlimited-item,
+.buyCar-container .buyCar-contain .unlimited-price .unlimited-item,
+.buyCar-container .buyCar-contain .unlimited-month .unlimited-item {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
 }
 
-.hotCart-list li .cartDescribe > p, .buyersShow-list li .cartDescribe > p {
-  padding-top: 28px;
-  margin: 0;
-  font-size: 22px;
-  color: #333333;
+.buyCar-container .buyCar-contain .unlimited-firstpay .unlimited-item ul,
+.buyCar-container .buyCar-contain .unlimited-price .unlimited-item ul,
+.buyCar-container .buyCar-contain .unlimited-month .unlimited-item ul {
+  margin-left: 0.33333rem;
+  width: 100%;
 }
 
-.hotCart-list li .cartDescribe .cartDescribe-ks, .buyersShow-list li .cartDescribe .cartDescribe-ks {
-  display: flex;
-  justify-content: space-between;
-}
-
-.hotCart-list li .cartDescribe .cartDescribe-ks span, .buyersShow-list li .cartDescribe .cartDescribe-ks span {
-  padding-top: 26px;
-  font-size: 18px;
+.buyCar-container .buyCar-contain .unlimited-firstpay .unlimited-item ul li,
+.buyCar-container .buyCar-contain .unlimited-price .unlimited-item ul li,
+.buyCar-container .buyCar-contain .unlimited-month .unlimited-item ul li {
+  float: left;
+  margin: 0.13333rem;
+  margin-bottom: 0.26667rem;
+  width: 2.88rem;
+  height: 0.85333rem;
+  line-height: 0.85333rem;
+  text-align: center;
+  font-size: 0.32rem;
   color: #666666;
-  display: inline-block;
+  border: 1px solid #cccccc;
 }
 
-.hotCart-list li .cartDescribe > div.monthPay, .buyersShow-list li .cartDescribe > div.monthPay {
-  margin-top: 17px;
+.buyCar-container .buyCar-contain .unlimited-firstpay .unlimited-item ul li.active,
+.buyCar-container .buyCar-contain .unlimited-price .unlimited-item ul li.active,
+.buyCar-container .buyCar-contain .unlimited-month .unlimited-item ul li.active {
+  border: 1px solid #20CE9C;
+  color: #20CE9C;
+}
+
+.buyCar-container .buyCar-contain .carList {
+  margin-top: 2.21333rem;
+  margin-bottom: 1.2rem;
+}
+
+.buyCar-container .buyCar-contain .carList .carList-item {
+  background-color: #ffffff;
+  width: 10rem;
+  height: 3.73333rem;
+  margin-bottom: 0.26667rem;
+}
+
+.buyCar-container .buyCar-contain .carList .carList-item .item-info {
+  margin: 0.4rem 0.42667rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.hotCart-list li .cartDescribe > div.monthPay span, .buyersShow-list li .cartDescribe > div.monthPay span {
-  font-size: 14px;
+.buyCar-container .buyCar-contain .carList .carList-item .item-info .item-l {
+  width: 3.94667rem;
+  height: 2.93333rem;
+  margin-right: 0.4rem;
+}
+
+.buyCar-container .buyCar-contain .carList .carList-item .item-info .item-r {
+  flex: 1;
+  padding-top: 0.13333rem;
+}
+
+.buyCar-container .buyCar-contain .carList .carList-item .item-info .item-r .carOptions {
+  font-size: 0.34667rem;
+  line-height: 0.66667rem;
+  color: gray;
+  padding-bottom: 0.46667rem;
+}
+
+.buyCar-container .buyCar-contain .carList .carList-item .item-info .item-r .guidePrice {
+  font-size: 0.32rem;
+  line-height: 0.53333rem;
+}
+
+.buyCar-container .buyCar-contain .carList .carList-item .item-info .item-r .payStyle {
+  color: #ff6156;
+  font-size: 0.32rem;
+}
+
+.buyCar-container .buyCar-contain .carList .carList-item .item-info .item-r .payStyle .firstPay i {
+  font-size: 0.45333rem;
+}
+
+.buyCar-container .buyCar-contain .carList .carList-item .item-info .item-r .payStyle .monthPay {
+  font-size: 0.32rem;
+  padding-right: 0.13333rem;
   color: #999999;
 }
 
-.hotCart-list li .cartDescribe > div.monthPay span:nth-of-type(1), .buyersShow-list li .cartDescribe > div.monthPay span:nth-of-type(1) {
-  font-size: 18px;
-  color: #ff6156;
+.mark {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.hotCart-list li .cartDescribe > div.monthPay span:nth-of-type(1) i, .buyersShow-list li .cartDescribe > div.monthPay span:nth-of-type(1) i {
-  font-size: 18px;
-  height: 25px;
-  line-height: 25px;
-}
-
-.hotCart-list li:hover img {
-  transform: scale(1.1);
-}
-
-.hotCart-list li:nth-child(4n), .buyersShow-list li:nth-child(4n) {
-  margin-right: 0px;
-}
-
-.buyersShow-list li .carterInfo {
-  width: 248px;
-  margin: 0 auto;
-}
-
-.buyersShow-list li .carterInfo .carterName {
-  padding-top: 18px;
-  font-size: 18px;
-  color: #333333;
-}
-
-.buyersShow-list li .carterInfo .getCartAd, .buyersShow-list li .carterInfo .getCarTime, .buyersShow-list li .carterInfo .comment {
-  font-size: 14px;
-  color: #666666;
-}
-
-.buyersShow-list li .carterInfo .getCartAd {
-  padding-right: 95px;
-}
-
-.buyersShow-list li .carterInfo .comment {
-  padding-top: 20px;
-}
-
-.buyProcedure {
+body,
+html {
   width: 100%;
-  background-color: #F3F5F7;
+  height: 100%;
 }
 
-.buyFlow > span {
-  margin-bottom: 80px;
-  padding-top: 130px;
-  text-align: center;
-  font-size: 30px;
-  display: block;
-  font-family: "PingFang SC";
+.index-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.buyFlow, .buyPattern {
-  text-align: center;
+.index-container .main-contain {
+  flex: 1;
+  padding-bottom: 1.2rem;
 }
 
-.buyFlow > span, .buyPattern > span {
-  font-size: 30px;
-  font-weight: 500;
-  display: block;
+.index-container .main-contain header {
+  height: 1.17333rem;
 }
 
-.buyFlow .flow, .buyPattern .flow {
-  margin-top: 20px;
-}
-
-.buyFlow .flow ul li, .buyPattern .flow ul li {
-  width: 295px;
-  height: 257px;
-  margin-right: 20px;
+.index-container .main-contain header a {
   float: left;
-  text-align: center;
-  position: relative;
-}
-
-.buyFlow .flow ul li img, .buyPattern .flow ul li img {
-  width: 85px;
-  height: 81px;
-}
-
-.buyFlow .flow ul li p, .buyPattern .flow ul li p {
-  font-size: 18px;
-  color: #666666;
-}
-
-.buyFlow .flow ul li p:nth-of-type(1), .buyPattern .flow ul li p:nth-of-type(1) {
-  font-size: 22px;
-  font-family: "PingFang SC";
-  color: #333333;
-  font-weight: bold;
-  padding: 20px 0px;
-}
-
-.buyFlow .flow ul li:nth-of-type(4), .buyPattern .flow ul li:nth-of-type(4) {
-  margin-right: 0px;
-}
-
-.buyFlow .flow ul li div::after, .buyPattern .flow ul li div::after {
-  content: "";
   display: block;
-  position: absolute;
-  width: 200px;
-  border: 1px solid green;
-  right: -47px;
-  top: 17%;
-  width: 80px;
+  height: 100%;
+  width: 2.13333rem;
+  background: url("https://image.bitautoimg.com/taoche/2016taoche_m/logo_12.png") no-repeat left 0;
+  background-size: 2.13333rem 1.17333rem;
 }
 
-.buyFlow .flow ul li:nth-of-type(4) div::after, .buyPattern .flow ul li:nth-of-type(4) div::after {
-  content: "";
-  position: absolute;
-  border: 0px solid green;
+.index-container .main-contain .main-banner {
+  width: 100%;
+  height: 2.96rem;
 }
 
-.buyPattern {
+.index-container .main-contain .main-banner .mui-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.index-container .main-contain .main-banner .mui-slider .mui-slider-loop {
+  height: 100%;
+  width: 100%;
+}
+
+.index-container .main-contain .main-banner .mui-slider .mui-slider-loop img {
+  height: 100%;
+  width: 100%;
+}
+
+.index-container .main-contain main {
+  width: 100%;
+  height: 5.6rem;
+}
+
+.index-container .main-contain main .itemList {
+  width: 100%;
+  height: 100%;
   background-color: white;
 }
 
-.Pattern {
+.index-container .main-contain main .itemList .item-brand {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+}
+
+.index-container .main-contain main .itemList .item-brand ul {
+  width: 9.6rem;
+  padding-top: 0.13333rem;
   margin: 0 auto;
-  margin-top: 30px;
 }
 
-.Pattern .shreeModul {
-  margin: 30px 0px;
-  margin-bottom: 85px;
-  color: white;
+.index-container .main-contain main .itemList .item-brand ul li {
+  float: left;
+  width: 1.30667rem;
+  margin: 0 0.13333rem;
 }
 
-.Pattern .shreeModul > span {
-  display: inline-block;
-  width: 400px;
-  height: 120px;
-  background: #20ce9c;
-  border-radius: 10px;
-  margin-right: 20px;
-  font-size: 26px;
-  font-family: "PingFang SC";
+.index-container .main-contain main .itemList .item-brand ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-container .main-contain main .itemList .item-brand ul li a i {
+  text-align: center;
+  line-height: 0.53333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  margin-top: 0.13333rem;
+}
+
+.index-container .main-contain main .itemList .item-brand ul li a img {
+  margin-top: 0.13333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+}
+
+.index-container .main-contain main .itemList .item-brand ul li a p {
+  padding-top: 0.26667rem;
+  margin-bottom: 0;
+  font-size: 0.29333rem;
+}
+
+.index-container .main-contain main .itemList .item-price {
+  width: 100%;
+  height: 1.17333rem;
+}
+
+.index-container .main-contain main .itemList .item-price ul {
+  height: 100%;
+  width: 9.6rem;
+  line-height: 1.17333rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.index-container .main-contain main .itemList .item-price ul li {
+  float: left;
+  width: 1.30667rem;
+  margin: 0 0.13333rem;
   text-align: center;
 }
 
-.Pattern .shreeModul > span:nth-of-type(1) {
-  padding-top: 25px;
+.index-container .main-contain main .itemList .item-price ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #666666;
+  font-size: 0.29333rem;
 }
 
-.Pattern .shreeModul > span:nth-of-type(2) {
-  line-height: 120px;
+.index-container .main-contain main .itemList .item-price ul li:last-child {
+  margin: 0;
+  width: 1.46667rem;
 }
 
-.Pattern .shreeModul > span:nth-of-type(3) {
-  margin-right: 0px;
-  padding-top: 0px;
-  padding-top: 25px;
-}
-
-.Pattern .fourAdvantage {
+.index-container .main-contain main .itemList .item-selectCar {
+  padding: 0 0.41333rem;
+  height: 1.17333rem;
   width: 100%;
 }
 
-.Pattern .fourAdvantage ul {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.index-container .main-contain main .itemList .item-selectCar .mui-input-clear {
+  width: 6.29333rem;
+  height: 100%;
+  margin-bottom: 0;
+  font-size: 0.4rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.Pattern .fourAdvantage ul li {
-  width: 610px;
-  height: 225px;
+.index-container .main-contain main .itemList .item-selectCar .mui-btn {
+  width: 2.88rem;
+  height: 100%;
+  border-left: none;
+  border-right: none;
+  font-size: 0.4rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #20CE9C;
+}
+
+.index-container .main-contain main .itemList .item-testQualification {
+  padding: 0 0.26667rem;
+  margin-top: 0.26667rem;
+  margin-bottom: 0.26667rem;
+  width: 10rem;
+  height: 1.17333rem;
+  display: flex;
+  justify-content: center;
+}
+
+.index-container .main-contain main .itemList .item-testQualification button {
+  font-size: 0.4rem;
+  width: 4.45333rem;
+  height: 100%;
+  color: #20CE9C;
+  background-color: white;
+}
+
+.index-container .main-contain main .itemList .item-testQualification button:nth-of-type(1) {
+  margin-right: 0.26667rem;
+  color: #ffffff;
+  background-color: #20CE9C;
+}
+
+.index-container .main-contain main .item-hotActivity {
+  background-color: #ffffff;
+  margin-top: 0.26667rem;
+  padding-bottom: 0.13333rem;
+}
+
+.index-container .main-contain main .item-hotActivity > p {
+  padding: 0.44rem 0 0.26667rem 0;
   text-align: center;
-  margin: 0 20px 20px 0;
+  font-size: 0.45333rem;
+  color: #333333;
+}
+
+.index-container .main-contain main .item-hotActivity .hotActivityList {
+  width: 9.17333rem;
+  margin: 0 auto;
+}
+
+.index-container .main-contain main .item-hotActivity .hotActivityList ul {
+  width: 100%;
+}
+
+.index-container .main-contain main .item-hotActivity .hotActivityList ul li {
+  width: 100%;
+  height: 5.06667rem;
+  background-color: #20CE9C;
+  margin-bottom: 0.26667rem;
+}
+
+.index-container .main-contain main .item-hotActivity .hotActivityList ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.index-container .main-contain main .item-hotCar {
+  background-color: #ffffff;
+  margin-top: 0.26667rem;
+}
+
+.index-container .main-contain main .item-hotCar > p {
+  padding: 0.44rem 0 0.26667rem 0;
+  text-align: center;
+  font-size: 0.45333rem;
+  color: #333333;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar ul {
+  background-color: white;
+  padding: 0 0.41333rem;
+  width: 100%;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar ul li {
+  float: left;
+  width: 4.45333rem;
+  height: 5.41333rem;
+  box-shadow: 0px 0px 5px #f2f2f2;
+  margin-bottom: 0.26667rem;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar ul li img {
+  width: 3.94667rem;
+  height: 2.93333rem;
+  margin: 0 auto;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar ul li .option-t {
+  font-size: 0.32rem;
+  color: #666666;
+  padding-top: 0.4rem;
+  line-height: 0.4rem;
+  padding-left: 0.26667rem;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar ul li .pay-b {
+  padding-top: 0.26667rem;
+  font-size: 0.32rem;
+  color: #999999;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar ul li .pay-b .pay-l {
+  color: #ff6156;
+  padding-left: 0.26667rem;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar ul li .pay-b .pay-l i {
+  font-size: 0.45333rem;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar ul li .pay-b .pay-r {
+  float: right;
+  padding-right: 0.26667rem;
+}
+
+.index-container .main-contain main .item-hotCar .hotCar ul li:nth-of-type(2n) {
+  margin-left: 0.26667rem;
+}
+
+.index-container .main-contain main .lookMoreCar {
+  height: 1.44rem;
+  background-color: #FAFAFA;
+  line-height: 1.44rem;
+  margin-bottom: 0.8rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background: #f1fffb;
 }
 
-.Pattern .fourAdvantage ul li p:nth-of-type(1) {
-  font-size: 26px;
-  padding-bottom: 34px;
-  font-weight: bold;
-  margin: 0;
+.index-container .main-contain main .lookMoreCar span {
+  display: block;
+  margin: 0 auto;
+  width: 2.66667rem;
+  height: 0.90667rem;
+  font-size: 0.32rem;
+  color: white;
+  background-color: #20CE9C;
+  text-align: center;
+  line-height: 0.90667rem;
+  border-radius: 0.05333rem;
 }
 
-.Pattern .fourAdvantage ul li p:nth-of-type(2) {
-  font-size: 22px;
-  margin: 0;
+.mui-bar-tab .mui-tab-item.activeGREEN {
+  color: #20CE9C;
 }
 
-.Pattern .fourAdvantage ul li:nth-of-type(2n) {
-  margin: 0 0px 20px 0;
+footer nav.mui-bar-tab {
+  height: 0.66667rem;
+}
+
+nav.mui-bar-tab a.mui-tab-item {
+  width: 100%;
+  height: 100%;
 }

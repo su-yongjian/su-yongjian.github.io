@@ -1,515 +1,295 @@
-@import "common.scss";
-@import "header.scss";
-@import "footer.scss";
-@import "buyCart.scss";
-@import "aboutUs.scss";
-@import "cartDetails.scss";
-@import "attractInvestment.scss";
-// 轮播图
-#banner {
+@import 'normalize6.0.scss';
+@import 'base.scss';
+@import "buyCar.scss";
+$ytcGreen: #20CE9C;
+$ytcWhite: #ffffff;
+body,
+html {
     width: 100%;
-    height: 460px;
-    overflow: hidden;
-    position: relative;
-    .carousel-indicators {
-        bottom: 60px !important;
-    }
-    img {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-container {
-        width: 100%;
-        height: 300px;
-        position: absolute;
-        left: -875px;
-        margin-left: 50%;
-    }
-    
-    .swiper-pagination {
-        bottom: -20px;
-        right: 100px;
-    }
-    
-    .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
-        background: #fff;
-        margin: 32px 4px;
-    }
-    .swiper-button-prev , .swiper-button-next {
-        display:none ;
-    }
+    height: 100%;
 }
 
-#banner:hover {
-    .swiper-button-prev , .swiper-button-next {
-        display:block ;
-    }
-}
-#banner .carousel-control {
-    display: none;
-}
-#banner .bannerAdvertising:hover {
-    .carousel-control {
-        display: block;
-    }
-}
-
-// 品牌，月供
-.brandCart{
-    position: relative;
-    z-index: 3;
-    margin-top: -80px;
-    font-size: 14px;
-    height:316px; 
-    border-top: 0;
-    box-shadow: 0 1px 4px 0 rgba(88,100,117,.2);
-    border-radius: 6px;
-    background-color: white;
-    .brandListInfo{
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        .cartList{
-            display: flex ;
-            justify-content: space-around;
-            width:788px;
-            height: 100%;
-            box-sizing: border-box;
-            .moreBrand{
-                // border:3px solid rgba(255,97,86,1);
+.index-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    .main-contain {
+        flex: 1;
+        padding-bottom: p2r(90);
+        header {
+            height: p2r(88);
+            a {
+                float: left;
+                display: block;
+                height: 100%;
+                width: p2r(160);
+                background: url("https://image.bitautoimg.com/taoche/2016taoche_m/logo_12.png") no-repeat left 0;
+                background-size:p2r(160) p2r(88); 
+            }
+        }
+        .main-banner {
+            width: 100%;
+            height: p2r(222);
+            .mui-slider {
                 width: 100%;
                 height: 100%;
-                margin-left: 80px;
-                cursor: pointer;
-                .brand{
-                    height: 60px;
-                    // padding: 18px 0 7px 20px;
-                    line-height: 60px;
-                    font-size: 18px;
-                    span a {
-                        color:green;
-                        text-decoration: none;
-                    }
-                    i {
-                        color:green;
-                        padding-right: 80px;
-                        line-height: 60px;
+                .mui-slider-loop {
+                    height: 100%;
+                    width: 100%;
+                    img {
+                        height: 100%;
+                        width: 100%;
                     }
                 }
-                
-                .brand span:nth-of-type(2):hover {
-                    color:green;
-                    i {
-                        color:green;
-                    }
-                }
-                .brand-dd {
-                    padding: 32px 0px 0 0;
+            }
+        }
+        main {
+            width: 100%;
+            height: p2r(420);
+            .itemList {
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                .item-brand {
+                    width: 100%;
                     ul {
+                        width: p2r(720);
+                        padding-top: p2r(10);
+                        margin: 0 auto;
                         li {
-                            border-radius: 2px;
                             float: left;
-                            text-align: center;
-                            text-decoration: none;
-                            margin: 5px;
+                            width: p2r(98);
+                            margin: 0 p2r(10); // padding-bottom: p2r(46);
                             a {
-                                text-decoration: none;
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                i {
+                                    text-align: center;
+                                    line-height: p2r(40);
+                                    width: p2r(40);
+                                    height: p2r(40);
+                                    margin-top: p2r(10);
+                                }
+                                img {
+                                    margin-top: p2r(10);
+                                    width: p2r(40);
+                                    height: p2r(40);
+                                }
                                 p {
-                                    width: 50px;
-                                    height: 40px;
-                                    font-size:14px;
-                                    padding: 20px 0 0 0;
-                                    margin: 0;
+                                    padding-top: p2r(20);
+                                    margin-bottom: 0;
+                                    font-size: p2r(22);
                                 }
                             }
-                            img {
-                                width: 50px;
-                                height: 50px;
-                            }
-                        }
-                        li:hover {
-                            box-shadow:0px 0px 2px green;
-                            a {
-                                color : green ;                            
-                            }
-                            
                         }
                     }
                 }
-                .moneyScope {
-                    padding-top: 37px;
-
-                    ul li {
-                        float: left;
-                        padding-right: 32px;
-                        a {
-                            font-size:18px;
-                            text-decoration: none;
-                            color: rgba(51,51,51,1);
-                        }
-                        a:hover {
-                            color : green ;
-                        }
+                .item-price{
+                  width: 100%;
+                  height: p2r(88);
+                  ul {
+                    height: 100%;
+                    width: p2r(720);
+                    line-height: p2r(88);
+                    margin: 0 auto;
+                    height: 100%;
+                    li {
+                      float: left;
+                      width: p2r(98);
+                      margin: 0 p2r(10);
+                      text-align: center;
+                      a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        color:rgba(102,102,102,1);
+                        font-size:p2r(22);
+                      }
                     }
+                    li:last-child {
+                        margin: 0;
+                        width: p2r(110);
+                    }
+                  }
+                }
+
+                .item-selectCar {
+                  padding:0 p2r(31);
+                  height: p2r(88);                  
+                  width: 100%;
+                  .mui-input-clear {
+                    width: p2r(472);
+                    height: 100%;
+                    margin-bottom: 0;
+                    font-size: p2r(30);
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                  }
+                  .mui-btn{
+                    width: p2r(216);
+                    height: 100%;
+                    border-left: none;
+                    border-right:none;
+                    font-size: p2r(30);
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    background-color: $ytcGreen;
+                  }
+                }
+                .item-testQualification{
+                  padding: 0 p2r(20);
+                  margin-top: p2r(20);
+                  margin-bottom: p2r(20);
+                  width: p2r(750);
+                  height: p2r(88);
+                  
+                  display: flex;
+                  justify-content: center;
+                  button{
+                    font-size: p2r(30);
+                    width: p2r(334);
+                    height: 100%;
+                    color: $ytcGreen;
+                    background-color: white;
+                  }
+                  button:nth-of-type(1){
+                    margin-right: p2r(20);
+                    color: $ytcWhite;
+                    background-color: $ytcGreen;
+                  }
                 }
             }
-            
-        }
-        .zeroBuyCart{
-            width: 452px;
-            height: 100%;
-            background:rgba(241,255,251,1);
-            text-align: center;
-            h4 {
-                width:285px;
-                font-size:26px;
-                font-family:"PingFang SC";
-                color:rgba(51,51,51,1);
+            // 热门活动
+            .item-hotActivity{
+              background-color: $ytcWhite;
+              margin-top: p2r(20);
+              padding-bottom: p2r(10);
+              >p {
+                padding:p2r(33) 0 p2r(20) 0;
                 text-align: center;
-                margin: 62px  auto;
-                margin-bottom: 50px;
-            }
-            input {
-                width: 248px;
-                height: 45px;
-                padding-left:10px;
-                background:rgba(241,255,251,1);
-                border: 1px solid #ddd;
-                border-radius: 4px;
+                font-size: p2r(34);
+                color:rgba(51,51,51,1);
+              }
+              .hotActivityList {
+                width: p2r(688);
                 margin: 0 auto;
+                ul{
+                  width: 100%;
+                  li{
+                    width: 100%;
+                    height: p2r(380);
+                    background-color: $ytcGreen;
+                    margin-bottom: p2r(20);
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                  }
+                }
+              }
             }
-            button {
-                width: 160px;
-                height: 40px;
-                font-size:18px;
-                color:rgba(254,254,254,1);
-                margin-top: 30px;
+            // 热门车型
+            .item-hotCar{
+                background-color: $ytcWhite;
+                margin-top: p2r(20);
+                >p {
+                  padding:p2r(33) 0 p2r(20) 0;
+                  text-align: center;
+                  font-size: p2r(34);
+                  color:rgba(51,51,51,1);
+                }
+                .hotCar{
+                    width: 100%;
+                    margin:0 auto;
+                    background-color: white;
+                    ul{
+                        background-color: white;
+                        padding:0 p2r(31);
+                        width: 100%;
+                        li {
+                            float: left;
+                            width: p2r(334);
+                            height: p2r(406);
+                            box-shadow:0px 0px 5px #f2f2f2; 
+                            margin-bottom: p2r(20);
+                            img {
+                                width: p2r(296);
+                                height: p2r(220);
+                                margin: 0 auto;
+                            }
+                            .option-t{
+                                font-size:p2r(24);
+                                color:rgba(102,102,102,1);
+                                padding-top: p2r(30);
+                                line-height: p2r(30);
+                                padding-left: p2r(20);
+                            }
+                            .pay-b{    
+                                padding-top: p2r(20);               
+                                font-size:p2r(24);
+                                color:rgba(153,153,153,1);
+                                .pay-l{
+                                    color: rgba(255,97,86,1);
+                                    padding-left: p2r(20);
+                                    i {
+                                        font-size:p2r(34);
+                                    }
+                                }
+                                .pay-r{
+                                    float: right;
+                                    padding-right: p2r(20);
+                                }
+                            }
+                        }
+                        li:nth-of-type(2n){
+                            margin-left: p2r(20);
+                        }
+                    }
+                }
+            }
+            // 查看更多车型btn
+            .lookMoreCar{
+                height: p2r(108);
+                background-color: #FAFAFA;
+                line-height: p2r(108);
+                margin-bottom: p2r(60);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                span{
+                    display: block;
+                    margin: 0 auto;
+                    width: p2r(200);
+                    height: p2r(68);
+                    font-size:p2r(24);
+                    color:rgba(255,255,255,1);
+                    background-color: $ytcGreen;
+                    text-align: center;
+                    line-height: p2r(68);
+                    border-radius: p2r(4);
+                }
             }
         }
     }
-    
 }
 
-.cartActive {
-    color: green;
+// 底部样式
+.mui-bar-tab .mui-tab-item.activeGREEN {
+    color: $ytcGreen;
 }
-// 热门活动
-.hotActivity{
+
+footer nav.mui-bar-tab {
+    height: p2r(50);
+}
+
+nav.mui-bar-tab a.mui-tab-item {
     width: 100%;
-    .activity{
-        height: 740px;
-        .activityList li {
-            float: left;
-            width: 610px;
-            height: 360px;
-            line-height: 360px;
-            text-align: center;
-            font-size:48px;
-            font-family:"PingFang SC";
-            // border:1px solid green;
-            a {
-                color: white;
-                text-decoration: none;
-                display: block;
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .activityList li:nth-of-type(1) { 
-            background-color: rgba(32,206,156,1);
-            margin: 0px 20px 20px 0;
-        }
-        .activityList li:nth-of-type(2) { 
-            background-color: rgba(255,97,86,1);
-            margin: 0px 0px 20px 0;
-            
-        }
-        .activityList li:nth-of-type(3) { 
-            background-color: rgba(255,165,107,1);
-            margin: 0px 20px 0px 0;
-            
-        }
-        .activityList li:nth-of-type(4) { 
-            background-color: rgba(118,201,222,1)
-        }
-    }
-}
-// 热门车型  开始
-.hotcar h2 , .buyersShow > p{
-    text-align: center;
-}
-.hotcar h2 , .hotActivity h2 , .buyersShow>p ,.buyPattern>span , .detais-buyFlow >span{
-    margin-bottom: 80px;
-    margin-top:130px;
-    text-align: center;
-    font-size: 30px;
-    display: block;
-    font-family: "PingFang SC";
-}
-.hotcar , .hotActivity , .buyersShow , .buyFlow , .buyPattern {
-    position: relative;
-}
-.hotcar h2::before , .hotActivity h2::before , .buyersShow>p::before ,.buyPattern>span::before , .detais-buyFlow >span::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../images/flower.jpg");
-    background-repeat: no-repeat;
-    width: 35%;
-    height: 20px;
-    border-radius: 250px 40px 260px 60px;
-}
-.hotcar h2::after , .hotActivity h2::after , .buyersShow>p::after ,.buyPattern>span::after , .detais-buyFlow >span::after{
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../images/flower.jpg");
-    background-repeat: no-repeat;
-    width: 35%;
-    height: 20px;
-    right: 0px;
-    top: 0px;
-    border-radius: 250px 40px 260px 60px;
-}
-.hotCart-list li ,.buyersShow-list li{
-    // position: relative;
-    float: left;
-    width: 295px;
-    height: 370px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow:0px 0px 15px gray;    
-    img {
-        width: 100%;
-        height: 210px;
-        transition: all 0.3s;
-    }
-    .cartDescribe{
-        width: 235px;
-        height: 160px;
-        margin: 0px auto;
-        >p {
-            padding-top: 28px;
-            margin: 0;
-            font-size:22px;
-            color:rgba(51,51,51,1);
-        }
-        .cartDescribe-ks {
-            display: flex;
-            justify-content: space-between;
-        }
-        .cartDescribe-ks span {
-            padding-top: 26px;            
-            font-size:18px;
-            color:rgba(102,102,102,1);
-            display: inline-block;
-        }
-        >div.monthPay {
-            margin-top:17px;
-            display: flex;
-            justify-content: space-between;
-            span {
-                font-size:14px;
-                color:rgba(153,153,153,1);
-            }
-        }
-        >div.monthPay span:nth-of-type(1) {
-            font-size:18px;
-            color:rgba(255,97,86,1);
-            i {
-                font-size:18px;
-                height: 25px;
-                line-height: 25px;
-            }
-        }  
-    }
-}
-
-.hotCart-list li:hover{
-    img {
-        transform: scale(1.1);  
-    }
-}
-.hotCart-list li:nth-child(4n) , .buyersShow-list li:nth-child(4n) {
-    margin-right: 0px;
-}
-// 车主晒单单独样式 开始
-
-.buyersShow-list li .carterInfo {
-    width: 248px;
-    margin: 0 auto ;
-    .carterName{
-        padding-top: 18px;
-        font-size:18px;
-        color:rgba(51,51,51,1);
-    }
-    .getCartAd , .getCarTime ,.comment {
-        font-size:14px;
-        color:rgba(102,102,102,1);
-    }
-    .getCartAd {
-        padding-right: 95px;
-    }
-    .comment{
-        padding-top: 20px;
-    }
-}
-// 车主晒单单独样式 结束
-
-
-// 购车流程
-.buyProcedure {
-    width: 100%;
-    background-color: #F3F5F7;
-}
-.buyFlow > span {
-    margin-bottom: 80px;
-    padding-top:130px;
-    text-align: center;
-    font-size: 30px;
-    display: block;
-    font-family: "PingFang SC";
-}
-.buyFlow , .buyPattern {
-    text-align: center;    
-    >span{
-        font-size:30px;
-        font-weight: 500;
-        display: block;
-    }
-   
-    .flow{
-        margin-top: 20px;
-    }
-    .flow ul li{
-        width: 295px;
-        height: 257px;
-        margin-right: 20px;
-        float: left;
-        // margin: 15px 20px;
-        text-align: center;
-        position: relative;
-        img{
-            width: 85px;
-            height: 81px;
-        }
-        p {
-            font-size:18px;
-            color:rgba(102,102,102,1);
-        }
-        p:nth-of-type(1) {
-            font-size:22px;
-            font-family: "PingFang SC";
-            color:rgba(51,51,51,1);
-            font-weight: bold;
-            padding:20px 0px;
-        }
-    }
-    .flow ul li:nth-of-type(4) {
-        margin-right: 0px;
-
-    }
-    .flow ul li div::after{
-        content: "";
-        display: block;
-        position: absolute;
-        width: 200px;
-        border:1px solid green;
-        right: -47px;
-        top: 17%;
-        width: 80px;
-    }
-    .flow ul li:nth-of-type(4) div::after{
-        content: "";
-
-        position: absolute;
-
-        border:0px solid green;
-
-    }
-}
-
-// 热门车型  结束
-
-// 购车模式
-.buyPattern{
-    background-color: white;
-}
-.Pattern {
-    width: 100%;
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
-    // background-color: rgb(184, 202, 146);
-    margin: 0 auto ;
-    margin-top:30px;    
-    .shreeModul {
-        margin: 30px 0px;
-        margin-bottom: 85px;
-        color: white;
-    }
-    .shreeModul>span {
-        display: inline-block;
-        width:400px;
-        height:120px; 
-        // line-height: 120px;
-        background:rgba(32,206,156,1);
-        border-radius: 10px ;
-        margin-right: 20px;
-        font-size:26px;
-        font-family:"PingFang SC";
-        text-align: center;
-    }
-    .shreeModul>span:nth-of-type(1) {   
-        padding-top: 25px;
-    }
-    .shreeModul>span:nth-of-type(2) {     
-        line-height: 120px;
-    }
-    .shreeModul>span:nth-of-type(3) {
-        margin-right: 0px;        
-        padding-top: 0px;        
-        padding-top: 25px;
-    }
-    .fourAdvantage {
-        width: 100%;
-    }
-    .fourAdvantage ul {
-        display: flex ; 
-        justify-content: space-between;
-        flex-wrap:wrap ;
-        li { 
-            width: 610px;
-            height: 225px;
-            text-align: center;
-            margin: 0 20px 20px 0 ;  
-            display: flex ;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;          
-            background:rgba(241,255,251,1);
-            p:nth-of-type(1) {
-                font-size:26px;
-                padding-bottom: 34px;
-                font-weight: bold;
-                margin: 0;
-            }
-            p:nth-of-type(2) {
-                font-size:22px;
-                margin: 0;                
-                // padding-bottom: 34px;
-                // font-weight: bold;
-            }
-         }
-  
-         li:nth-of-type(2n){
-            margin: 0 0px 20px 0 ;
-         }
-    }
+    height: 100%;
 }

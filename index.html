@@ -1,554 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>易淘车</title>
-    <link rel="shortcut icon" type="image/x-icon" href="faviconytc.ico" class="ico" />
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./assets/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
-    <script src="./js/lib/jquery-2.1.4.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="./assets/swiper/js/swiper.min.js"></script>
-    <!-- <script src="./js/index.js"></script> -->
-    <script src="./js/common.js"></script>
+
+    <script>
+        document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
+    </script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" type="text/css" href="./lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
+<!--引JS-->
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="js/template.js"></script>
+
 <body>
-    <div class="cartContainer">
-        <div class="top w1240">
-            <h1 class="topLogo">
-                <a href="#" title="易淘车">易淘车</a>
-            </h1>
-            <!--菜单  nav-->
-            <div class="right">
-                <ul class="toggleStyle topNav">
-                    <li class="activeBottom">
-                        <a href="./index.html" class="home cartActive">首页</a>
-                    </li>
-                    <li>
-                        <a href="./tpls/buyCart.html" class="buyCar">我要买车</a>
-                    </li>
-                    <li>
-                        <a href="./tpls/cartDetails.html" class="carDeitel">商品页</a>
-                    </li>
-                    <li>
-                        <a href="./tpls/attractInvestment.html" class="attractInvestment">商家入驻</a>
-                    </li>
-                    <li>
-                        <a href="./tpls/aboutUs.html" class="aboutUslink">关于我们</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- banner区域 -->
-        <div id="banner" class="banner">
-            <div class="swiper-container-Main">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide rightDownBig">
-                        <img src="https://image.guazistatic.com/gz01171128/18/09/930753e123440766c2ddfc8274708b8f.jpg@base@tag=imgScale" />
+    <div class="index-container">
+        <div class="main-contain">
+            <header>
+                <a href="javascript:void(0);"></a>
+                
+            </header>
+            <div class="main-banner">
+
+                <div class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!--支持循环，需要重复图片节点-->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="http://img5.taoche.cn/99/031700aemc.png" />
+                            </a>
+                        </div>
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="http://st2.taoche.cn/resourcefiles/0/3/445/20171121051958889.jpg" />
+                            </a>
+                        </div>
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="http://img5.taoche.cn/99/031700aefd.jpg" />
+                            </a>
+                        </div>
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="http://st2.taoche.cn/resourcefiles/0/3/445/20171206095825721.jpg" />
+                            </a>
+                        </div>
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="http://img5.taoche.cn/99/031700aemc.png" />
+                            </a>
+                        </div>
+                        <!--支持循环，需要重复图片节点-->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="http://st2.taoche.cn/resourcefiles/0/3/445/20171121051958889.jpg" />
+                            </a>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="https://image.guazistatic.com/gz01171128/18/12/d478d64e3049f8ec9f7bfb3cb49feac5.jpg@base@tag=imgScale" />
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="https://image.guazistatic.com/gz01171128/18/09/5cebdbbdc3088ba927a5745ef0feb55d.jpg@base@tag=imgScale" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://image.guazistatic.com/gz01171128/18/12/d478d64e3049f8ec9f7bfb3cb49feac5.jpg@base@tag=imgScale" />
-                    </div>
+
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <!-- 如果需要导航按钮 -->
-            <div class="swiper-button-prev "></div>
-            <div class="swiper-button-next "></div>
-        </div>
-
-        <!-- 品牌 月供  s-->
-        <div class="brandCart w1240 clearfix">
-            <!-- 品牌 -->
-            <div class="brandListInfo fl">
-                <div class="cartList">
-                    <div class="moreBrand">
-                        <div class="brand clearfix">
-                            <span class="fl">快速选车</span>
-                            <span class="fr">
-                                <a href="./tpls/buyCart.html">更多
-                                    <i class="glyphicon glyphicon-menu-right"></i>
-                                </a>
-                            </span>
-                        </div>
-                        <div class="brand-dd co6-a">
-                            <ul class=" clearfix">
-                                <li>
-                                    <a class="i-dazhong" href="/list/bj/m1207/" target="_blank">
-                                        <img src="./images/mudu.png" alt="">
-                                        <p>大众</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="i-toyota" href="/list/bj/m1207/" target="_blank">
-                                        <img src="./images/mudu.png" alt="">
-                                        <p>丰田</p>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="i-honda" href="/list/bj/m1207/" target="_blank">
-                                        <img src="./images/mudu.png" alt="">
-                                        <p>本田</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="i-benz" href="/list/bj/m1207/" target="_blank">
-                                        <img src="./images/mudu.png" alt="">
-                                        <p>奔驰</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="i-bmw" href="/list/bj/m1207/" target="_blank">
-                                        <img src="./images/mudu.png" alt="">
-                                        <p>宝马</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="i-audi" href="/list/bj/m1207/" target="_blank">
-                                        <img src="./images/mudu.png" alt="">
-                                        <p>奥迪</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="i-dazhong" href="/list/bj/m1207/" target="_blank">
-                                        <img src="./images/mudu.png" alt="">
-                                        <p>大众</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="i-toyota" href="/list/bj/m1207/" target="_blank">
-                                        <img src="./images/mudu.png" alt="">
-                                        <p>丰田</p>
-                                    </a>
-                                </li>
-
-
-
-                            </ul>
-                        </div>
-                        <div class="moneyScope">
-                            <ul>
-                                <li>
-                                    <a href="#">10万以下</a>
-                                </li>
-                                <li>
-                                    <a href="#">10-15万</a>
-                                </li>
-                                <li>
-                                    <a href="#">15-20万</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- 零首付开新车 -->
-                <div class="zeroBuyCart fl">
-                    <h4>0首付开新车，免费预约</h4>
-                    <div>
-                        <input type="text" placeholder="请输入您的手机号">
-                    </div>
-                    <!-- Indicates a successful or positive action -->
-                    <button type="button" class="btn btn-success">帮我选车</button>
-                </div>
-
-            </div>
-        </div>
-        <!-- 内容区 -->
-        <div class="cartInfo w1240">
-            <!-- 热门活动 -->
-            <div class="hotActivity">
-                <h2>热门活动</h2>
-                <div class="activity w1240">
-                    <ul class="activityList">
-                        <li>
-                            <a href="javascript:void(0)">0元购车</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">一成首付</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">首付一万</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">月供1000元购车</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- 热门车型 -->
-            <div class="hotcar">
-                <h2>热门车型</h2>
-                <div>
-                    <ul class="hotCart-list clearfix">
-
-                        <li class="list-item">
-                            <a class="l-img" href="#" target="_blank">
-                                <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                                <div class="ltips">
-                                </div>
-                            </a>
-                            <div class="cartDescribe">
-                                <p>大众POLO</p>
-                                <div class="cartDescribe-ks">
-                                    <span>2016款 1.4L</span> &nbsp&nbsp
-                                    <span>自动风尚型</span>
-                                </div>
-
-                                <div class="monthPay">
-                                    <span>首付
-                                        <i>1.76</i> 万</span>
-                                    <span>月供1998元</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="l-img" href="#" target="_blank">
-                                <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                                <div class="ltips">
-                                </div>
-                            </a>
-                            <div class="cartDescribe">
-                                <p>大众POLO</p>
-                                <div class="cartDescribe-ks">
-                                    <span>2016款 1.4L</span> &nbsp&nbsp
-                                    <span>自动风尚型</span>
-                                </div>
-
-                                <div class="monthPay">
-                                    <span>首付
-                                        <i>1.76</i> 万</span>
-                                    <span>月供1998元</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="l-img" href="#" target="_blank">
-                                <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                                <div class="ltips">
-                                </div>
-                            </a>
-                            <div class="cartDescribe">
-                                <p>大众POLO</p>
-                                <div class="cartDescribe-ks">
-                                    <span>2016款 1.4L</span> &nbsp&nbsp
-                                    <span>自动风尚型</span>
-                                </div>
-
-                                <div class="monthPay">
-                                    <span>首付
-                                        <i>1.76</i> 万</span>
-                                    <span>月供1998元</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="l-img" href="#" target="_blank">
-                                <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                                <div class="ltips">
-                                </div>
-                            </a>
-                            <div class="cartDescribe">
-                                <p>大众POLO</p>
-                                <div class="cartDescribe-ks">
-                                    <span>2016款 1.4L</span> &nbsp&nbsp
-                                    <span>自动风尚型</span>
-                                </div>
-
-                                <div class="monthPay">
-                                    <span>首付
-                                        <i>1.76</i> 万</span>
-                                    <span>月供1998元</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="l-img" href="#" target="_blank">
-                                <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                                <div class="ltips">
-                                </div>
-                            </a>
-                            <div class="cartDescribe">
-                                <p>大众POLO</p>
-                                <div class="cartDescribe-ks">
-                                    <span>2016款 1.4L</span> &nbsp&nbsp
-                                    <span>自动风尚型</span>
-                                </div>
-
-                                <div class="monthPay">
-                                    <span>首付
-                                        <i>1.76</i> 万</span>
-                                    <span>月供1998元</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="l-img" href="#" target="_blank">
-                                <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                                <div class="ltips">
-                                </div>
-                            </a>
-                            <div class="cartDescribe">
-                                <p>大众POLO</p>
-                                <div class="cartDescribe-ks">
-                                    <span>2016款 1.4L</span> &nbsp&nbsp
-                                    <span>自动风尚型</span>
-                                </div>
-
-                                <div class="monthPay">
-                                    <span>首付
-                                        <i>1.76</i> 万</span>
-                                    <span>月供1998元</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="l-img" href="#" target="_blank">
-                                <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                                <div class="ltips">
-                                </div>
-                            </a>
-                            <div class="cartDescribe">
-                                <p>大众POLO</p>
-                                <div class="cartDescribe-ks">
-                                    <span>2016款 1.4L</span> &nbsp&nbsp
-                                    <span>自动风尚型</span>
-                                </div>
-
-                                <div class="monthPay">
-                                    <span>首付
-                                        <i>1.76</i> 万</span>
-                                    <span>月供1998元</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="l-img" href="#" target="_blank">
-                                <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                                <div class="ltips">
-                                </div>
-                            </a>
-                            <div class="cartDescribe">
-                                <p>大众POLO</p>
-                                <div class="cartDescribe-ks">
-                                    <span>2016款 1.4L</span> &nbsp&nbsp
-                                    <span>自动风尚型</span>
-                                </div>
-
-                                <div class="monthPay">
-                                    <span>首付
-                                        <i>1.76</i> 万</span>
-                                    <span>月供1998元</span>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-            <!-- 车主晒单 -->
-            <div class="buyersShow">
-                <p>车主晒单</p>
-                <ul class="buyersShow-list clearfix">
-                    <li class="list-item">
-                        <!-- <a class="l-img" href="#" target="_blank"> -->
-                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                        <div class="ltips">
-                        </div>
-                        <!-- </a> -->
-                        <div class="carterInfo">
-                            <p class="carterName">张先生</p>
-                            <span class="getCartAd">深圳提车</span> &nbsp&nbsp
-                            <span class="getCarTime">2017.11.28</span>
-                            <div class="comment">
-                                <p>关注本田九代雅阁很久了，平时自己做生意比较忙，没有太多时间，在易淘车买车省时省力省心，服务非常贴心。</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <!-- <a class="l-img" href="#" target="_blank"> -->
-                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                        <div class="ltips">
-                        </div>
-                        <!-- </a> -->
-                        <div class="carterInfo">
-                            <p class="carterName">张先生</p>
-                            <span class="getCartAd">深圳提车</span> &nbsp&nbsp
-                            <span class="getCarTime">2017.11.28</span>
-                            <div class="comment">
-                                <p>关注本田九代雅阁很久了，平时自己做生意比较忙，没有太多时间，在易淘车买车省时省力省心，服务非常贴心。</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <!-- <a class="l-img" href="#" target="_blank"> -->
-                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                        <div class="ltips">
-                        </div>
-                        <!-- </a> -->
-                        <div class="carterInfo">
-                            <p class="carterName">张先生</p>
-                            <span class="getCartAd">深圳提车</span> &nbsp&nbsp
-                            <span class="getCarTime">2017.11.28</span>
-                            <div class="comment">
-                                <p>关注本田九代雅阁很久了，平时自己做生意比较忙，没有太多时间，在易淘车买车省时省力省心，服务非常贴心。</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <!-- <a class="l-img" href="#" target="_blank"> -->
-                        <img src="https://image1.guazistatic.com/qn17112915575202de9a50d85e0dfbbbdfee611966de61.jpg?imageView2/1/w/384/h/258/q/88">
-                        <div class="ltips">
-                        </div>
-                        <!-- </a> -->
-                        <div class="carterInfo">
-                            <p class="carterName">张先生</p>
-                            <span class="getCartAd">深圳提车</span> &nbsp&nbsp
-                            <span class="getCarTime">2017.11.28</span>
-                            <div class="comment">
-                                <p>关注本田九代雅阁很久了，平时自己做生意比较忙，没有太多时间，在易淘车买车省时省力省心，服务非常贴心。</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="buyProcedure">
-            <!-- 购车流程 -->
-
-            <div class="buyFlow w1240">
-                <span>购车流程</span>
-                <div class="flow">
-                    <ul class="clearfix">
-                        <li>
-                            <div>
-                                <img src="./images/mudu.png" alt="">
-                            </div>
-
-                            <p>预约看车</p>
-                            <p>留下您的联系方式，
-                                <br> 预约成功后会有市场人员跟您联系</p>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="./images/mudu.png" alt="">
-                            </div>
-                            <p>挑选爱车</p>
-                            <p>专人陪同挑选心仪车辆</p>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="./images/mudu.png" alt="">
-                            </div>
-                            <p>签订合同</p>
-                            <p>签署合同并支付定金</p>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="./images/mudu.png" alt="">
-                            </div>
-                            <p>预约看车</p>
-                            <p>市场人员陪同过户，
-                                <br> 好车开回家</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- 购车模式 -->
-        <div class="buyCartMode">
-            <!-- 购车模式 -->
-            <div class="buyPattern w1240">
-                <span>购车模式</span>
-                <div class="Pattern">
-                    <div class="shreeModul clearfix">
-                        <span class="fl">
-                            以租代购
-                            <br> 0首付购车
-                        </span>
-                        <span class="fl">低首付购车</span>
-                        <span class="fl">优惠购车
-                            <br> 三成首付购车</span>
-                    </div>
-
-                    <div class="fourAdvantage">
+            <main>
+                <div class="itemList">
+                    <div class="item-brand">
                         <ul class="clearfix">
-                            <li>
-                                <p>月供低</p>
-                                <p>低月供还款轻松无压力</p>
+                            <li class="active">
+                                <a class="" href="javascript:void(0)">
+                                    <img src="https://image.guazistatic.com/files/brand/1207.png" alt="">
+                                    <p>大众</p>
+                                </a>
                             </li>
                             <li>
-                                <p>手续便捷</p>
-                                <p>在线审核，简单快捷</p>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="http://image.bitautoimg.com/bt/car/default/images/logo/masterbrand/png/100/m_7_100.png" alt="">
+                                    <p>丰田</p>
+                                </a>
                             </li>
                             <li>
-                                <p>超快审批</p>
-                                <p>在线审批，1-3天可提车</p>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="http://image.bitautoimg.com/bt/car/default/images/logo/masterbrand/png/100/m_26_100.png" alt="">
+                                    <p>本田</p>
+                                </a>
                             </li>
                             <li>
-                                <p>省心省力</p>
-                                <p>提车、上牌、交税、保险
-                                    <br> 平台办理，只等提新车</p>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="http://image.bitautoimg.com/bt/car/default/images/logo/masterbrand/png/100/m_9_100.png" alt="">
+                                    <p>奥迪</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="http://image.bitautoimg.com/bt/car/default/images/logo/masterbrand/png/100/m_3_100.png" alt="">
+                                    <p>宝马</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0)">
+                                    <img src="http://image.bitautoimg.com/bt/car/default/images/logo/masterbrand/png/100/m_2_100.png" alt="">
+                                    <p>奔驰</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
 
+                    <div class="item-price">
+                        <ul class="clearfix">
+                            <li><a href="#">5万以下</a> </li>
+                            <li><a href="#">5-10万</a></li>
+                            <li><a href="#">10-15万</a></li>
+                            <li><a href="#">15-20万</a></li>
+                            <li><a href="#">20-25万</a></li>
+                            <li><a href="#">25万以上</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-selectCar clearfix">
+                        <input type="text" class="mui-input-clear fl" placeholder="请输入用户名">
+                        <button type="button" class="mui-btn mui-btn-outlined fl">帮我选车</button>
+                    </div>
+                    <div class="item-testQualification ">
+                        <button type="button" class="mui-btn mui-btn-outlined ">测试贷款资格</button>
+                        <button type="button" class="mui-btn mui-btn-outlined ">查看全部车型</button>
+                    </div>
                 </div>
-            </div>
+                <!-- 热门活动 -->
+                <div class="item-hotActivity">
+                    <p>热门活动</p>
+                    <div class="hotActivityList">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 热门车型 -->
+                <div class="item-hotCar">
+                    <p>热门车型</p>
+                    <div class="hotCar">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">
+                                    <img src="https://image.guazistatic.com/gz01171204/21/53/2e1e709625e8552ef1cf52b09dd811e8.jpg@base@tag=imgScale&w=248&h=160&q=55" alt="">
+                                    <p class="option-t">大众POLO &nbsp2016款&nbsp1.4L 自动风尚型</p>
+                                    <p class="pay-b">
+                                        <span class="pay-l">首付 <i>1.17</i>&nbsp万 </span>
+                                        <span class="pay-r">月供1998元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://image.guazistatic.com/gz01171204/21/53/2e1e709625e8552ef1cf52b09dd811e8.jpg@base@tag=imgScale&w=248&h=160&q=55" alt="">
+                                    <p class="option-t">大众POLO &nbsp2016款&nbsp1.4L 自动风尚型</p>
+                                    <p class="pay-b">
+                                        <span class="pay-l">首付 <i>0</i>&nbsp万 </span>
+                                        <span class="pay-r">月供1998元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://image.guazistatic.com/gz01171204/21/53/2e1e709625e8552ef1cf52b09dd811e8.jpg@base@tag=imgScale&w=248&h=160&q=55" alt="">
+                                    <p class="option-t">大众POLO &nbsp2016款&nbsp1.4L 自动风尚型</p>
+                                    <p class="pay-b">
+                                        <span class="pay-l">首付 <i>0</i>&nbsp万 </span>
+                                        <span class="pay-r">月供1998元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://image.guazistatic.com/gz01171204/21/53/2e1e709625e8552ef1cf52b09dd811e8.jpg@base@tag=imgScale&w=248&h=160&q=55" alt="">
+                                    <p class="option-t">大众POLO &nbsp2016款&nbsp1.4L 自动风尚型</p>
+                                    <p class="pay-b">
+                                        <span class="pay-l">首付 <i>0</i> 万 </span>
+                                        <span class="pay-r">月供1998元</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lookMoreCar">
+                        <span>查看更多车型</span>
+                    </div>
+                </div>
+
+            </main>
         </div>
-        <!-- 底部区域 -->
+
         <footer>
-            <div class="w1240">
-                <!-- 上部分 -->
-                <div class="footLayout">
-                    <!-- 左边 -->
-                    <div class="footLogoLeft">
-                        <div>
-                            <img src="./images/ytc_logo.jpg" alt="">
-                            <!-- 下部分   备案号 -->
-                            <p>CopyRight © 2017 版权所有 粤ICP备17020340号-1</p>
-                        </div>
-
-                    </div>
-                    <div class="footLogoCenter">
-                        <span>
-                            <img src="./images/weixin.jpg" alt="">
-                            <span>关注微信号</span>
-                        </span>
-                        <span>
-                            <img src="./images/gzNum.jpg" alt="">
-                            <span>关注微信号</span>
-                        </span>
-
-                    </div>
-                    <div class="footLogoRight">
-                        <h2>400-863-3378</h2>
-                        <p>服务时间：9:00-17:30 </p>
-                        <div class="companyLocation">
-                            <p>深圳市东方快车投资管理有限公司</p>
-                            <p>深圳市南山区大冲商务中心1栋2号楼1808室</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <nav class="mui-bar mui-bar-tab">
+                <a class="mui-tab-item activeGREEN" href="./index.html">
+                    <span class="mui-icon mui-icon-home"></span>
+                    <span class="mui-tab-label">首页</span>
+                </a>
+                <a class="mui-tab-item" href="./html/buyCar.html">
+                    <span class="mui-icon mui-icon-contact"></span>
+                    <span class="mui-tab-label">买车</span>
+                </a>
+                <a class="mui-tab-item" href="./html/mine.html">
+                    <span class="mui-icon mui-icon-gear"></span>
+                    <span class="mui-tab-label">我的</span>
+                </a>
+            </nav>
         </footer>
 
     </div>
-
 </body>
-<script src="./js/index.js"></script>
+<script src="./lib/mui/js/mui.min.js"></script>
+<script>
+    //获得slider插件对象
+    var gallery = mui('.mui-slider');
+    gallery.slider({
+        interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+    });
+</script>
 
 </html>
