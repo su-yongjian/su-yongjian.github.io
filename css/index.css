@@ -778,7 +778,7 @@ img {
 .mine-container .login .user_img .p-login {
   width: 1.6rem;
   margin-left: 0.26667rem;
-  padding-top: 20%;
+  padding-top: 10%;
   color: white;
   line-height: 34px;
   font-size: 0.37333rem;
@@ -1536,7 +1536,7 @@ img {
   line-height: 1.17333rem;
   padding-top: 0px;
   color: #20CE9C;
-  font-size: 0.45333rem;
+  font-size: 0.66667rem;
 }
 .order-layout .order-contain header h1 {
   height: 100%;
@@ -1621,7 +1621,7 @@ img {
   color: #999999;
 }
 .order-layout .order-contain .carList .carList-item .item-info .item-r .orderTime {
-  padding-top: 0.53333rem;
+  padding-top: 0.26667rem;
   font-size: 0.26667rem;
   color: #999999;
 }

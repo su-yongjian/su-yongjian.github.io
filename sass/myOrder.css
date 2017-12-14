@@ -10,7 +10,7 @@
   line-height: p2r(88);
   padding-top: 0px;
   color: #20CE9C;
-  font-size: p2r(34);
+  font-size: p2r(50);
 }
 
 .order-layout .order-contain header h1 {
@@ -103,7 +103,7 @@
 }
 
 .order-layout .order-contain .carList .carList-item .item-info .item-r .orderTime {
-  padding-top: p2r(40);
+  padding-top: p2r(20);
   font-size: p2r(20);
   color: #999999;
 }
