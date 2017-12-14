@@ -1,0 +1,99 @@
+.order-layout .order-contain header {
+  width: 100%;
+  height: p2r(88);
+  line-height: p2r(88);
+  border-bottom: 1px solid #F0F0F0;
+}
+.order-layout .order-contain header a {
+  height: 100%;
+  line-height: p2r(88);
+  padding-top: 0px;
+  color: #20CE9C;
+  font-size: p2r(34);
+}
+.order-layout .order-contain header h1 {
+  height: 100%;
+  font-size: p2r(34);
+  line-height: p2r(88);
+}
+.order-layout .order-contain .carList {
+  margin-top: p2r(88);
+}
+.order-layout .order-contain .carList .carList-item {
+  background-color: #ffffff;
+  width: p2r(750);
+  height: p2r(352);
+  margin-bottom: p2r(20);
+}
+.order-layout .order-contain .carList .carList-item .orderInfo {
+  border-bottom: p2r(1) solid #F0F0F0;
+  height: p2r(60);
+  line-height: p2r(60);
+  padding: 0 p2r(32);
+}
+.order-layout .order-contain .carList .carList-item .orderInfo .orderNum {
+  font-size: p2r(24);
+  color: #999999;
+}
+.order-layout .order-contain .carList .carList-item .orderInfo .orderStatus {
+  font-size: p2r(26);
+  color: #333333;
+}
+.order-layout .order-contain .carList .carList-item .item-info {
+  margin: p2r(30) p2r(32);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-l {
+  width: p2r(296);
+  height: p2r(220);
+  margin-right: p2r(30);
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: p2r(10);
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .carOptions {
+  font-size: p2r(26);
+  line-height: p2r(50);
+  color: gray;
+  padding-bottom: p2r(35);
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .carOptions .sel-icon {
+  display: inline-block;
+  background: url("../images/ziying@2x.png") no-repeat;
+  width: p2r(113);
+  height: p2r(37);
+  position: relative;
+  top: p2r(6);
+  border-radius: p2r(4);
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .guidePrice {
+  font-size: p2r(24);
+  line-height: p2r(40);
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .payStyle {
+  color: #ff6156;
+  font-size: p2r(24);
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .payStyle .firstPay i {
+  font-size: p2r(34);
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .payStyle .monthPay {
+  font-size: p2r(24);
+  padding-right: p2r(10);
+  color: #999999;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .orderTime {
+  padding-top: p2r(40);
+  font-size: p2r(20);
+  color: #999999;
+}

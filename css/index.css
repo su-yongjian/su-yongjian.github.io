@@ -1,0 +1,2492 @@
+@charset "UTF-8";
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "PingFang SC";
+  color: #000;
+}
+
+a, span {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  clear: both;
+}
+
+.buyCar-layout {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 0.21333rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.buyCar-layout .buyCar-contain {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #F0F0F0;
+  overflow-y: scroll;
+}
+.buyCar-layout .buyCar-contain header {
+  z-index: 3;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  font-size: 0.45333rem;
+  font-family: "PingFang SC";
+  color: #20ce9c;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(177, 172, 172, 0.6);
+}
+.buyCar-layout .buyCar-contain .conditionScreen {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  top: 1.17333rem;
+  height: 1.04rem;
+  line-height: 1.04rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.34667rem;
+  color: #666666;
+  font-family: "PingFang SC";
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: #ffffff;
+  border-bottom: 1px solid #F0F0F0;
+}
+.buyCar-layout .buyCar-contain .unlimited {
+  width: 100%;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand {
+  display: none;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  top: 2.21333rem;
+  border-bottom: 1px solid #F0F0F0;
+  z-index: 3;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item {
+  margin-top: 0.4rem;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul {
+  width: 9.6rem;
+  margin: 0 auto;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li {
+  float: left;
+  width: 1.30667rem;
+  height: 1.6rem;
+  margin: 0 0.13333rem;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li a i {
+  text-align: center;
+  line-height: 0.53333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  margin-top: 0.13333rem;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li a img {
+  margin-top: 0.13333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li a p {
+  padding-top: 0.26667rem;
+  margin-bottom: 0;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li.active {
+  border: 1px solid #20CE9C;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li.active a {
+  color: #20CE9C;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li.active p {
+  color: #20CE9C;
+}
+.buyCar-layout .buyCar-contain .unlimited-price,
+.buyCar-layout .buyCar-contain .unlimited-firstpay,
+.buyCar-layout .buyCar-contain .unlimited-month {
+  display: none;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay,
+.buyCar-layout .buyCar-contain .unlimited-price,
+.buyCar-layout .buyCar-contain .unlimited-month {
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  top: 2.21333rem;
+  border-bottom: 1px solid #F0F0F0;
+  z-index: 3;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay .unlimited-item,
+.buyCar-layout .buyCar-contain .unlimited-price .unlimited-item,
+.buyCar-layout .buyCar-contain .unlimited-month .unlimited-item {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay .unlimited-item ul,
+.buyCar-layout .buyCar-contain .unlimited-price .unlimited-item ul,
+.buyCar-layout .buyCar-contain .unlimited-month .unlimited-item ul {
+  margin-left: 0.33333rem;
+  width: 100%;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay .unlimited-item ul li,
+.buyCar-layout .buyCar-contain .unlimited-price .unlimited-item ul li,
+.buyCar-layout .buyCar-contain .unlimited-month .unlimited-item ul li {
+  float: left;
+  margin: 0.13333rem;
+  margin-bottom: 0.26667rem;
+  width: 2.88rem;
+  height: 0.85333rem;
+  line-height: 0.85333rem;
+  text-align: center;
+  font-size: 0.32rem;
+  color: #666666;
+  border: 1px solid #cccccc;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay .unlimited-item ul li.active,
+.buyCar-layout .buyCar-contain .unlimited-price .unlimited-item ul li.active,
+.buyCar-layout .buyCar-contain .unlimited-month .unlimited-item ul li.active {
+  border: 1px solid #20CE9C;
+  color: #20CE9C;
+}
+.buyCar-layout .buyCar-contain .carList {
+  margin-top: 2.21333rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item {
+  background-color: #ffffff;
+  width: 10rem;
+  height: 3.73333rem;
+  margin-bottom: 0.26667rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info {
+  margin: 0.4rem 0.42667rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-l {
+  width: 3.94667rem;
+  height: 2.93333rem;
+  margin-right: 0.4rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 0.13333rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .carOptions {
+  font-size: 0.34667rem;
+  line-height: 0.66667rem;
+  color: gray;
+  padding-bottom: 0.46667rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .guidePrice {
+  font-size: 0.32rem;
+  line-height: 0.53333rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .payStyle {
+  color: #ff6156;
+  font-size: 0.32rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .payStyle .firstPay i {
+  font-size: 0.45333rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .payStyle .monthPay {
+  font-size: 0.32rem;
+  padding-right: 0.13333rem;
+  color: #999999;
+}
+
+.mark {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mine-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.mine-container .mine-contain {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: white;
+}
+.mine-container header {
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  width: 100%;
+  background-color: #20CE9C;
+  text-align: center;
+}
+.mine-container header span {
+  margin-right: -0.85333rem;
+  font-size: 0.45333rem;
+  color: white;
+}
+.mine-container header i {
+  color: white;
+  float: right;
+  width: 0.48rem;
+  height: 1.17333rem;
+  background-position-y: 0.4rem;
+  margin-right: 0.42667rem;
+  font-size: 0.53333rem;
+}
+.mine-container .login {
+  position: relative;
+}
+.mine-container .login > img {
+  max-width: 100%;
+}
+.mine-container .login .user_img {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.mine-container .login .user_img .img_a {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.mine-container .login .user_img .img_a img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.mine-container .login .user_img .p-login {
+  width: 1.6rem;
+  margin-left: 0.26667rem;
+  padding-top: 20%;
+  color: white;
+  line-height: 34px;
+  font-size: 0.37333rem;
+}
+.mine-container .loginList {
+  width: 100%;
+  background-color: white;
+  margin-top: 0.26667rem;
+}
+.mine-container .loginList ul {
+  width: 100%;
+}
+.mine-container .loginList ul li {
+  position: relative;
+  width: 100%;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  font-size: 0.37333rem;
+  color: #666666;
+  border: 1px solid rgba(201, 195, 195, 0.5);
+}
+.mine-container .loginList ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #20CE9C;
+}
+.mine-container .loginList ul li a i {
+  display: inline-block;
+  margin-left: 0.26667rem;
+  width: 0.41333rem;
+  height: 0.41333rem;
+  position: relative;
+  top: 0.06667rem;
+}
+.mine-container .loginList ul li a > span {
+  padding-left: 0.13333rem;
+}
+.mine-container .loginList ul li:nth-of-type(1) i {
+  background: url("../images/myOrder@3x.png") no-repeat left 0;
+  background-size: 0.41333rem 0.41333rem;
+}
+.mine-container .loginList ul li:nth-of-type(2) i {
+  background: url("../images/issue@3x.png") no-repeat left 0;
+  background-size: 0.41333rem 0.41333rem;
+}
+.mine-container .loginList ul li:nth-of-type(3) i {
+  background: url("../images/link@3x.png") no-repeat left 0;
+  background-size: 0.41333rem 0.41333rem;
+}
+.mine-container .loginList ul li:nth-of-type(3) .linkPhone {
+  float: right;
+  padding-right: 0.8rem;
+  color: #20CE9C;
+}
+.mine-container .loginList ul li:nth-of-type(4) i {
+  background: url("../images/aboutUs@3x.png") no-repeat left 0;
+  background-size: 0.41333rem 0.41333rem;
+}
+
+.detail-layout {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.detail-layout .detail-contain {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: scroll;
+}
+.detail-layout .detail-contain header {
+  width: 100%;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  border-bottom: 1px solid #F0F0F0;
+}
+.detail-layout .detail-contain header a {
+  height: 100%;
+  line-height: 1.17333rem;
+  padding-top: 0px;
+  color: #20CE9C;
+  font-size: 0.45333rem;
+}
+.detail-layout .detail-contain header a:last-child {
+  float: right;
+  padding-right: 0.26667rem;
+}
+.detail-layout .detail-contain header h1 {
+  height: 100%;
+  font-size: 0.45333rem;
+  line-height: 1.17333rem;
+}
+.detail-layout .detail-contain main .detail-main-img {
+  background-color: white;
+  padding-bottom: 0.4rem;
+}
+.detail-layout .detail-contain main .detail-main-img img {
+  width: 100%;
+  height: 6.4rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe {
+  margin: 0 0.4rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .describe {
+  color: #333333;
+  line-height: 50px;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .describe .sel-icon {
+  display: inline-block;
+  background: url("../images/ziying@2x.png") no-repeat;
+  width: 1.50667rem;
+  height: 0.49333rem;
+  position: relative;
+  top: 0.08rem;
+  border-radius: 0.05333rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .describe span {
+  font-size: 0.42667rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .guidePrice {
+  font-size: 0.34667rem;
+  color: #999999;
+  line-height: 0.66667rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle {
+  width: 9.17333rem;
+  height: 1.86667rem;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: #f3f5f7;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .firstPay,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .monthPay,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .expectCount {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .firstPay p,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .monthPay p,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .expectCount p {
+  margin: 0;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .firstPay p:nth-of-type(1),
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .monthPay p:nth-of-type(1),
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .expectCount p:nth-of-type(1) {
+  font-size: 0.34667rem;
+  color: #666666;
+  line-height: 0.4rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .firstPay p:nth-of-type(2),
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .monthPay p:nth-of-type(2),
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .expectCount p:nth-of-type(2) {
+  font-size: 0.45333rem;
+  color: #ff6156;
+  padding-top: 0.29333rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .discounts {
+  margin-top: 0.26667rem;
+  margin-bottom: 0.42667rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .discounts .purchaseTax,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .discounts .oneYuarInsurance {
+  padding: 0.13333rem;
+  height: 0.58667rem;
+  background: #20ce9c;
+  border-radius: 0.05333rem;
+  font-size: 0.32rem;
+  color: white;
+  line-height: 0.66667rem;
+}
+.detail-layout .detail-contain main .detail-main-img .tsetQualification {
+  width: 100%;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  padding: 0 0.4rem;
+  padding-bottom: 0.4rem;
+  background: rgba(32, 206, 156, 0.3);
+}
+.detail-layout .detail-contain main .detail-main-img .tsetQualification span {
+  font-size: 0.4rem;
+  color: #20ce9c;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain,
+.detail-layout .detail-contain main .detail-buyCar-option,
+.detail-layout .detail-contain main .detail-buyCar-lightspot, .detail-layout .detail-contain main .detail-buyCar-fourStep, .detail-layout .detail-contain main .detail-buyCar-illustrate {
+  margin-top: 0.26667rem;
+  width: 100%;
+  background-color: white;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain > P,
+.detail-layout .detail-contain main .detail-buyCar-option > P,
+.detail-layout .detail-contain main .detail-buyCar-lightspot > P, .detail-layout .detail-contain main .detail-buyCar-fourStep > P, .detail-layout .detail-contain main .detail-buyCar-illustrate > P {
+  padding: 0.53333rem 0 0.13333rem 0;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain > P span,
+.detail-layout .detail-contain main .detail-buyCar-option > P span,
+.detail-layout .detail-contain main .detail-buyCar-lightspot > P span, .detail-layout .detail-contain main .detail-buyCar-fourStep > P span, .detail-layout .detail-contain main .detail-buyCar-illustrate > P span {
+  margin-left: 0.2rem;
+  padding-left: 0.2rem;
+  font-size: 0.42667rem;
+  color: #333333;
+  border-left: 0.10667rem solid #20CE9C;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain {
+  height: 10.4rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage {
+  margin-top: 0.66667rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.26667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style span {
+  font-size: 0.29333rem;
+  display: inline-block;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.08rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style span:nth-of-type(1) {
+  width: 2.88rem;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  color: white;
+  background-color: #20ce9c;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style span:nth-of-type(2) {
+  width: 1.30667rem;
+  height: 1.17333rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style span:nth-of-type(3) {
+  width: 2.88rem;
+  height: 1.17333rem;
+  background: #f3f5f7;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zero-center {
+  display: inline-block;
+  width: 1.30667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zero-center {
+  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1 p,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zero-center p {
+  width: 4rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1 p,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p {
+  text-align: right;
+  font-size: 0.26667rem;
+  color: #666666;
+  line-height: 0.4rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1 p:nth-of-type(1),
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p:nth-of-type(1) {
+  font-size: 0.37333rem;
+  color: #20ce9c;
+  line-height: 0.26667rem;
+  padding-top: 0.26667rem;
+  padding-bottom: 0.13333rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1 p:nth-of-type(2),
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p:nth-of-type(2) {
+  margin: 0;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p {
+  text-align: left;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p:nth-of-type(1) {
+  color: #666666;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain {
+  height: 11.62667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain ul li {
+  height: 1.17333rem;
+  border-bottom: 0.01333rem solid #F0F0F0;
+  padding: 0 0.42667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain ul li span {
+  display: inline-block;
+  height: 100%;
+  line-height: 1.17333rem;
+  font-size: 0.34667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain ul li .specification {
+  color: #666666;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain ul li .parameter {
+  color: #999999;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .lookOverMore {
+  width: 9.17333rem;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  margin: 0.4rem auto;
+  text-align: center;
+  background-color: #f3f5f7;
+  font-size: 0.34667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .lookOverMore a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #666666;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList .lightspot-explain {
+  padding: 0 0.4rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList .lightspot-explain img {
+  width: 100%;
+  height: 6.4rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList .lightspot-explain p:nth-of-type(1) {
+  font-size: 0.42667rem;
+  color: #666666;
+  line-height: 0.4rem;
+  margin-bottom: 0.34667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList .lightspot-explain p:nth-of-type(2) {
+  font-size: 0.34667rem;
+  color: rgba(51, 51, 51, 0.7);
+  line-height: 0.48rem;
+  padding-bottom: 0.13333rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li {
+  margin: 0 0.41333rem;
+  height: 1.6rem;
+  padding-top: 0.53333rem;
+  border-bottom: 0.01333rem solid #F0F0F0;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li i {
+  max-width: 1.06667rem;
+  width: 1.06667rem;
+  height: 1.33333rem;
+  color: #20CE9C;
+  font-size: 1rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li span {
+  display: inline-block;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li span p {
+  padding-left: 0.26667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li span p:nth-of-type(1) {
+  font-size: 0.37333rem;
+  color: #666666;
+  margin-bottom: 0.26667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li span p:nth-of-type(2) {
+  font-size: 0.32rem;
+  color: #999999;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate {
+  width: 100%;
+  height: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList {
+  border-bottom: 1px solid #F0F0F0;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList tr {
+  padding-bottom: 0.26667rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList tr td {
+  padding-top: 0.4rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList .list {
+  padding-right: 0.26667rem;
+  padding-left: 0.53333rem;
+  width: 2.66667rem;
+  font-size: 0.37333rem;
+  color: #666666;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList .info {
+  font-size: 0.32rem;
+  padding: 0.26667rem 0.26667rem 0.26667rem 0;
+  line-height: 0.4rem;
+  color: #999999;
+}
+.detail-layout footer {
+  width: 100%;
+  height: 1.30667rem;
+}
+.detail-layout footer .linkStyle {
+  width: 100%;
+  height: 100%;
+}
+.detail-layout footer .linkStyle ul {
+  width: 100%;
+  height: 100%;
+}
+.detail-layout footer .linkStyle ul li {
+  width: 33.333%;
+  height: 100%;
+}
+.detail-layout footer .linkStyle ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.30667rem;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+.detail-layout footer .linkStyle ul li a i {
+  width: 0.4rem;
+  height: 0.4rem;
+  color: #20CE9C;
+}
+.detail-layout footer .linkStyle ul li:last-child {
+  background-color: #20CE9C;
+  color: white;
+}
+
+.more-layout {
+  margin-top: 1.17333rem;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: white;
+}
+.more-layout .more-contain {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: scroll;
+}
+.more-layout .more-contain header {
+  width: 100%;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.more-layout .more-contain header a {
+  height: 100%;
+  line-height: 1.17333rem;
+  padding-top: 0px;
+  color: #20ce9c;
+  font-size: 0.45333rem;
+}
+.more-layout .more-contain header h1 {
+  height: 100%;
+  font-size: 0.45333rem;
+  line-height: 1.17333rem;
+}
+.more-layout .more-contain main .detail-buyCar-more {
+  margin-top: 0.26667rem;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title {
+  width: 100%;
+  height: 1.33333rem;
+  line-height: 1.33333rem;
+  color: #3f4359;
+  font-weight: 500;
+  position: relative;
+  border-bottom: 0.01333rem solid #f0f0f0;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title > span {
+  margin-left: 0.26667rem;
+  font-size: 0.42667rem;
+  color: #333333;
+  padding-left: 0.13333rem;
+  border-left: 0.05333rem solid #20ce9c;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips {
+  height: 100%;
+  float: left;
+  margin-right: 0.33333rem;
+  line-height: 0.66667rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips .yuan1 {
+  width: 0.16rem;
+  height: 0.16rem;
+  border-radius: 50%;
+  background: #20ce9c;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips .yuan2 {
+  width: 0.16rem;
+  height: 0.16rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid #20ce9c;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips .tip-word {
+  float: left;
+  height: 100%;
+  padding-left: 0.13333rem;
+  line-height: 1.33333rem;
+  font-size: 0.32rem;
+  margin: 0;
+  color: #999999;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips .line {
+  width: 0.06667rem;
+  height: 0.06667rem;
+  background: #20ce9c;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain {
+  width: 100%;
+  height: 100%;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain table {
+  width: 100%;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList {
+  border-bottom: 1px solid #f0f0f0;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList tr {
+  padding-bottom: 0.26667rem;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList tr td {
+  padding-top: 0.4rem;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList .list {
+  padding-right: 0.26667rem;
+  padding-left: 0.4rem;
+  width: 5.86667rem;
+  font-size: 0.34667rem;
+  color: #666666;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList .info {
+  font-size: 0.32rem;
+  padding: 0.26667rem 0.26667rem 0.26667rem 0;
+  line-height: 0.4rem;
+  color: #999999;
+  text-align: right;
+  padding-right: 0.4rem;
+}
+.more-layout footer {
+  width: 100%;
+  height: 1.30667rem;
+}
+.more-layout footer .linkStyle {
+  width: 100%;
+  height: 100%;
+}
+.more-layout footer .linkStyle ul {
+  width: 100%;
+  height: 100%;
+}
+.more-layout footer .linkStyle ul li {
+  width: 33.333%;
+  height: 100%;
+}
+.more-layout footer .linkStyle ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.30667rem;
+}
+.more-layout footer .linkStyle ul li a i {
+  width: 0.4rem;
+  height: 0.4rem;
+  color: #20ce9c;
+}
+.more-layout footer .linkStyle ul li:last-child {
+  background-color: #20ce9c;
+  color: white;
+}
+
+.order-layout .order-contain header {
+  width: 100%;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  border-bottom: 1px solid #F0F0F0;
+}
+.order-layout .order-contain header a {
+  height: 100%;
+  line-height: 1.17333rem;
+  padding-top: 0px;
+  color: #20CE9C;
+  font-size: 0.45333rem;
+}
+.order-layout .order-contain header h1 {
+  height: 100%;
+  font-size: 0.45333rem;
+  line-height: 1.17333rem;
+}
+.order-layout .order-contain .carList {
+  margin-top: 1.17333rem;
+}
+.order-layout .order-contain .carList .carList-item {
+  background-color: #ffffff;
+  width: 10rem;
+  height: 4.69333rem;
+  margin-bottom: 0.26667rem;
+}
+.order-layout .order-contain .carList .carList-item .orderInfo {
+  border-bottom: 0.01333rem solid #F0F0F0;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  padding: 0 0.42667rem;
+}
+.order-layout .order-contain .carList .carList-item .orderInfo .orderNum {
+  font-size: 0.32rem;
+  color: #999999;
+}
+.order-layout .order-contain .carList .carList-item .orderInfo .orderStatus {
+  font-size: 0.34667rem;
+  color: #333333;
+}
+.order-layout .order-contain .carList .carList-item .item-info {
+  margin: 0.4rem 0.42667rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-l {
+  width: 3.94667rem;
+  height: 2.93333rem;
+  margin-right: 0.4rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 0.13333rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .carOptions {
+  font-size: 0.34667rem;
+  line-height: 0.66667rem;
+  color: gray;
+  padding-bottom: 0.46667rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .carOptions .sel-icon {
+  display: inline-block;
+  background: url("../images/ziying@2x.png") no-repeat;
+  width: 1.50667rem;
+  height: 0.49333rem;
+  position: relative;
+  top: 0.08rem;
+  border-radius: 0.05333rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .guidePrice {
+  font-size: 0.32rem;
+  line-height: 0.53333rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .payStyle {
+  color: #ff6156;
+  font-size: 0.32rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .payStyle .firstPay i {
+  font-size: 0.45333rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .payStyle .monthPay {
+  font-size: 0.32rem;
+  padding-right: 0.13333rem;
+  color: #999999;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .orderTime {
+  padding-top: 0.53333rem;
+  font-size: 0.26667rem;
+  color: #999999;
+}
+
+.byStages-layout {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.byStages-layout .byStages-contain {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 1.17333rem;
+  position: relative;
+}
+.byStages-layout .byStages-contain header {
+  height: 1.17333rem;
+}
+.byStages-layout .byStages-contain header .dianhua {
+  float: right;
+  padding-right: 0.26667rem;
+}
+.byStages-layout .byStages-contain header a {
+  display: inline-block;
+  height: 100%;
+  line-height: 1.17333rem;
+  padding-top: 0;
+  font-size: 0.8rem;
+  color: #20CE9C;
+}
+.byStages-layout .byStages-contain header a:last-child {
+  font-size: 0.53333rem;
+}
+.byStages-layout .byStages-contain header a:last-child i {
+  display: block;
+  font-size: 0.53333rem;
+}
+.byStages-layout .byStages-contain header h1 {
+  height: 100%;
+  line-height: 1.17333rem;
+  font-size: 0.45333rem;
+}
+.byStages-layout .byStages-contain > p {
+  width: 100%;
+  height: 0.90667rem;
+  line-height: 0.90667rem;
+  text-align: center;
+  font-size: 0.29333rem;
+  color: #666666;
+}
+.byStages-layout .byStages-contain .browser {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+  /*选择地区*/
+  /*选择地区弹层*/
+  /*遮罩层*/
+}
+.byStages-layout .byStages-contain .browser .express-area {
+  width: 100%;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  padding-left: 0.4rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+.byStages-layout .byStages-contain .browser .express-area a {
+  display: block;
+}
+.byStages-layout .byStages-contain .browser .express-area dl {
+  position: relative;
+  color: #4d525d;
+}
+.byStages-layout .byStages-contain .browser .express-area dl dt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.37333rem;
+}
+.byStages-layout .byStages-contain .browser .express-area dl dd {
+  padding-top: 0rem;
+  margin-left: 2.66667rem;
+  text-align: justify;
+  font-size: 0.34667rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box, .byStages-layout .byStages-contain .browser .bank-select {
+  width: 100%;
+  height: 70%;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: -200%;
+  z-index: 15;
+  background-color: #fff;
+  color: #4d525d;
+}
+.byStages-layout .byStages-contain .browser .bank-select {
+  z-index: 16;
+  height: 65%;
+  overflow-y: scroll;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li {
+  float: left;
+  width: 33.33%;
+  height: 1.17333rem;
+  text-align: center;
+  line-height: 1.17333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li span {
+  font-size: 0.37333rem;
+  color: #666666;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 0.13333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.gongshangyinhang {
+  background: url("../images/gh@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.nongyeyinhang {
+  background: url("../images/nh@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.jiansheyinhang {
+  background: url("../images/jh@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.zhaoshangyinhang {
+  background: url("../images/zs@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.jiaotongyinhang {
+  background: url("../images/jt@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.zhonghang {
+  background: url("../images/zh@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.pufayinhang {
+  background: url("../images/pf@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.youzhengyinhang {
+  background: url("../images/yz@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.guangdayinhang {
+  background: url("../images/gd@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.pinganyinhang {
+  background: url("../images/pn@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.minshengyinhang {
+  background: url("../images/ms@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.xingyeyinhang {
+  background: url("../images/xy@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.huaxiayinhang1 {
+  background: url("../images/hx@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.guangfayinhang {
+  background: url("../images/gf@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.zhongxinyinhang {
+  background: url("../images/zx@2x.png") no-repeat;
+  background-size: 0.53333rem 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header, .byStages-layout .byStages-contain .browser .bank-select header {
+  position: relative;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header h3, .byStages-layout .byStages-contain .browser .bank-select header h3 {
+  text-align: center;
+  font-size: 0.26667rem;
+  height: 0.58667rem;
+  line-height: 0.58667rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header .back,
+.byStages-layout .byStages-contain .browser .express-area-box header .close, .byStages-layout .byStages-contain .browser .bank-select header .close {
+  position: absolute;
+  top: 0;
+  width: 0.4rem;
+  height: 0.4rem;
+  top: 0.18667rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header .back {
+  display: none;
+  left: 0.26667rem;
+  background: url("../images/back.png") no-repeat center;
+  background-size: 0.26667rem 0.26667rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header .close, .byStages-layout .byStages-contain .browser .bank-select header .close {
+  right: 0.26667rem;
+  background: url("../images/close-area.png") no-repeat center;
+  background-size: 0.26667rem 0.26667rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box article .bank-select article {
+  height: 100%;
+  overflow-y: scroll;
+}
+.byStages-layout .byStages-contain .browser .area-list {
+  margin-bottom: 2.66667rem;
+}
+.byStages-layout .byStages-contain .browser .area-list li {
+  border-bottom: 1px solid #e2e2e2;
+  text-align: justify;
+  font-size: 0.24rem;
+  height: 0.58667rem;
+  line-height: 0.58667rem;
+  padding-left: 0.13333rem;
+}
+.byStages-layout .byStages-contain .browser .city-mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1, .byStages-layout .byStages-contain .browser .posionalInfo-2 {
+  z-index: 11;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li {
+  width: 100%;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  background-color: #ffffff;
+  border-bottom: 0.01333rem solid #F0F0F0;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li span, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li span {
+  width: 2.4rem;
+  display: inline-block;
+  font-size: 0.37333rem;
+  margin-left: 0.42667rem;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li input, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li input {
+  width: 4rem;
+  font-size: 0.34667rem;
+  outline: none;
+  border: none;
+  padding: 0 0 0 0.26667rem;
+  margin: 0;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li button {
+  width: 2.66667rem;
+  height: 1.17333rem;
+  line-height: 1.06667rem;
+  font-size: 0.34667rem;
+  outline: none;
+  border: none;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button.active, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li button.active {
+  color: #20CE9C;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-2 {
+  margin-top: 0.26667rem;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang {
+  position: relative;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang i {
+  float: right;
+  padding-right: 0.42667rem;
+  font-size: 0.66667rem;
+  color: #20CE9C;
+}
+.byStages-layout .byStages-contain .browser .agreement {
+  margin-top: 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .agreement button.result {
+  display: block;
+  width: 8.90667rem;
+  margin: 0 auto;
+  height: 1.30667rem;
+  background-color: #20CE9C;
+  color: #ffffff;
+  font-size: 0.42667rem;
+  margin-top: 0.66667rem;
+}
+.byStages-layout .byStages-contain .browser .agreement label {
+  padding-left: 0.53333rem;
+}
+.byStages-layout .byStages-contain .browser .agreement label input {
+  width: 0.26667rem;
+  height: 0.26667rem;
+}
+.byStages-layout .byStages-contain .browser .agreement label span {
+  font-size: 0.32rem;
+  color: #999999;
+}
+
+.city-layout {
+  width: 100%;
+  height: 100%;
+}
+.city-layout .city-contain {
+  margin-top: 1.17333rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.city-layout header {
+  height: 1.17333rem;
+}
+.city-layout header .dianhua {
+  float: right;
+  padding-right: 0.26667rem;
+}
+.city-layout header a.icon-l {
+  display: inline-block;
+  height: 100%;
+  line-height: 1.17333rem;
+  padding-top: 0;
+  font-size: 0.8rem;
+  color: #20CE9C;
+}
+.city-layout header h1 {
+  height: 100%;
+  line-height: 1.17333rem;
+  font-size: 0.45333rem;
+}
+
+.none {
+  display: none;
+}
+
+.loan_jm1 {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.loan_jm_spa1 {
+  width: 39%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1em;
+  color: #666;
+  display: block;
+  float: left;
+}
+
+.loan_jm_l1 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 40px;
+}
+
+.wbk_srn {
+  width: 57%;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: #FFF;
+  float: left;
+  padding-left: 3%;
+  line-height: 40px;
+  color: #ADADAD;
+  font-size: 1.1em;
+  background-size: 45%;
+  background-position: center;
+  background: #fff;
+}
+
+.wbk_srn b {
+  width: 30px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: #FFF;
+  float: left;
+  padding-left: 3%;
+  line-height: 40px;
+  color: #ADADAD;
+  font-size: 1.1em;
+}
+
+/*显示点击是哪个字母*/
+.showLetter {
+  position: fixed;
+  color: #20CE9C;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: #00C7C7 1px solid;
+  text-align: center;
+  display: none;
+}
+
+.showLetter span {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+/*城市弹层*/
+.container {
+  width: 100%;
+}
+
+.letter {
+  width: auto;
+  position: fixed;
+  top: 10%;
+  right: 0.26667rem;
+  text-align: center;
+}
+
+.letter ul {
+  list-style-type: none;
+  padding-bottom: 0.2rem;
+}
+
+.letter ul li {
+  padding-bottom: 0.2rem;
+}
+
+.letter ul li a {
+  text-decoration: none;
+  color: #20CE9C;
+  font-size: 0.32rem;
+}
+
+.city {
+  width: 100%;
+  overflow: hidden;
+  padding: 0.26667rem 0;
+}
+
+.city-list {
+  width: 100%;
+}
+
+.city-list .city-letter {
+  font-size: 0.32rem;
+  display: inline-block;
+  padding-top: 0.2rem;
+  padding-bottom: 0.06667rem;
+  border-bottom: 0.01333rem solid #e8ecf1;
+  width: 100%;
+  padding: 0 0.26667rem;
+}
+
+.city-list p {
+  font-size: 0.29333rem;
+  color: #afafaf;
+  width: 100%;
+  height: 0.66667rem;
+  line-height: 0.66667rem;
+  border-bottom: 1px solid #e8ecf1;
+  cursor: pointer;
+  background-color: white;
+  margin: 0;
+  padding: 0 0.4rem;
+}
+
+.UISelect {
+  margin-top: 0.06667rem;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.index-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.index-container .main-contain {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: scroll;
+  margin-top: 1.17333rem;
+}
+.index-container .main-contain .y-header {
+  height: 1.17333rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 998;
+}
+.index-container .main-contain .y-header > a {
+  float: left;
+  display: block;
+  height: 100%;
+  width: 2.4rem;
+  background: url("../images/logoW.png") no-repeat left 0;
+  background-size: 2.13333rem 1.17333rem;
+}
+.index-container .main-contain .y-header .location {
+  display: inline-block;
+  width: 2rem;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+}
+.index-container .main-contain .y-header .location a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.32rem;
+  color: #20CE9C;
+}
+.index-container .main-contain .y-header .location a i {
+  position: relative;
+  top: 0.02667rem;
+}
+.index-container .main-contain .y-header span {
+  width: 0.66667rem;
+  float: right;
+}
+.index-container .main-contain .y-header span a:nth-of-type(1) {
+  float: right;
+  width: 0.66667rem;
+  height: 1.17333rem;
+  position: relative;
+  left: -0.13333rem;
+  top: 0.4rem;
+  color: #20CE9C;
+}
+.index-container .main-contain .main-banner {
+  width: 100%;
+  height: 2.96rem;
+}
+.index-container .main-contain .main-banner .mui-slider {
+  width: 100%;
+  height: 100%;
+}
+.index-container .main-contain .main-banner .mui-slider .mui-slider-loop {
+  height: 100%;
+  width: 100%;
+}
+.index-container .main-contain .main-banner .mui-slider .mui-slider-loop img {
+  max-height: 2.96rem;
+  height: 100%;
+  width: 100%;
+}
+.index-container .main-contain .itemList {
+  width: 100%;
+  height: 5.6rem;
+  background-color: white;
+}
+.index-container .main-contain .itemList .item-brand {
+  width: 100%;
+}
+.index-container .main-contain .itemList .item-brand ul {
+  width: 9.6rem;
+  padding-top: 0.13333rem;
+  margin: 0 auto;
+}
+.index-container .main-contain .itemList .item-brand ul li {
+  float: left;
+  width: 1.30667rem;
+  margin: 0 0.13333rem;
+}
+.index-container .main-contain .itemList .item-brand ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.index-container .main-contain .itemList .item-brand ul li a i {
+  text-align: center;
+  line-height: 0.53333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  margin-top: 0.13333rem;
+}
+.index-container .main-contain .itemList .item-brand ul li a img {
+  margin-top: 0.13333rem;
+  width: 0.53333rem;
+  height: 0.53333rem;
+}
+.index-container .main-contain .itemList .item-brand ul li a p {
+  padding-top: 0.13333rem;
+  margin-bottom: 0;
+  font-size: 0.29333rem;
+}
+.index-container .main-contain .itemList .item-price {
+  width: 100%;
+  height: 1.17333rem;
+}
+.index-container .main-contain .itemList .item-price ul {
+  height: 100%;
+  width: 9.6rem;
+  line-height: 1.17333rem;
+  margin: 0 auto;
+  height: 100%;
+}
+.index-container .main-contain .itemList .item-price ul li {
+  float: left;
+  width: 1.30667rem;
+  margin: 0 0.13333rem;
+  text-align: center;
+}
+.index-container .main-contain .itemList .item-price ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #666666;
+  font-size: 0.29333rem;
+}
+.index-container .main-contain .itemList .item-price ul li:last-child {
+  margin: 0;
+  width: 1.46667rem;
+}
+.index-container .main-contain .itemList .item-selectCar {
+  padding: 0 0.41333rem;
+  height: 1.17333rem;
+  width: 100%;
+}
+.index-container .main-contain .itemList .item-selectCar .mui-input-clear {
+  width: 6.29333rem;
+  height: 100%;
+  margin-bottom: 0;
+  font-size: 0.4rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.index-container .main-contain .itemList .item-selectCar .mui-btn {
+  width: 2.88rem;
+  height: 100%;
+  border-left: none;
+  border-right: none;
+  font-size: 0.4rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #20CE9C;
+  color: white;
+}
+.index-container .main-contain .itemList .item-testQualification {
+  padding: 0 0.26667rem;
+  margin-top: 0.26667rem;
+  margin-bottom: 0.26667rem;
+  width: 10rem;
+  height: 1.17333rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index-container .main-contain .itemList .item-testQualification button {
+  font-size: 0.4rem;
+  width: 4.45333rem;
+  height: 100%;
+  color: #20CE9C;
+  background-color: white;
+}
+.index-container .main-contain .itemList .item-testQualification button:nth-of-type(1) {
+  margin-right: 0.26667rem;
+  color: #ffffff;
+  background-color: #20CE9C;
+}
+.index-container .main-contain .item-hotActivity {
+  background-color: #ffffff;
+  margin-top: 0.26667rem;
+  padding-bottom: 0.13333rem;
+}
+.index-container .main-contain .item-hotActivity > p {
+  padding: 0.44rem 0 0.26667rem 0;
+  text-align: center;
+  font-size: 0.45333rem;
+  color: #333333;
+}
+.index-container .main-contain .item-hotActivity .hotActivityList {
+  width: 9.17333rem;
+  margin: 0 auto;
+}
+.index-container .main-contain .item-hotActivity .hotActivityList ul {
+  width: 100%;
+}
+.index-container .main-contain .item-hotActivity .hotActivityList ul li {
+  width: 100%;
+  height: 5.06667rem;
+  background-color: #20CE9C;
+  margin-bottom: 0.26667rem;
+}
+.index-container .main-contain .item-hotActivity .hotActivityList ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index-container .main-contain .item-hotCar {
+  background-color: #ffffff;
+  margin-top: 0.26667rem;
+}
+.index-container .main-contain .item-hotCar > p {
+  padding: 0.44rem 0 0.26667rem 0;
+  text-align: center;
+  font-size: 0.45333rem;
+  color: #333333;
+}
+.index-container .main-contain .item-hotCar .hotCar {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+.index-container .main-contain .item-hotCar .hotCar ul {
+  background-color: white;
+  padding: 0 0.41333rem;
+  width: 100%;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li {
+  float: left;
+  width: 4.45333rem;
+  height: 5.41333rem;
+  box-shadow: 0px 0px 5px #f2f2f2;
+  margin-bottom: 0.26667rem;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li img {
+  width: 3.94667rem;
+  height: 2.93333rem;
+  margin: 0 auto;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .option-t {
+  font-size: 0.32rem;
+  color: #666666;
+  padding-top: 0.4rem;
+  line-height: 0.4rem;
+  padding-left: 0.26667rem;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .pay-b {
+  padding-top: 0.26667rem;
+  font-size: 0.32rem;
+  color: #999999;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .pay-b .pay-l {
+  color: #ff6156;
+  padding-left: 0.26667rem;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .pay-b .pay-l i {
+  font-size: 0.45333rem;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .pay-b .pay-r {
+  float: right;
+  padding-right: 0.26667rem;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li:nth-of-type(2n) {
+  margin-left: 0.26667rem;
+}
+.index-container .main-contain .item-hotCar .lookMoreCar {
+  height: 1.44rem;
+  background-color: #FAFAFA;
+  line-height: 1.44rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index-container .main-contain .item-hotCar .lookMoreCar a {
+  display: block;
+  margin: 0 auto;
+  width: 2.66667rem;
+  height: 0.90667rem;
+  font-size: 0.32rem;
+  color: white;
+  background-color: #20CE9C;
+  text-align: center;
+  line-height: 0.90667rem;
+  border-radius: 0.05333rem;
+}
+
+footer {
+  background-color: #ffffff;
+  width: 100%;
+  height: 1.30667rem;
+  border-top: 1px solid #aaaaaa;
+}
+footer ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+footer ul li {
+  width: 33.333%;
+  height: 100%;
+}
+footer ul li a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.29333rem;
+  color: #666666;
+  width: 100%;
+  height: 100%;
+}
+footer ul li a span.icon-font {
+  font-size: 0.53333rem;
+}
+footer ul li.activeGREEN a {
+  color: #20CE9C;
+}
