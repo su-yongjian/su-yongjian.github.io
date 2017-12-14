@@ -1,0 +1,157 @@
+$ytcGreen: #20CE9C;
+$ytcWhite: #ffffff;
+.byStages-layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .byStages-contain {
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        padding-top: p2r(88);
+        position: relative;
+        header {
+            height: p2r(88);
+            .dianhua {
+                float: right;
+                padding-right: p2r(20);
+            }
+            a {
+                display: inline-block;
+                height: 100%;
+                line-height: p2r(88);
+                padding-top: 0;
+                font-size: p2r(60);
+                color: $ytcGreen;
+            }
+            a:last-child {
+                font-size: p2r(40);
+                i {
+                    display: block;
+                    font-size: p2r(40);
+                }
+            }
+            h1 {
+                height: 100%;
+                line-height: p2r(88);
+                font-size: p2r(34);
+            }
+        }
+        >p {
+            width: 100%;
+            height: p2r(68);
+            line-height: p2r(68);
+            text-align: center;
+            font-size: p2r(22);
+            color: rgba(102, 102, 102, 1);
+        }
+        .browser {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /*选择地区*/
+            .express-area {
+                width: 100%;
+                height: p2r(88);
+                line-height: p2r(88);
+                padding-left: p2r(20);
+                border-bottom: 1px solid #ddd;
+                background-color: #fff;
+            }
+            .express-area a {
+                display: block;
+            }
+            .express-area dl {
+                position: relative;
+                color: #4d525d;
+            }
+            .express-area dl dt {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: p2r(28);
+            }
+            .express-area dl dd {
+                padding-top: p2r(0);
+                margin-left: p2r(200);
+                text-align: justify;
+                font-size: p2r(26);
+            }
+            /*选择地区弹层*/
+            .express-area-box {
+                width: 100%;
+                height: 80%;
+                position: absolute;
+                bottom: -200%;
+                z-index: 15; // margin-left: p2r(-160);
+                background-color: #fff;
+                color: #4d525d;
+            }
+            .express-area-box header {
+                position: relative;
+                border-top: 1px solid #e2e2e2;
+                border-bottom: 1px solid #e2e2e2;
+            }
+            .express-area-box header h3 {
+                text-align: center;
+                font-size: p2r(20);
+                height: p2r(44);
+                line-height: p2r(44);
+            }
+            .express-area-box header .back,
+            .express-area-box header .close {
+                position: absolute;
+                top: 0;
+                width: p2r(30);
+                height: p2r(30);
+                top: p2r(14);
+            }
+            .express-area-box header .back {
+                display: none;
+                left: p2r(20);
+                background: url("../images/back.png") no-repeat center;
+                background-size: p2r(20) p2r(20);
+            }
+            .express-area-box header .close {
+                right: p2r(20);
+                background: url("../images/close-area.png") no-repeat center;
+                background-size: p2r(20) p2r(20);
+            }
+            .express-area-box article {
+                height: 100%;
+                overflow-y: scroll;
+            }
+            .area-list li {
+                border-bottom: 1px solid #e2e2e2;
+                text-align: justify;
+                font-size: p2r(18);
+                height: p2r(44);
+                line-height: p2r(44);
+                padding-left: p2r(10);
+            }
+            /*遮罩层*/
+            .city-mask {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 12;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, .5);
+            }
+        }
+        .posionalInfo {
+            ul {
+                li{
+                    width: 100%;
+                    height: p2r(88);
+                    background-color: $ytcWhite;
+                }
+            }
+        }
+    }
+}

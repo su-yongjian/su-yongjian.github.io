@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <script>
+        document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
+    </script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+<!--引JS-->
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/template.js"></script>
+
+<body>
+    <div class="detail-layout">
+
+        <div class="detail-contain">
+            <header id="header" class="mui-bar mui-bar-nav">
+                <a id="comeBack-icon" onclick="javascript:history.back(-1);" class="iconfont icon-left"></a>
+                <h1 class="mui-title">车辆详情</h1>
+                <a href="#">
+                    <i class="iconfont icon-fenxiang"></i>
+                </a>
+            </header>
+            <main>
+                <div class="detail-main-img">
+                    <img src="https://image.guazistatic.com/gz01171127/16/11/4b71cdc1aaf4bfd58de5e09d5b1e79df.png@base@tag=imgScale&w=750&h=375&q=88"
+                        alt="">
+                    <div class="detail-describe">
+                        <div class="describe">
+                            <!-- 如果是自营则显示 自营标签 -->
+                            <i class="sel-icon"></i>
+                            <span>大众 POLO 2016款 1.4L 自动风尚型</span>
+                        </div>
+                        <div class="guidePrice">
+                            厂商指导价:
+                            <span>19.8万</span>
+                        </div>
+                        <div class="detail-payStyle">
+                            <div class="firstPay">
+                                <p>首付</p>
+                                <p>1.07万</p>
+                            </div>
+                            <div class="monthPay">
+                                <p>月供</p>
+                                <p>2098元</p>
+                            </div>
+                            <div class="expectCount">
+                                <p>期数</p>
+                                <p>12期</p>
+                            </div>
+                        </div>
+                        <div class="discounts">
+                            <span class="purchaseTax">含购置税</span>&nbsp&nbsp
+                            <span class="oneYuarInsurance">送一年车险</span>
+                        </div>
+                    </div>
+                    <div class="tsetQualification">
+                        <span class="fl">测试贷款资格</span>
+                        <span class="fr">
+                            详情
+                            <i class="iconfont info-icon">&#xe607;</i>
+                        </span>
+                    </div>
+
+                </div>
+                <!-- 购车优势 -->
+                <div class="detail-buyCar-explain">
+                    <p>
+                        <span>购车优势</span>
+                    </p>
+                    <div class="buyCartAdvantage">
+                        <div class="Style">
+                            <span>0首付购车</span>
+                            <span>VS</span>
+                            <span>贷款买车</span>
+                        </div>
+
+                        <div class="zeroBuy">
+                            <div class="zeroBuy-left-1">
+                                <div>
+                                    <p>0首付购车</p>
+                                    <p>购车0首付</p>
+                                    <p>投入小，购车灵活无烦恼</p>
+                                </div>
+                                <div>
+                                    <p>月供低</p>
+                                    <p>低月供还款无压力</p>
+                                </div>
+                                <div>
+                                    <p>手续便捷</p>
+                                    <p>在线审核，简单快捷</p>
+                                </div>
+                                <div>
+                                    <p>超快审核</p>
+                                    <p>在线审核，1-3天可提车</p>
+                                </div>
+                                <div>
+                                    <p>省心省力</p>
+                                    <p>提车、上牌、交税、保险</p>
+                                    <p>平台办理只等提车</p>
+                                </div>
+                            </div>
+
+                            <div class="zero-center"></div>
+
+                            <div class="zeroBuy-right-1">
+                                <div>
+                                    <p>首付高</p>
+                                    <p>30%起</p>
+                                    <p>外加购置税、车险</p>
+                                </div>
+                                <div>
+                                    <p>月供高</p>
+                                    <p>还款压力大，资金紧张</p>
+                                </div>
+                                <div>
+                                    <p>手续繁琐</p>
+                                    <p>多种纸质证明，流程繁琐</p>
+                                </div>
+                                <div>
+                                    <p>审批拖沓</p>
+                                    <p>等待审核时间长，低通过率</p>
+                                </div>
+                                <div>
+                                    <p>费心费力</p>
+                                    <p>提车、上牌、交税、保险</p>
+                                    <p>事事自己办理</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 车辆配置 -->
+                <div class="detail-buyCar-option">
+                    <p>
+                        <span>车辆配置</span>
+                    </p>
+
+                    <div class="detail-option-explain">
+                        <ul class="parameterList">
+                            <li>
+                                <span class="specification fl">厂商</span>
+                                <span class="parameter fr">上汽大众</span>
+                            </li>
+                            <li>
+                                <span class="specification fl">级别</span>
+                                <span class="parameter fr">紧凑车型</span>
+                            </li>
+                            <li>
+                                <span class="specification fl">发动机</span>
+                                <span class="parameter fr">1.6L 110马力 L4</span>
+                            </li>
+                            <li>
+                                <span class="specification fl">变速箱</span>
+                                <span class="parameter fr">6档自动</span>
+                            </li>
+                            <li>
+                                <span class="specification fl">长 * 宽 * 高(mm)</span>
+                                <span class="parameter fr">4605*1765*1460</span>
+                            </li>
+                            <li>
+                                <span class="specification fl">车身型式</span>
+                                <span class="parameter fr">4门5座三厢车</span>
+                            </li>
+                            <li>
+                                <span class="specification fl">燃料形式</span>
+                                <span class="parameter fr">汽油</span>
+                            </li>
+                            <li>
+                                <span class="specification fl">工信部综合油耗（L/100KM）</span>
+                                <span class="parameter fr">--</span>
+                            </li>
+                        </ul>
+                        <div class="lookOverMore">
+                            <a href="./sonHTML/parameters.html">查看全部设置</a> 
+                        </div>
+                    </div>
+                </div>
+                <!-- 车型亮点 -->
+                <div class="detail-buyCar-lightspot">
+                    <p>
+                        <span>车型亮点</span>
+                    </p>
+
+                    <div class="detail-lightspot">
+                        <div class="lightspotList">
+                            <!-- 1 -->
+                            <div class="lightspot-explain">
+                                <img src="https://image.guazistatic.com/gz01171127/16/11/4b71cdc1aaf4bfd58de5e09d5b1e79df.png@base@tag=imgScale&w=750&h=375&q=88"
+                                    alt="">
+                                <p class="lightspot-explain-title">经典“吉普车” 个性十足的中型SUV</p>
+                                <p class="lightspot-explain-discribe">自由光霸气稳重，外观酷炫拉风，行驶在街头的时候会吸引众多目光，车如其名，是一辆极具自我精神的车，选择自由光，代表者标新立志，性价比又相对较高，总的来说是辆个性十足的中型SUV，适合年轻人。</p>
+                            </div>
+                            <!-- 2 -->
+                            <div class="lightspot-explain">
+                                <img src="https://image.guazistatic.com/gz01171113/23/19/455c183659dc070eb380b32bbfa217f7.png@base@tag=imgScale&w=750&h=375&q=88"
+                                    alt="">
+                                <p class="lightspot-explain-title">经典“吉普车” 个性十足的中型SUV</p>
+                                <p class="lightspot-explain-discribe">自由光霸气稳重，外观酷炫拉风，行驶在街头的时候会吸引众多目光，车如其名，是一辆极具自我精神的车，选择自由光，代表者标新立志，性价比又相对较高，总的来说是辆个性十足的中型SUV，适合年轻人。</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 轻松四部购买新车 -->
+                <div class="detail-buyCar-fourStep">
+                    <p>
+                        <span>轻松四步，低首付买新车</span>
+                    </p>
+                    <div class="fourStep">
+                        <ul>
+                            <li>
+                                <i class="iconfont">&#xe609;</i>
+                                <span>
+                                    <p>预约看车</p>
+                                    <p>填写联系方式，预约成功后会有专人联系</p>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="iconfont">&#xe69b;</i>
+                                <span>
+                                    <p>挑选爱车</p>
+                                    <p>专人陪同挑选心仪车辆</p>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="iconfont">&#xe62b;</i>
+                                <span>
+                                    <p>签订合同</p>
+                                    <p>签订合同并支付定金</p>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-qicheyuechi"></i>
+                                <span>
+                                    <p>到店提车</p>
+                                    <p>专人陪同过户，好车开回家</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 购车说明 -->
+                <div class="detail-buyCar-illustrate">
+                    <p>
+                        <span>购车说明</span>
+                    </p>
+                    <div class="detail-illustrate">
+
+                        <table>
+                            <tr class="illustrateList">
+                                <td class="list">车源供应</td>
+                                <td class="info">平台车辆均由各大汽车品牌厂商直接供应，车源品质有保障</td>
+                            </tr>
+                            <tr class="illustrateList">
+                                <td class="list">车辆归属</td>
+                                <td class="info">在未还清车款之前，车辆及车牌所有权归属易淘车平台</td>
+                            </tr>
+                            <tr class="illustrateList">
+                                <td class="list">资料</td>
+                                <td class="info">有效身份证、驾驶证</td>
+                            </tr>
+                            <tr class="illustrateList">
+                                <td class="list">购置税</td>
+                                <td class="info">平台购车方案已包含购置税，您无需支付任何额外费用</td>
+                            </tr>
+                            <tr class="illustrateList">
+                                <td class="list">保险</td>
+                                <td class="info">平台送1年车险，含交强险、第三者责任险（30万）、车上人员责任险（司机）、车损险及以上几项险种的不计免赔险；提供盗抢险和涉水险理赔服务。如需增加其他保险险种，可联系顾问办理，增加险种费用由用户自己承担</td>
+                            </tr>
+                            <tr class="illustrateList">
+                                <td class="list">上牌</td>
+                                <td class="info">上牌手续由平台负责办理，客户无需支付任何费用</td>
+                            </tr>
+                            <tr class="illustrateList">
+                                <td class="list">还款</td>
+                                <td class="info">购车后每月通过绑定银行卡扣款</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <footer>
+            <div class="linkStyle">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-dianhua"></i>
+                            <span>电话咨询</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-xiaoxi"></i>
+                            <span>在线咨询</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>立即预约</span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

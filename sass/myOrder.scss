@@ -1,0 +1,102 @@
+$ytcGreen: #20CE9C;
+$ytcWhite: #ffffff;
+$ytcGray: #F0F0F0;
+$ytcRed:rgba(255, 97, 86, 1);
+.order-layout{
+    .order-contain{
+        header {
+            width: 100%;
+            height: p2r(88);
+            line-height: p2r(88);
+            border-bottom: 1px solid $ytcGray;
+            a {
+                height: 100%;
+                line-height: p2r(88);
+                padding-top: 0px;
+                color: $ytcGreen;
+                font-size: p2r(34);
+            }
+            h1 {
+                height: 100%;
+                font-size: p2r(34);
+                line-height: p2r(88);
+            }
+        }
+        .carList {
+            margin-top: p2r(88);
+            .carList-item {
+                background-color: $ytcWhite;
+                width: p2r(750);
+                height: p2r(352);
+                margin-bottom: p2r(20); // background-color: $ytcGreen;
+                .orderInfo{
+                    border-bottom: p2r(1) solid $ytcGray;
+                    height: p2r(60);
+                    line-height: p2r(60);
+                    padding:0 p2r(32);
+                    .orderNum{
+                        font-size:p2r(24);
+                        color:rgba(153,153,153,1);
+                    }
+                    .orderStatus {
+                        font-size:p2r(26);
+                        color:rgba(51,51,51,1);
+                    }
+                }
+                .item-info {
+                    margin: p2r(30) p2r(32);
+                    display: flex;
+                    justify-content: space-around;
+                    .item-l {
+                        width: p2r(296);
+                        height: p2r(220);
+                        margin-right: p2r(30);
+                    }
+                    .item-r {
+                        flex: 1;
+                        padding-top: p2r(10);
+                        .carOptions {
+                            font-size: p2r(26);
+                            line-height: p2r(50);
+                            color:gray;
+                            padding-bottom: p2r(35);
+                            .sel-icon{
+                                display: inline-block;
+                                background: url("../images/ziying@2x.png") no-repeat;
+                                background-size: p2r(113) p2r(37);
+                                width: p2r(113);
+                                height: p2r(37);
+                                position: relative;
+                                top: p2r(6);
+                                border-radius: p2r(4);
+                            }
+                        }
+                        .guidePrice {
+                            font-size: p2r(24);
+                            line-height: p2r(40);
+                        }
+                        .payStyle {
+                            color: $ytcRed;
+                            font-size: p2r(24);
+                            .firstPay {
+                                i {
+                                    font-size: p2r(34);
+                                }
+                            }
+                            .monthPay {
+                                font-size: p2r(24);
+                                padding-right: p2r(10);
+                                color: rgba(153, 153, 153, 1);
+                            }
+                        }
+                        .orderTime {
+                            padding-top: p2r(40);
+                            font-size:p2r(20);
+                            color:rgba(153,153,153,1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
