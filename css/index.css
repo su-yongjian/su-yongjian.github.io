@@ -2288,6 +2288,7 @@ img {
   border-bottom: 1px solid #F0F0F0;
 }
 .setting-layout .setting-contain header a {
+  z-index: 2;
   height: 100%;
   float: left;
   line-height: 0.88rem;
@@ -2298,7 +2299,9 @@ img {
   font-size: 0.3rem;
 }
 .setting-layout .setting-contain header h3 {
+  z-index: 1;
   height: 100%;
+  display: inline-block;
   line-height: 0.88rem;
   font-size: 0.34rem;
   -webkit-transform: translateX(-0.3rem);
