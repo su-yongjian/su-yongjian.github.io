@@ -208,9 +208,9 @@ $ytcGray: #F0F0F0;
                 background-size: p2r(20) p2r(20);
             }
             .express-area-box header .close , .bank-select header .close  {
-                right: p2r(20);
+                right: p2r(30);
                 background: url("../images/close-area.png") no-repeat center;
-                background-size: p2r(20) p2r(20);
+                background-size: p2r(40) p2r(40);
             }
             .express-area-box article .bank-select article {
                 height: 100%;
@@ -239,9 +239,10 @@ $ytcGray: #F0F0F0;
                 height: 100%;
                 background-color: rgba(0, 0, 0, .5);
             }
-            .posionalInfo-1 , .posionalInfo-2 {
+            .posionalInfo-1  {
                 z-index: 11;
                 ul {
+                    margin-bottom: p2r(20);
                     li{
                         width: 100%;
                         height: p2r(88);
@@ -274,21 +275,31 @@ $ytcGray: #F0F0F0;
                             color: $ytcGreen;
                         }
                     }
-                }
-            }
-            .posionalInfo-2 {
-                margin-top: p2r(20);
-                .yinhang {
-                    position: relative;
-                    i {
-                        float: right;
-                        padding-right: p2r(32);
-                        font-size: p2r(50);
-                        // padding-top: p2r(15);
-                        color: $ytcGreen;
+                    .yinhang {
+                        position: relative;
+                        i {
+                            float: right;
+                            padding-right: p2r(32);
+                            font-size: p2r(50);
+                            // padding-top: p2r(15);
+                            color: $ytcGreen;
+                        }
                     }
                 }
             }
+            // .posionalInfo-2 {
+            //     margin-top: p2r(20);
+            //     .yinhang {
+            //         position: relative;
+            //         i {
+            //             float: right;
+            //             padding-right: p2r(32);
+            //             font-size: p2r(50);
+            //             // padding-top: p2r(15);
+            //             color: $ytcGreen;
+            //         }
+            //     }
+            // }
             .agreement {
                 margin-top: p2r(30);
                 button.result{
