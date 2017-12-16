@@ -24,6 +24,7 @@
           flex: 1;
   margin-top: p2r(88);
   position: relative;
+  overflow-y: scroll;
 }
 .byStages-layout .byStages-contain > header {
   height: p2r(88);
@@ -56,7 +57,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow: hidden
+  overflow-y: scroll
   /*选择地区*/
   /*选择地区弹层*/
   /*遮罩层*/
