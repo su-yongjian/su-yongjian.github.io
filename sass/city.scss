@@ -130,7 +130,7 @@ $ytcGray: #F0F0F0;
 .letter ul li a {
     text-decoration: none;
     color: $ytcGreen;
-    font-size: p2r(34);
+    font-size: p2r(30);
     height: p2r(30);
 }
 .letter ul li {
@@ -139,7 +139,7 @@ $ytcGray: #F0F0F0;
 .city {
     width: 100%;
     overflow: hidden;
-    padding: p2r(20) 0;
+    // padding: p2r(20) 0;
 }
 
 .city-list {
