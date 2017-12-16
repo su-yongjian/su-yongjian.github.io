@@ -20,6 +20,7 @@
   height: p2r(88);
   line-height: p2r(88);
   padding-left: p2r(30);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .login-layout header i::before, .appointment-layout header i::before {
   font-size: p2r(32);

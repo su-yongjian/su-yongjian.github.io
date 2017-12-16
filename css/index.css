@@ -803,7 +803,7 @@ img {
   line-height: 0.88rem;
   font-size: 0.28rem;
   color: #666666;
-  border: 1px solid rgba(201, 195, 195, 0.5);
+  border-bottom: 1px solid rgba(201, 195, 195, 0.5);
 }
 .mine-container .loginList ul li a {
   display: block;
@@ -2462,6 +2462,7 @@ img {
   height: 0.88rem;
   line-height: 0.88rem;
   padding-left: 0.3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .login-layout header i::before, .appointment-layout header i::before {
   font-size: 0.32rem;

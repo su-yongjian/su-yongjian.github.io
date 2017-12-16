@@ -90,7 +90,7 @@
   line-height: p2r(88);
   font-size: p2r(28);
   color: #666666;
-  border: 1px solid rgba(201, 195, 195, 0.5);
+  border-bottom: 1px solid rgba(201, 195, 195, 0.5);
 }
 .mine-container .loginList ul li a {
   display: block;

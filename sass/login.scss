@@ -12,6 +12,7 @@ $ytcWhite: #ffffff;
         height: p2r(88);
         line-height: p2r(88);
         padding-left: p2r(30);
+        border-bottom: 1px solid rgba(0,0,0,.3);
         i::before {
             font-size: p2r(32);
             color: $ytcGreen;
