@@ -38,10 +38,11 @@
 }
 .setting-layout .setting-contain header h3 {
   height: 100%;
-  text-align: center;
   line-height: p2r(88);
   font-size: p2r(34);
-  padding-left: p2r(-30);
+  -webkit-transform: translateX(p2r(-30));
+      -ms-transform: translateX(p2r(-30));
+          transform: translateX(p2r(-30));
   margin: 0;
 }
 .setting-layout .setting-contain main {

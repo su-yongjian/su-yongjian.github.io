@@ -2299,10 +2299,11 @@ img {
 }
 .setting-layout .setting-contain header h3 {
   height: 100%;
-  text-align: center;
   line-height: 0.88rem;
   font-size: 0.34rem;
-  padding-left: -0.3rem;
+  -webkit-transform: translateX(-0.3rem);
+      -ms-transform: translateX(-0.3rem);
+          transform: translateX(-0.3rem);
   margin: 0;
 }
 .setting-layout .setting-contain main {
@@ -2573,10 +2574,11 @@ img {
 .aboutUs-layout .aboutUs-contain header h3 {
   height: 100%;
   display: inline-block;
-  text-align: center;
   line-height: 0.88rem;
   font-size: 0.34rem;
-  padding-left: -0.3rem;
+  -webkit-transform: translateX(-0.3rem);
+      -ms-transform: translateX(-0.3rem);
+          transform: translateX(-0.3rem);
   margin: 0;
 }
 .aboutUs-layout .aboutUs-contain .ytaoche-describe {

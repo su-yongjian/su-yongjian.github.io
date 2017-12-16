@@ -28,10 +28,10 @@ $ytcGray: #F0F0F0;
             }
             h3{
                 height: 100%;
-                text-align: center;
+                // text-align: center;
                 line-height: p2r(88);
                 font-size:p2r(34);
-                padding-left: p2r(-30);
+                transform: translateX(p2r(-30));
                 margin: 0 ;
             }
         }
