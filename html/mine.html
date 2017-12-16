@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <script src="../js/adaptive.js"></script>
+    <script>
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 24;
+        // window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 2;
+        window['adaptive'].init();
+    </script>
+    <!-- <script>
+        document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
+    </script> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+<!--引JS-->
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/template.js"></script>
+
+<body>
+    <div class="mine-container">
+        <div class="mine-contain">
+            <header>
+                <span>我的</span>
+                <a href="./sonHTML/setting.html"><i class="iconfont icon-shezhi"></i></a> 
+            </header>
+            <div class="login">
+                <img src="http://img1.bitautoimg.com/taoche/2016taoche_m/login_banner.png">
+
+                <div class="user_img clearfix">
+                    <a href="javascript:;" class="img_a fl">
+                        <img src="http://img1.bitautoimg.com/taoche/2016taoche_m/login_img.png">
+                    </a>
+                    <a class="p-login fl" href='./login.html'>请登录</a>
+                </div>
+            </div>
+            <div class="loginList">
+                <ul>
+                    <li>
+                        <a href="./sonHTML/myOrder.html">
+                            <i></i>
+                            <span class="mui-navigate-right">我的订单</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span class="mui-navigate-right">常见问题</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span class="mui-navigate-right">联系客服</span>
+                            <span class="linkPhone">4008-633-378</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sonHTML/aboutUs.html">
+                            <i></i>
+                            <span class="mui-navigate-right">关于我们</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <span class="icon-font mui-icon mui-icon-home"></span>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./buyCar.html">
+                        <span class="icon-font iconfont icon-che1-copy"></span>
+                        <span>买车</span>
+                    </a>
+                </li>
+                <li class="activeGREEN">
+                    <a href="./mine.html">
+
+                        <span class="icon-font mui-icon mui-icon-contact"></span>
+                        <span>我的</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+
+    </div>
+</body>
+<script>
+    (function () {
+        var isIPhone = !!window.navigator.appVersion.match(/iphone/gi);
+        if (isIPhone && devicePixelRatio === 2) {
+            var testElem = document.createElement('div');
+            testElem.style.border = '.5px solid transparent';
+            document.body.appendChild(testElem);
+            if (testElem.offsetHeight == 1) {
+                document.querySelector('html').classList.add('hairlines');
+            }
+            document.body.removeChild(testElem);
+        }
+    })();
+</script>
+
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+
+    <script src="../../js/adaptive.js"></script>
+    <script>
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 24;
+        // window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 2;
+        window['adaptive'].init();
+    </script>
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+</head>
+<!--引JS-->
+<script src="../../js/jquery-2.1.4.js"></script>
+<script src="../../js/template.js"></script>
+
+<body>
+    <div class="aboutUs-layout">
+
+        <div class="aboutUs-contain">
+            <header>
+                <a onclick="javascript:history.back(-1);"> <i class="iconfont icon-ico_zuo"></i> </a>
+                <h3>关于我们</h3>
+            </header>
+            <div class="ytaoche-describe">
+                <p>易淘车是一家专注于新车租售的消费服务的汽车新零售平台，于2017年9月底正式上线。通过0到1成首付买新车的方式为消费者提供低首付、低月供、门槛低获贷快、省心省力的新车交易服务。为用户提供了“买车无压力”的轻松购车氛围，实现比传统模式更灵活、实惠的全新购车体验。
+                </p>
+                <p>目前，易淘车已与超过20个汽车品牌商建立合作，覆盖46个主流车型。并在长春、石家庄、成都、东莞、南京5个城市建立了线下中心仓，服务覆盖全国33个主流城市。</p>
+                <p>易淘车引进了国际上成熟的汽车融资租赁模式，开创性的将线上平台与线下仓储深度融合，并致力于打造国内领先的汽车新零售平台。</p>
+                <p>易淘车通过与汽车主机厂商、经销商无中间环节的合作，拿到一手优质车源，为消费者提供低首付融资租赁的新型用车、购车服务。与传统的汽车贷款服务相比，易淘车有首付低、月供低、门槛低获贷快、省心省力四大特点。</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    (function () {
+        var isIPhone = !!window.navigator.appVersion.match(/iphone/gi);
+        if (isIPhone && devicePixelRatio === 2) {
+            var testElem = document.createElement('div');
+            testElem.style.border = '.5px solid transparent';
+            document.body.appendChild(testElem);
+            if (testElem.offsetHeight == 1) {
+                document.querySelector('html').classList.add('hairlines');
+            }
+            document.body.removeChild(testElem);
+        }
+    })();
+</script>
+
+</html>

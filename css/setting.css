@@ -1,0 +1,190 @@
+@charset "UTF-8";
+.setting-layout {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: #F0F0F0;
+}
+.setting-layout .setting-contain {
+  width: 100%;
+  height: 100%;
+}
+.setting-layout .setting-contain > header {
+  width: 100%;
+  height: p2r(88);
+  line-height: p2r(88);
+}
+.setting-layout .setting-contain > header a {
+  display: block;
+  height: 100%;
+  line-height: p2r(88);
+  padding: 0;
+  font-size: p2r(60);
+  color: #20CE9C;
+}
+.setting-layout .setting-contain > header h1 {
+  line-height: p2r(88);
+  font-size: p2r(34);
+}
+.setting-layout .setting-contain main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: p2r(88);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.setting-layout .setting-contain main .settingList {
+  width: 100%
+  /*选择地区弹层*/
+}
+.setting-layout .setting-contain main .settingList ul.list {
+  width: 100%;
+}
+.setting-layout .setting-contain main .settingList ul.list li {
+  height: p2r(88);
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: p2r(30);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.setting-layout .setting-contain main .settingList ul.list li span {
+  font-size: p2r(28);
+  margin-left: p2r(30);
+}
+.setting-layout .setting-contain main .settingList ul.list li .mui-switch {
+  margin-right: p2r(30);
+  height: p2r(50);
+  width: p2r(88);
+}
+.setting-layout .setting-contain main .settingList ul.list li .mui-switch .mui-switch-handle {
+  line-height: p2r(50);
+  top: p2r(6);
+}
+.setting-layout .setting-contain main .settingList ul.list li .mui-switch:before {
+  top: p2r(10);
+}
+.setting-layout .setting-contain main .settingList ul.list li .mui-switch.mui-active {
+  border-color: #20CE9C;
+  background-color: #20CE9C;
+}
+.setting-layout .setting-contain main .settingList ul.list li .versions {
+  margin-right: p2r(30);
+}
+.setting-layout .setting-contain main .settingList .share-select {
+  display: none;
+  width: 100%;
+  height: 70%;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: -200%;
+  z-index: 15;
+  background-color: #fff;
+  color: #4d525d;
+}
+.setting-layout .setting-contain main .settingList .share-select header {
+  position: relative;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+.setting-layout .setting-contain main .settingList .share-select header h2 {
+  text-align: center;
+  line-height: p2r(44);
+}
+.setting-layout .setting-contain main .settingList .share-select header .close {
+  position: absolute;
+  top: 0;
+  width: p2r(30);
+  height: p2r(30);
+  top: p2r(14);
+}
+.setting-layout .setting-contain main .settingList .share-select header .close {
+  right: p2r(20);
+  background: url("../images/close-area.png") no-repeat center;
+  background-size: p2r(20) p2r(20);
+}
+.setting-layout .setting-contain main .settingList .share-select article {
+  height: 100%;
+  overflow-y: scroll;
+}
+.setting-layout .setting-contain main .settingList .share-select {
+  z-index: 16;
+  height: 65%;
+  overflow-y: scroll;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  line-height: p2r(88);
+  margin: 0 p2r(50) p2r(30) p2r(50);
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li span {
+  font-size: p2r(28);
+  color: #666666;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i {
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: p2r(10);
+  left: p2r(16);
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.WeChatFriend {
+  background: url("../images/weixin@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.friendCircle {
+  background: url("../images/wFriend@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.QQfriend {
+  background: url("../images/qq@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.QQZone {
+  background: url("../images/qqZone@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.sinaBlog {
+  background: url("../images/sinaBlog@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.copyLink {
+  background: url("../images/copyLink@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .share-mask {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.setting-layout .setting-contain main .outLogin {
+  width: 90%;
+  height: p2r(88);
+  line-height: p2r(88);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: p2r(30);
+  border-radius: p2r(6);
+  background-color: #cccaca;
+  font-size: p2r(34);
+}

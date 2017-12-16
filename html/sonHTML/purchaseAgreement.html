@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>授权协议</title>
+
+    <script src="../../js/adaptive.js"></script>
+    <script>
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 24;
+        // window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 2;
+        window['adaptive'].init();
+    </script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+</head>
+<!--引JS-->
+<script src="../../js/jquery-2.1.4.js"></script>
+<script src="../../js/template.js"></script>
+
+<body>
+    <div class="purchaseAgreement-layout">
+
+        <div class="purchaseAgreement-contain">
+            <header id="header" class="mui-bar mui-bar-nav">
+                <a onclick="javascript:history.back(-1);" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+                <h1 class="mui-title">分期购车</h1>
+                <span class="phone-icon">
+                    <a href="#">
+                        <i class="iconfont icon-dianhua"></i>
+                    </a>
+                </span>
+            </header>
+            <main>
+                <span>相关授权书和服务协议</span>
+                <div class="personalInformation">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span class="mui-navigate-right">个人征信授权书</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span class="mui-navigate-right">信息使用授权书</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span class="mui-navigate-right">银行个人电子账户服务协议</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+<script>
+    (function () {
+        var isIPhone = !!window.navigator.appVersion.match(/iphone/gi);
+        if (isIPhone && devicePixelRatio === 2) {
+            var testElem = document.createElement('div');
+            testElem.style.border = '.5px solid transparent';
+            document.body.appendChild(testElem);
+            if (testElem.offsetHeight == 1) {
+                document.querySelector('html').classList.add('hairlines');
+            }
+            document.body.removeChild(testElem);
+        }
+    })();
+</script>
+
+</html>

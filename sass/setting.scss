@@ -1,0 +1,189 @@
+$ytcGreen: #20CE9C;
+$ytcWhite: #ffffff;
+$ytcGray: #F0F0F0;
+.setting-layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: $ytcGray;
+    .setting-contain {
+        width: 100%;
+        height: 100%;
+        >header {
+            width: 100%;
+            height: p2r(88);
+            line-height: p2r(88);
+            a {
+                display: block;
+                height: 100%;
+                line-height: p2r(88);
+                padding: 0;
+                font-size: p2r(60);
+                color: $ytcGreen;
+            }
+            h1 {
+                line-height: p2r(88);
+                font-size: p2r(34);
+            }
+        }
+        
+        main {
+            flex: 1;
+            margin-top: p2r(88);
+            width: 100%;
+            height: 100%;
+            position: relative;        
+            .settingList {
+                width: 100%;
+                ul.list {
+                    width: 100%;
+                    li {
+                        height: p2r(88);
+                        // line-height: p2r(60);
+                        background-color: $ytcWhite;
+                        width: 100%;
+                        margin-top:p2r(30);
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        span {
+                            font-size: p2r(28);
+                            margin-left: p2r(30);
+                        }
+                        .mui-switch {
+                            margin-right: p2r(30);
+                            height: p2r(50);
+                            width: p2r(88);
+                            .mui-switch-handle {
+                                line-height: p2r(50);
+                                top: p2r(6);
+                            }
+                        }
+                        .mui-switch:before {
+                            top: p2r(10);
+                        }
+                        .mui-switch.mui-active {
+                            border-color: $ytcGreen;
+                            background-color: $ytcGreen;
+                        }
+                        .versions {
+                            margin-right: p2r(30);
+                        }
+                    }
+                }
+                
+                /*选择地区弹层*/
+                .share-select {
+                    display: none;
+                    width: 100%;
+                    height: 70%;
+                    overflow-y: scroll;
+                    position: absolute;
+                    bottom: -200%;
+                    z-index: 15; 
+                    background-color: #fff;
+                    color: #4d525d;
+                    header {
+                        position: relative;
+                        border-top: 1px solid #e2e2e2;
+                        border-bottom: 1px solid #e2e2e2;
+                    }
+                    header h2 {
+                        text-align: center;
+                        line-height: p2r(44);
+                    }
+                    
+                    header .close  {
+                        position: absolute;
+                        top: 0;
+                        width: p2r(30);
+                        height: p2r(30);
+                        top: p2r(14);
+                    }
+                    header .close  {
+                        right: p2r(20);
+                        background: url("../images/close-area.png") no-repeat center;
+                        background-size: p2r(20) p2r(20);
+                    }
+                    article {
+                        height: 100%;
+                        overflow-y: scroll;
+                        
+                    }
+
+                }
+
+                .share-select {
+                    z-index: 16; 
+                    height: 65%;
+                    overflow-y: scroll;
+                    .shareBox {
+                        ul.share-list {
+                            li {
+                                float: left;
+                                width: 20%;
+                                text-align: center;
+                                line-height: p2r(88);
+                                margin: 0 p2r(50) p2r(30) p2r(50) ;
+                                span {
+                                    font-size: p2r(28);
+                                    color:rgba(102,102,102,1);
+                                }
+                         
+                                i {
+                                    display:block;
+                                    width: 90px;
+                                    height: 90px;
+                                    position: relative;
+                                    top: p2r(10);
+                                    left: p2r(16);
+                                }
+                                i.WeChatFriend{
+                                    background:url("../images/weixin@2x.png") no-repeat;
+                                }
+                                i.friendCircle{
+                                    background:url("../images/wFriend@2x.png") no-repeat;
+                                }
+                                i.QQfriend{
+                                    background:url("../images/qq@2x.png") no-repeat;
+                                }
+                                i.QQZone{
+                                    background:url("../images/qqZone@2x.png") no-repeat;
+                                }
+                                i.sinaBlog{
+                                    background:url("../images/sinaBlog@2x.png") no-repeat;
+                                }
+                                i.copyLink{
+                                    background:url("../images/copyLink@2x.png") no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+             // 遮罩层
+            .share-mask {
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                position: absolute;
+                top: 0;
+                background-color: rgba(0, 0, 0, .5);
+                display: none;
+            }
+            .outLogin {
+                width: 90%;
+                height: p2r(88);
+                line-height: p2r(88);
+                text-align: center;
+                margin: 0 auto;
+                margin-top: p2r(30);
+                border-radius: p2r(6);
+                background-color: #cccaca;
+                font-size: p2r(34);
+            }
+        }
+    }
+}
