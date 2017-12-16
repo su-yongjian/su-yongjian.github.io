@@ -12,6 +12,10 @@ $ytcWhite: #ffffff;
         height: p2r(88);
         line-height: p2r(88);
         padding-left: p2r(30);
+        i::before {
+            font-size: p2r(32);
+            color: $ytcGreen;
+        }
     }
     .login-contain ,.appointment-contain {
         flex: 1;

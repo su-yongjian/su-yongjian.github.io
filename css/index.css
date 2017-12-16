@@ -2472,6 +2472,10 @@ img {
   line-height: 0.88rem;
   padding-left: 0.3rem;
 }
+.login-layout header i::before, .appointment-layout header i::before {
+  font-size: 0.32rem;
+  color: #20CE9C;
+}
 .login-layout .login-contain, .login-layout .appointment-contain, .appointment-layout .login-contain, .appointment-layout .appointment-contain {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
