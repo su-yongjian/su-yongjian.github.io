@@ -52,14 +52,6 @@
   line-height: p2r(88);
   font-size: p2r(34);
 }
-.byStages-layout .byStages-contain > p {
-  width: 100%;
-  height: p2r(68);
-  line-height: p2r(68);
-  text-align: center;
-  font-size: p2r(22);
-  color: #666666;
-}
 .byStages-layout .byStages-contain .browser {
   position: absolute;
   width: 100%;
@@ -68,6 +60,15 @@
   /*选择地区*/
   /*选择地区弹层*/
   /*遮罩层*/
+}
+.byStages-layout .byStages-contain .browser > p {
+  width: 100%;
+  height: p2r(68);
+  line-height: p2r(68);
+  text-align: center;
+  font-size: p2r(22);
+  color: #666666;
+  margin: 0;
 }
 .byStages-layout .byStages-contain .browser .express-area {
   width: 100%;
@@ -125,8 +126,8 @@
 }
 .byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: p2r(40);
+  height: p2r(40);
   position: relative;
   top: p2r(10);
 }
@@ -230,10 +231,10 @@
 .byStages-layout .byStages-contain .browser .area-list li {
   border-bottom: 1px solid #e2e2e2;
   text-align: justify;
-  font-size: p2r(18);
-  height: p2r(44);
-  line-height: p2r(44);
-  padding-left: p2r(10);
+  font-size: p2r(20);
+  height: p2r(60);
+  line-height: p2r(60);
+  padding-left: p2r(20);
 }
 .byStages-layout .byStages-contain .browser .city-mask {
   display: none;
