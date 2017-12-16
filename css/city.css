@@ -133,12 +133,12 @@
 .letter ul li a {
   text-decoration: none;
   color: #20CE9C;
-  font-size: p2r(24);
+  font-size: p2r(34);
   height: p2r(30);
 }
 
 .letter ul li {
-  height: p2r(40);
+  height: p2r(30);
 }
 
 .city {

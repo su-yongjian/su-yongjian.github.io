@@ -2077,12 +2077,12 @@ img {
 .letter ul li a {
   text-decoration: none;
   color: #20CE9C;
-  font-size: 0.24rem;
+  font-size: 0.34rem;
   height: 0.3rem;
 }
 
 .letter ul li {
-  height: 0.4rem;
+  height: 0.3rem;
 }
 
 .city {
