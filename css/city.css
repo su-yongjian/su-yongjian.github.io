@@ -120,7 +120,7 @@
 .letter {
   width: auto;
   position: fixed;
-  top: 14%;
+  top: 10%;
   right: p2r(20);
   text-align: center;
 }
@@ -133,7 +133,7 @@
 .letter ul li a {
   text-decoration: none;
   color: #20CE9C;
-  font-size: p2r(18);
+  font-size: p2r(24);
   height: p2r(30);
 }
 
