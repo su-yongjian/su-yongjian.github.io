@@ -23,7 +23,7 @@
   width: 100%;
   height: p2r(88);
   text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #F0F0F0;
 }
 .aboutUs-layout .aboutUs-contain header a {
   height: 100%;

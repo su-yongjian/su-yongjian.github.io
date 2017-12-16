@@ -1,5 +1,6 @@
 $ytcGreen: #20CE9C;
 $ytcWhite: #ffffff; 
+$ytcGray: #F0F0F0;
 .aboutUs-layout {
     background-color: $ytcWhite;
     width: 100%;
@@ -14,7 +15,7 @@ $ytcWhite: #ffffff;
             width: 100%;
             height: p2r(88);
             text-align: center;
-            border-bottom: 1px solid rgba(0,0,0,.5);
+            border-bottom: 1px solid $ytcGray;
             a {
                 height: 100%;
                 float: left;
