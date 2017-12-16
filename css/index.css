@@ -2333,15 +2333,6 @@ img {
 }
 .setting-layout .setting-contain main .settingList ul.list li .mui-switch {
   margin-right: 0.3rem;
-  height: 0.5rem;
-  width: 0.88rem;
-}
-.setting-layout .setting-contain main .settingList ul.list li .mui-switch .mui-switch-handle {
-  line-height: 0.5rem;
-  top: 0.06rem;
-}
-.setting-layout .setting-contain main .settingList ul.list li .mui-switch:before {
-  top: 0.1rem;
 }
 .setting-layout .setting-contain main .settingList ul.list li .mui-switch.mui-active {
   border-color: #20CE9C;
@@ -2438,9 +2429,9 @@ img {
   display: none;
 }
 .setting-layout .setting-contain main .outLogin {
+  display: block;
   width: 90%;
   height: 0.88rem;
-  line-height: 0.88rem;
   text-align: center;
   margin: 0 auto;
   margin-top: 0.3rem;
@@ -2554,7 +2545,7 @@ img {
   width: 100%;
   height: 0.88rem;
   text-align: center;
-  border-bottom: 0.01rem solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 .aboutUs-layout .aboutUs-contain header a {
   height: 100%;

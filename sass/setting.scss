@@ -53,16 +53,16 @@ $ytcGray: #F0F0F0;
                         }
                         .mui-switch {
                             margin-right: p2r(30);
-                            height: p2r(50);
-                            width: p2r(88);
-                            .mui-switch-handle {
-                                line-height: p2r(50);
-                                top: p2r(6);
-                            }
+                            // height: p2r(50);
+                            // width: p2r(88);
+                            // .mui-switch-handle {
+                            //     line-height: p2r(50);
+                            //     top: p2r(6);
+                            // }
                         }
-                        .mui-switch:before {
-                            top: p2r(10);
-                        }
+                        // .mui-switch:before {
+                        //     top: p2r(10);
+                        // }
                         .mui-switch.mui-active {
                             border-color: $ytcGreen;
                             background-color: $ytcGreen;
@@ -174,9 +174,9 @@ $ytcGray: #F0F0F0;
                 display: none;
             }
             .outLogin {
+                display: block;
                 width: 90%;
                 height: p2r(88);
-                line-height: p2r(88);
                 text-align: center;
                 margin: 0 auto;
                 margin-top: p2r(30);
