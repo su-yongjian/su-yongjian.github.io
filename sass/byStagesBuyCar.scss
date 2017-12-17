@@ -13,7 +13,6 @@ $ytcGray: #F0F0F0;
         flex: 1;
         margin-top: p2r(88);
         position: relative;
-        overflow-y: scroll;
         >header {
             height: p2r(88);
             .dianhua {
@@ -41,12 +40,19 @@ $ytcGray: #F0F0F0;
                 font-size: p2r(34);
             }
         }
-        
+        // >p {
+        //     width: 100%;
+        //     height: p2r(68);
+        //     line-height: p2r(68);
+        //     text-align: center;
+        //     font-size: p2r(22);
+        //     color: rgba(102, 102, 102, 1);
+        // }
         .browser {
             position: absolute;
             width: 100%;
             height: 100%;
-            overflow-y: scroll;
+            overflow: hidden;
             >p {
                 width: 100%;
                 height: p2r(68);
@@ -114,8 +120,8 @@ $ytcGray: #F0F0F0;
                             }
                             i {
                                 display: inline-block;
-                                width: p2r(40);
-                                height: p2r(40);
+                                width: 40px;
+                                height: 40px;
                                 position: relative;
                                 top: p2r(10);
                             }
@@ -209,9 +215,9 @@ $ytcGray: #F0F0F0;
                 background-size: p2r(20) p2r(20);
             }
             .express-area-box header .close , .bank-select header .close  {
-                right: p2r(30);
+                right: p2r(20);
                 background: url("../images/close-area.png") no-repeat center;
-                background-size: p2r(40) p2r(40);
+                background-size: p2r(20) p2r(20);
             }
             .express-area-box article .bank-select article {
                 height: 100%;
@@ -223,10 +229,10 @@ $ytcGray: #F0F0F0;
                 li {
                     border-bottom: 1px solid #e2e2e2;
                     text-align: justify;
-                    font-size: p2r(20);
-                    height: p2r(60);
-                    line-height: p2r(60);
-                    padding-left: p2r(20);
+                    font-size: p2r(18);
+                    height: p2r(44);
+                    line-height: p2r(44);
+                    padding-left: p2r(10);
                 }
             }
             /*遮罩层*/
@@ -240,10 +246,9 @@ $ytcGray: #F0F0F0;
                 height: 100%;
                 background-color: rgba(0, 0, 0, .5);
             }
-            .posionalInfo-1  {
+            .posionalInfo-1 , .posionalInfo-2 {
                 z-index: 11;
                 ul {
-                    margin-bottom: p2r(20);
                     li{
                         width: 100%;
                         height: p2r(88);
@@ -276,31 +281,21 @@ $ytcGray: #F0F0F0;
                             color: $ytcGreen;
                         }
                     }
-                    .yinhang {
-                        position: relative;
-                        i {
-                            float: right;
-                            padding-right: p2r(32);
-                            font-size: p2r(50);
-                            // padding-top: p2r(15);
-                            color: $ytcGreen;
-                        }
+                }
+            }
+            .posionalInfo-2 {
+                margin-top: p2r(20);
+                .yinhang {
+                    position: relative;
+                    i {
+                        float: right;
+                        padding-right: p2r(32);
+                        font-size: p2r(50);
+                        // padding-top: p2r(15);
+                        color: $ytcGreen;
                     }
                 }
             }
-            // .posionalInfo-2 {
-            //     margin-top: p2r(20);
-            //     .yinhang {
-            //         position: relative;
-            //         i {
-            //             float: right;
-            //             padding-right: p2r(32);
-            //             font-size: p2r(50);
-            //             // padding-top: p2r(15);
-            //             color: $ytcGreen;
-            //         }
-            //     }
-            // }
             .agreement {
                 margin-top: p2r(30);
                 button.result{
@@ -329,4 +324,3 @@ $ytcGray: #F0F0F0;
         
     }
 }
-

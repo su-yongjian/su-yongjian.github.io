@@ -1650,7 +1650,6 @@ img {
           flex: 1;
   margin-top: 0.88rem;
   position: relative;
-  overflow-y: scroll;
 }
 .byStages-layout .byStages-contain > header {
   height: 0.88rem;
@@ -1683,7 +1682,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow-y: scroll
+  overflow: hidden
   /*选择地区*/
   /*选择地区弹层*/
   /*遮罩层*/
@@ -1753,8 +1752,8 @@ img {
 }
 .byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i {
   display: inline-block;
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 40px;
+  height: 40px;
   position: relative;
   top: 0.1rem;
 }
@@ -1844,9 +1843,9 @@ img {
   background-size: 0.2rem 0.2rem;
 }
 .byStages-layout .byStages-contain .browser .express-area-box header .close, .byStages-layout .byStages-contain .browser .bank-select header .close {
-  right: 0.3rem;
+  right: 0.2rem;
   background: url("../images/close-area.png") no-repeat center;
-  background-size: 0.4rem 0.4rem;
+  background-size: 0.2rem 0.2rem;
 }
 .byStages-layout .byStages-contain .browser .express-area-box article .bank-select article {
   height: 100%;
@@ -1858,10 +1857,10 @@ img {
 .byStages-layout .byStages-contain .browser .area-list li {
   border-bottom: 1px solid #e2e2e2;
   text-align: justify;
-  font-size: 0.2rem;
-  height: 0.6rem;
-  line-height: 0.6rem;
-  padding-left: 0.2rem;
+  font-size: 0.18rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  padding-left: 0.1rem;
 }
 .byStages-layout .byStages-contain .browser .city-mask {
   display: none;
@@ -1873,26 +1872,23 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-1 {
+.byStages-layout .byStages-contain .browser .posionalInfo-1, .byStages-layout .byStages-contain .browser .posionalInfo-2 {
   z-index: 11;
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-1 ul {
-  margin-bottom: 0.2rem;
-}
-.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li {
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li {
   width: 100%;
   height: 0.88rem;
   line-height: 0.88rem;
   background-color: #ffffff;
   border-bottom: 0.01rem solid #F0F0F0;
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li span {
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li span, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li span {
   width: 1.8rem;
   display: inline-block;
   font-size: 0.28rem;
   margin-left: 0.32rem;
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li input {
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li input, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li input {
   width: 3rem;
   font-size: 0.26rem;
   outline: none;
@@ -1900,7 +1896,7 @@ img {
   padding: 0 0 0 0.2rem;
   margin: 0;
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button {
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li button {
   width: 2rem;
   height: 0.88rem;
   line-height: 0.8rem;
@@ -1908,13 +1904,16 @@ img {
   outline: none;
   border: none;
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button.active {
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button.active, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li button.active {
   color: #20CE9C;
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-1 ul .yinhang {
+.byStages-layout .byStages-contain .browser .posionalInfo-2 {
+  margin-top: 0.2rem;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang {
   position: relative;
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-1 ul .yinhang i {
+.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang i {
   float: right;
   padding-right: 0.32rem;
   font-size: 0.5rem;
