@@ -17,7 +17,6 @@ $ytcGray: #F0F0F0;
             text-align: center;
             border-bottom: 1px solid $ytcGray;
             a {
-                z-index: 2;
                 height: 100%;
                 float: left;
                 line-height: p2r(88);
@@ -28,7 +27,6 @@ $ytcGray: #F0F0F0;
                 }
             }
             h3{
-                z-index: 1;
                 height: 100%;
                 display: inline-block;
                 // text-align: center;
