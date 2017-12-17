@@ -1682,7 +1682,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow-y: scroll
+  overflow-y: hidden
   /*选择地区*/
   /*选择地区弹层*/
   /*遮罩层*/
@@ -1875,6 +1875,10 @@ img {
 .byStages-layout .byStages-contain .browser .posionalInfo-1, .byStages-layout .byStages-contain .browser .posionalInfo-2 {
   z-index: 11;
 }
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul {
+  overflow-y: scroll;
+  margin-top: 0.2rem;
+}
 .byStages-layout .byStages-contain .browser .posionalInfo-1 ul li, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li {
   width: 100%;
   height: 0.88rem;
@@ -1907,13 +1911,10 @@ img {
 .byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button.active, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li button.active {
   color: #20CE9C;
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-2 {
-  margin-top: 0.2rem;
-}
-.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang {
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul .yinhang, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul .yinhang {
   position: relative;
 }
-.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang i {
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul .yinhang i, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul .yinhang i {
   float: right;
   padding-right: 0.32rem;
   font-size: 0.5rem;

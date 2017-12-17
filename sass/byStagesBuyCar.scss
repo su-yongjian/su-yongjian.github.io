@@ -44,7 +44,8 @@ $ytcGray: #F0F0F0;
             position: absolute;
             width: 100%;
             height: 100%;
-            overflow-y: scroll;
+            // overflow-y: scroll;
+            overflow-y: hidden;
             >p {
                 width: 100%;
                 height: p2r(68);
@@ -241,6 +242,7 @@ $ytcGray: #F0F0F0;
             .posionalInfo-1 , .posionalInfo-2 {
                 z-index: 11;
                 ul {
+                    overflow-y: scroll;
                     li{
                         width: 100%;
                         height: p2r(88);
@@ -273,21 +275,32 @@ $ytcGray: #F0F0F0;
                             color: $ytcGreen;
                         }
                     }
-                }
-            }
-            .posionalInfo-2 {
-                margin-top: p2r(20);
-                .yinhang {
-                    position: relative;
-                    i {
-                        float: right;
-                        padding-right: p2r(32);
-                        font-size: p2r(50);
-                        // padding-top: p2r(15);
-                        color: $ytcGreen;
+                    margin-top: p2r(20);
+                    .yinhang {
+                        position: relative;
+                        i {
+                            float: right;
+                            padding-right: p2r(32);
+                            font-size: p2r(50);
+                            // padding-top: p2r(15);
+                            color: $ytcGreen;
+                        }
                     }
                 }
             }
+            // .posionalInfo-2 {
+            //     margin-top: p2r(20);
+            //     .yinhang {
+            //         position: relative;
+            //         i {
+            //             float: right;
+            //             padding-right: p2r(32);
+            //             font-size: p2r(50);
+            //             // padding-top: p2r(15);
+            //             color: $ytcGreen;
+            //         }
+            //     }
+            // }
             .agreement {
                 margin-top: p2r(30);
                 button.result{
