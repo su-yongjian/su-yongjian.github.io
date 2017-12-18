@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>我的订单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <script src="../../js/adaptive.js"></script>
+    <script>
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 24;
+        // window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 2;
+        window['adaptive'].init();
+    </script>
+
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+</head>
+<!--引JS-->
+<script src="../../js/jquery-2.1.4.js"></script>
+<script src="../../js/template.js"></script>
+
+<body>
+    <div class="order-layout">
+        <div class="order-contain">
+            <header id="" class="mui-bar mui-bar-nav">
+                <a onclick="javascript:history.back(-1);" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+                <h1 class="mui-title">我的订单</h1>
+            </header>
+
+            <div class="carList">
+
+                <div class="carList-item">
+                    <div class="orderInfo">
+                        <span class="orderNum fl">订单号：201712121607001</span>
+                        <span class="orderStatus fr">预约成功</span>
+                    </div>
+                    <a href="./carDetail.html" class="item-info">
+                        <img class="item-l" src="https://image.guazistatic.com/gz01171204/21/39/5768feb3a6f0691f6322aabdebd56c69.jpg@base@tag=imgScale&w=750&h=375&q=88"
+                            alt="">
+                        <div class="item-r">
+                            <!-- 参数介绍 -->
+                            <div class="carOptions">
+                                <span>大众 POLO 2016款 1.4L 自动风尚型</span>
+                            </div>
+                            <div class="payStyle">
+                                <span class="firstPay">
+                                    首付
+                                    <i>1.76</i>&nbsp万
+                                </span>
+                                <span class="monthPay fr">月供1998元</span>
+                            </div>
+                            <p class="orderTime">预约时间：2017-12-12 16:07</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carList-item">
+                    <div class="orderInfo">
+                        <span class="orderNum fl">订单号：201712121607001</span>
+                        <span class="orderStatus fr">已取消</span>
+                    </div>
+                    <a href="./carDetail.html" class="item-info">
+                        <img class="item-l" src="https://image.guazistatic.com/gz01171204/21/39/5768feb3a6f0691f6322aabdebd56c69.jpg@base@tag=imgScale&w=750&h=375&q=88"
+                            alt="">
+                        <div class="item-r">
+                            <!-- 参数介绍 -->
+                            <div class="carOptions">
+                                <span>大众 POLO 2016款 1.4L 自动风尚型</span>
+                            </div>
+                            <div class="payStyle">
+                                <span class="firstPay">
+                                    首付
+                                    <i>1.76</i>&nbsp万
+                                </span>
+                                <span class="monthPay fr">月供1998元</span>
+                            </div>
+                            <p class="orderTime">预约时间：2017-12-12 16:07</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carList-item">
+                    <div class="orderInfo">
+                        <span class="orderNum fl">订单号：201712121607001</span>
+                        <span class="orderStatus fr">预约成功</span>
+                    </div>
+                    <a href="./carDetail.html" class="item-info">
+                        <img class="item-l" src="https://image.guazistatic.com/gz01171204/21/39/5768feb3a6f0691f6322aabdebd56c69.jpg@base@tag=imgScale&w=750&h=375&q=88"
+                            alt="">
+                        <div class="item-r">
+                            <!-- 参数介绍 -->
+                            <div class="carOptions">
+                                <!-- 如果是自营则显示 自营标签 -->
+                                <i class="sel-icon"></i>
+                                <span>大众 POLO 2016款 1.4L 自动风尚型</span>
+                            </div>
+                            <div class="payStyle">
+                                <span class="firstPay">
+                                    首付
+                                    <i>1.76</i>&nbsp万
+                                </span>
+                                <span class="monthPay fr">月供1998元</span>
+                            </div>
+                            <p class="orderTime">预约时间：2017-12-12 16:07</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<!-- <script src="../statics/lib/mui/js/mui.min.js"></script> -->
+<script src="../js/buyCart.js"></script>
+<script>
+    (function() {
+    var isIPhone = !!window.navigator.appVersion.match(/iphone/gi);
+    if (isIPhone && devicePixelRatio === 2) {
+        var testElem = document.createElement('div');
+        testElem.style.border = '.5px solid transparent';
+        document.body.appendChild(testElem);
+        if (testElem.offsetHeight == 1)
+        {
+            document.querySelector('html').classList.add('hairlines');
+        }
+        document.body.removeChild(testElem);
+    }
+})();
+</script>
+
+</html>

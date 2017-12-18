@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>贷款资格测试</title>
+    <script src="../../js/adaptive.js"></script>
+    <script>
+      window['adaptive'].desinWidth = 750;
+      window['adaptive'].baseFont = 24;
+      // window['adaptive'].maxWidth = 480;
+      window['adaptive'].scaleType = 2;
+      window['adaptive'].init();
+    </script>
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+</head>
+<!--引JS-->
+<script src="../../js/jquery-2.1.4.js"></script>
+<script src="../../js/template.js"></script>
+
+<body>
+    <div class="byStages-layout">
+
+        <div class="byStages-contain">
+            <header id="header" class="mui-bar mui-bar-nav">
+                <a onclick="javascript:history.back(-1);" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+                <h1 class="mui-title">分期购车</h1>
+                <a class="dianhua" href="#">
+                    <i class="iconfont icon-dianhua"></i>
+                </a>
+            </header>
+           
+            <div class="browser">
+                 <p>请填写以下基本资料，通过后可购买意向车型</p>
+                <!--选择地区-->
+                <section class="express-area">
+                    <a id="expressArea" href="javascript:void(0)">
+                        <dl>
+                            <dt>购车城市</dt>
+                            <dd>省 > 市 > 区/县</dd>
+                        </dl>
+                    </a>
+                </section>
+                <div class="posionalInfo-1">
+                    <ul>
+                        <li>
+                            <span>真实姓名</span>
+                            <input type="text" placeholder="请输入购车人真实姓名">
+                        </li>
+                        <li>
+                            <span>身份证号</span>
+                            <input type="text" placeholder="请输入18位身份证号码">
+                        </li>
+                    </ul>
+                    
+                </div>
+                 <div class="posionalInfo-2">
+                    <ul>
+                        <li class="yinhang">
+                            <span>银行卡号</span>
+                            <input type="text" placeholder="请设置常用储蓄卡">
+                            <i id="openBank" class="iconfont icon-yinhang"></i>
+                        </li>
+                        <li>
+                            <span>手机号码</span>
+                            <input type="text" placeholder="银行预留手机号">
+                        </li>
+                        <li>
+                            <span>验证码</span>
+                            <input type="text" placeholder="请输入短信验证码">
+                            <button type="button" class="mui-btn mui-btn-outlined active fr">获取验证码</button>
+                        </li>
+                    </ul>
+                </div> 
+                <!--选择地区弹层-->
+                <section id="areaLayer" class="express-area-box">
+                    <header>
+                        <h3>选择地区</h3>
+                        <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+                        <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+                    </header>
+                    <article id="areaBox">
+                        <ul id="areaList" class="area-list">
+
+                        </ul>
+                    </article>
+                </section>
+                <!-- 选择银行弹层 -->
+                <div id="bank" class="bank-select">
+                    <header>
+                        <h3>我们支持以下银行的储蓄卡</h3>
+                        <a id="closeBack" class="close" href="javascript:void(0)" title="关闭"></a>
+                    </header>
+                    <article id="bankBox" class="bankBox">
+                        <ul id="bankList" class="bank-list clearfix">
+                            <li>
+                                <i class="gongshangyinhang"></i>
+                                <span>工商银行</span>
+                            </li>
+                            <li>
+                                <i class="nongyeyinhang"></i>
+                                <span>农业银行</span>
+                            </li>
+                            <li>
+                                <i class="jiansheyinhang"></i>
+                                <span>建设银行</span>
+                            </li>
+                            <li>
+                                <i class="zhaoshangyinhang"></i>
+                                <span>招商银行</span>
+                            </li>
+                            <li>
+                                <i class="jiaotongyinhang"></i>
+                                <span>交通银行</span>
+                            </li>
+                            <li>
+                                <i class="zhonghang"></i>
+                                <span>中国银行</span>
+                            </li>
+                            <li>
+                                <i class="pufayinhang"></i>
+                                <span>浦发银行</span>
+                            </li>
+                            <li>
+                                <i class="youzhengyinhang"></i>
+                                <span>邮储银行</span>
+                            </li>
+                            <li>
+                                <i class="guangdayinhang"></i>
+                                <span>光大银行</span>
+                            </li>
+                            <li>
+                                <i class="pinganyinhang"></i>
+                                <span>平安银行</span>
+                            </li>
+                            <li>
+                                <i class="minshengyinhang"></i>
+                                <span>民生银行</span>
+                            </li>
+                            <li>
+                                <i class="xingyeyinhang"></i>
+                                <span>兴业银行</span>
+                            </li>
+                            <li>
+                                <i class="huaxiayinhang1"></i>
+                                <span>华夏银行</span>
+                            </li>
+                            <li>
+                                <i class="guangfayinhang"></i>
+                                <span>广发银行</span>
+                            </li>
+                            <li>
+                                <i class="zhongxinyinhang"></i>
+                                <span>中信银行</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="agreement">
+                    <label>
+                        <input type="checkbox">
+                        <span>我已同意查询人民银行征信记录及
+                            <span>《相关授权书和服务协议》</span>
+                        </span>
+                    </label>
+
+                    <button class="result">查看结果</button>
+                </div>
+                <!--遮罩层-->
+                <div id="areaMask" class="city-mask"></div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="../../js/jquery.area.js"></script>
+<script>
+    (function () {
+        var isIPhone = !!window.navigator.appVersion.match(/iphone/gi);
+        if (isIPhone && devicePixelRatio === 2) {
+            var testElem = document.createElement('div');
+            testElem.style.border = '.5px solid transparent';
+            document.body.appendChild(testElem);
+            if (testElem.offsetHeight == 1) {
+                document.querySelector('html').classList.add('hairlines');
+            }
+            document.body.removeChild(testElem);
+        }
+    })();
+</script>
+
+</html>
