@@ -1,0 +1,374 @@
+@charset "UTF-8";
+.byStages-layout {
+  width: 100%;
+  height: 100%;
+}
+
+.byStages-layout .byStages-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.byStages-layout .byStages-contain > header {
+  height: p2r(88);
+}
+
+.byStages-layout .byStages-contain > header .dianhua {
+  float: right;
+  padding-right: p2r(20);
+}
+
+.byStages-layout .byStages-contain > header a {
+  display: inline-block;
+  height: 100%;
+  line-height: p2r(88);
+  padding-top: 0;
+  font-size: p2r(60);
+  color: #20CE9C;
+}
+
+.byStages-layout .byStages-contain > header a:last-child {
+  font-size: p2r(40);
+}
+
+.byStages-layout .byStages-contain > header a:last-child i {
+  display: block;
+  font-size: p2r(40);
+}
+
+.byStages-layout .byStages-contain > header h1 {
+  height: 100%;
+  line-height: p2r(88);
+  font-size: p2r(34);
+}
+
+.byStages-layout .byStages-contain .contain-browser {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.byStages-layout .byStages-contain .browser {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  margin-top: p2r(88);
+  /*选择地区*/
+  /*选择地区弹层*/
+  /*遮罩层*/
+}
+
+.byStages-layout .byStages-contain .browser > p {
+  width: 100%;
+  height: p2r(68);
+  line-height: p2r(68);
+  text-align: center;
+  font-size: p2r(22);
+  color: #666666;
+  margin: 0;
+}
+
+.byStages-layout .byStages-contain .browser .express-area {
+  width: 100%;
+  height: p2r(88);
+  line-height: p2r(88);
+  padding-left: p2r(30);
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.byStages-layout .byStages-contain .browser .express-area a {
+  display: block;
+}
+
+.byStages-layout .byStages-contain .browser .express-area dl {
+  position: relative;
+  color: #4d525d;
+}
+
+.byStages-layout .byStages-contain .browser .express-area dl dt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: p2r(28);
+}
+
+.byStages-layout .byStages-contain .browser .express-area dl dd {
+  padding-top: p2r(0);
+  margin-left: p2r(210);
+  text-align: justify;
+  font-size: p2r(26);
+  color: rgba(75, 73, 73, 0.9);
+}
+
+.byStages-layout .byStages-contain .browser .express-area-box, .byStages-layout .byStages-contain .browser .bank-select {
+  width: 100%;
+  height: 70%;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: 0;
+  z-index: 15;
+  background-color: #fff;
+  color: #4d525d;
+  display: none;
+}
+
+.byStages-layout .byStages-contain .browser .bank-select {
+  z-index: 16;
+  height: 65%;
+  overflow-y: scroll;
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li {
+  float: left;
+  width: 33.33%;
+  height: p2r(88);
+  text-align: center;
+  line-height: p2r(88);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li span {
+  font-size: p2r(28);
+  color: #666666;
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: p2r(10);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.gongshangyinhang {
+  background: url("../images/gh@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.nongyeyinhang {
+  background: url("../images/nh@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.jiansheyinhang {
+  background: url("../images/jh@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.zhaoshangyinhang {
+  background: url("../images/zs@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.jiaotongyinhang {
+  background: url("../images/jt@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.zhonghang {
+  background: url("../images/zh@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.pufayinhang {
+  background: url("../images/pf@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.youzhengyinhang {
+  background: url("../images/yz@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.guangdayinhang {
+  background: url("../images/gd@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.pinganyinhang {
+  background: url("../images/pn@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.minshengyinhang {
+  background: url("../images/ms@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.xingyeyinhang {
+  background: url("../images/xy@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.huaxiayinhang1 {
+  background: url("../images/hx@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.guangfayinhang {
+  background: url("../images/gf@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.zhongxinyinhang {
+  background: url("../images/zx@2x.png") no-repeat;
+  background-size: p2r(40) p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .express-area-box header, .byStages-layout .byStages-contain .browser .bank-select header {
+  position: relative;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.byStages-layout .byStages-contain .browser .express-area-box header h3, .byStages-layout .byStages-contain .browser .bank-select header h3 {
+  text-align: center;
+  font-size: p2r(20);
+  height: p2r(44);
+  line-height: p2r(44);
+}
+
+.byStages-layout .byStages-contain .browser .express-area-box header .back,
+.byStages-layout .byStages-contain .browser .express-area-box header .close, .byStages-layout .byStages-contain .browser .bank-select header .close {
+  position: absolute;
+  top: 0;
+  width: p2r(30);
+  height: p2r(30);
+  top: p2r(14);
+}
+
+.byStages-layout .byStages-contain .browser .express-area-box header .back {
+  display: none;
+  left: p2r(20);
+  background: url("../images/back.png") no-repeat center;
+  background-size: p2r(20) p2r(20);
+}
+
+.byStages-layout .byStages-contain .browser .express-area-box header .close, .byStages-layout .byStages-contain .browser .bank-select header .close {
+  right: p2r(20);
+  background: url("../images/close-area.png") no-repeat center;
+  background-size: p2r(20) p2r(20);
+}
+
+.byStages-layout .byStages-contain .browser .express-area-box article .bank-select article {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.byStages-layout .byStages-contain .browser .area-list {
+  margin-bottom: p2r(100);
+}
+
+.byStages-layout .byStages-contain .browser .area-list li {
+  border-bottom: 1px solid #e2e2e2;
+  text-align: justify;
+  font-size: p2r(18);
+  height: p2r(44);
+  line-height: p2r(44);
+  padding-left: p2r(10);
+}
+
+.byStages-layout .byStages-contain .browser .city-mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-1, .byStages-layout .byStages-contain .browser .posionalInfo-2 {
+  z-index: 11;
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul {
+  overflow-y: scroll;
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li {
+  width: 100%;
+  height: p2r(88);
+  line-height: p2r(88);
+  background-color: #ffffff;
+  border-bottom: p2r(1) solid #F0F0F0;
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li span, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li span {
+  width: p2r(180);
+  display: inline-block;
+  font-size: p2r(28);
+  margin-left: p2r(32);
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li input, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li input {
+  width: p2r(300);
+  font-size: p2r(26);
+  outline: none;
+  border: none;
+  padding: 0 0 0 p2r(20);
+  margin: 0;
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li button {
+  width: p2r(200);
+  height: p2r(88);
+  line-height: p2r(80);
+  font-size: p2r(26);
+  outline: none;
+  border: none;
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button.active, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li button.active {
+  color: #20CE9C;
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-2 {
+  margin-top: p2r(20);
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang {
+  position: relative;
+}
+
+.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang i {
+  float: right;
+  padding-right: p2r(32);
+  font-size: p2r(50);
+  color: #20CE9C;
+}
+
+.byStages-layout .byStages-contain .browser .agreement {
+  margin-top: p2r(30);
+}
+
+.byStages-layout .byStages-contain .browser .agreement button.result {
+  display: block;
+  width: p2r(668);
+  margin: 0 auto;
+  height: p2r(98);
+  background-color: #20CE9C;
+  color: #ffffff;
+  font-size: p2r(32);
+  margin-top: p2r(50);
+}
+
+.byStages-layout .byStages-contain .browser .agreement label {
+  padding-left: p2r(40);
+}
+
+.byStages-layout .byStages-contain .browser .agreement label input {
+  width: p2r(20);
+  height: p2r(20);
+}
+
+.byStages-layout .byStages-contain .browser .agreement label span {
+  font-size: p2r(24);
+  color: #999999;
+}

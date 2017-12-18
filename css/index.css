@@ -1,0 +1,3015 @@
+@charset "UTF-8";
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "PingFang SC";
+  color: #000;
+}
+
+a, span {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  clear: both;
+}
+
+.buyCar-layout {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 0.16rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.buyCar-layout .buyCar-contain {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #F0F0F0;
+  overflow-y: scroll;
+}
+.buyCar-layout .buyCar-contain header {
+  z-index: 3;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  font-size: 0.34rem;
+  font-family: "PingFang SC";
+  color: #20ce9c;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(177, 172, 172, 0.6);
+}
+.buyCar-layout .buyCar-contain .conditionScreen {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  top: 0.88rem;
+  height: 0.78rem;
+  line-height: 0.78rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.26rem;
+  color: #666666;
+  font-family: "PingFang SC";
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: #ffffff;
+  border-bottom: 1px solid #F0F0F0;
+}
+.buyCar-layout .buyCar-contain .conditionScreen li i {
+  font-size: 0.3rem;
+}
+.buyCar-layout .buyCar-contain .unlimited {
+  width: 100%;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand {
+  display: none;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  top: 1.66rem;
+  border-bottom: 1px solid #F0F0F0;
+  z-index: 3;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item {
+  margin-top: 0.3rem;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul {
+  width: 7.2rem;
+  margin: 0 auto;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li {
+  float: left;
+  width: 0.98rem;
+  height: 1.2rem;
+  margin: 0 0.1rem;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li a i {
+  text-align: center;
+  line-height: 0.4rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-top: 0.1rem;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li a img {
+  margin-top: 0.1rem;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li a p {
+  padding-top: 0.2rem;
+  margin-bottom: 0;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li.active {
+  border: 1px solid #20CE9C;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li.active a {
+  color: #20CE9C;
+}
+.buyCar-layout .buyCar-contain .unlimited-brand .unlimited-item ul li.active p {
+  color: #20CE9C;
+}
+.buyCar-layout .buyCar-contain .unlimited-price,
+.buyCar-layout .buyCar-contain .unlimited-firstpay,
+.buyCar-layout .buyCar-contain .unlimited-month {
+  display: none;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay,
+.buyCar-layout .buyCar-contain .unlimited-price,
+.buyCar-layout .buyCar-contain .unlimited-month {
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  top: 1.66rem;
+  border-bottom: 1px solid #F0F0F0;
+  z-index: 3;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay .unlimited-item,
+.buyCar-layout .buyCar-contain .unlimited-price .unlimited-item,
+.buyCar-layout .buyCar-contain .unlimited-month .unlimited-item {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay .unlimited-item ul,
+.buyCar-layout .buyCar-contain .unlimited-price .unlimited-item ul,
+.buyCar-layout .buyCar-contain .unlimited-month .unlimited-item ul {
+  margin-left: 0.25rem;
+  width: 100%;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay .unlimited-item ul li,
+.buyCar-layout .buyCar-contain .unlimited-price .unlimited-item ul li,
+.buyCar-layout .buyCar-contain .unlimited-month .unlimited-item ul li {
+  float: left;
+  margin: 0.1rem;
+  margin-bottom: 0.2rem;
+  width: 2.16rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #666666;
+  border: 1px solid #cccccc;
+}
+.buyCar-layout .buyCar-contain .unlimited-firstpay .unlimited-item ul li.active,
+.buyCar-layout .buyCar-contain .unlimited-price .unlimited-item ul li.active,
+.buyCar-layout .buyCar-contain .unlimited-month .unlimited-item ul li.active {
+  border: 1px solid #20CE9C;
+  color: #20CE9C;
+}
+.buyCar-layout .buyCar-contain .carList {
+  margin-top: 1.66rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item {
+  background-color: #ffffff;
+  width: 100%;
+  height: 2.8rem;
+  margin-bottom: 0.2rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info {
+  margin: 0.3rem 0.32rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-l {
+  width: 2.96rem;
+  height: 2.2rem;
+  margin-right: 0.3rem;
+  margin-top: 0.3rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 0.1rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .carOptions {
+  font-size: 0.28rem;
+  line-height: 0.5rem;
+  color: gray;
+  padding-bottom: 0.35rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .guidePrice {
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .payStyle {
+  color: #ff6156;
+  font-size: 0.26rem;
+  padding-top: 0.2rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .payStyle .firstPay i {
+  font-size: 0.34rem;
+}
+.buyCar-layout .buyCar-contain .carList .carList-item .item-info .item-r .payStyle .monthPay {
+  font-size: 0.24rem;
+  padding-right: 0.1rem;
+  color: #999999;
+}
+
+.mark {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mine-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.mine-container .mine-contain {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: white;
+}
+.mine-container header {
+  height: 0.88rem;
+  line-height: 0.88rem;
+  width: 100%;
+  background-color: #20CE9C;
+  text-align: center;
+}
+.mine-container header span {
+  margin-right: -0.64rem;
+  font-size: 0.34rem;
+  color: white;
+}
+.mine-container header a {
+  float: right;
+}
+.mine-container header a i {
+  color: white;
+  float: right;
+  width: 0.36rem;
+  height: 0.88rem;
+  background-position-y: 0.3rem;
+  margin-right: 0.32rem;
+  font-size: 0.4rem;
+}
+.mine-container .login {
+  position: relative;
+}
+.mine-container .login > img {
+  max-width: 100%;
+}
+.mine-container .login .user_img {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.mine-container .login .user_img .img_a {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.mine-container .login .user_img .img_a img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.mine-container .login .user_img .p-login {
+  width: 1.2rem;
+  margin-left: 0.2rem;
+  padding-top: 10%;
+  color: white;
+  line-height: 34px;
+  font-size: 0.28rem;
+}
+.mine-container .loginList {
+  width: 100%;
+  background-color: white;
+  margin-top: 0.2rem;
+}
+.mine-container .loginList ul {
+  width: 100%;
+}
+.mine-container .loginList ul li {
+  position: relative;
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.28rem;
+  color: #666666;
+  border-bottom: 1px solid rgba(201, 195, 195, 0.5);
+}
+.mine-container .loginList ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #20CE9C;
+}
+.mine-container .loginList ul li a i {
+  display: inline-block;
+  margin-left: 0.2rem;
+  width: 0.31rem;
+  height: 0.31rem;
+  position: relative;
+  top: 0.05rem;
+}
+.mine-container .loginList ul li a > span {
+  padding-left: 0.1rem;
+}
+.mine-container .loginList ul li:nth-of-type(1) i {
+  background: url("../images/myOrder@3x.png") no-repeat left 0;
+  background-size: 0.31rem 0.31rem;
+}
+.mine-container .loginList ul li:nth-of-type(2) i {
+  background: url("../images/issue@3x.png") no-repeat left 0;
+  background-size: 0.31rem 0.31rem;
+}
+.mine-container .loginList ul li:nth-of-type(3) i {
+  background: url("../images/link@3x.png") no-repeat left 0;
+  background-size: 0.31rem 0.31rem;
+}
+.mine-container .loginList ul li:nth-of-type(3) .linkPhone {
+  float: right;
+  padding-right: 0.6rem;
+  color: #20CE9C;
+}
+.mine-container .loginList ul li:nth-of-type(4) i {
+  background: url("../images/aboutUs@3x.png") no-repeat left 0;
+  background-size: 0.31rem 0.31rem;
+}
+
+.detail-layout {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.detail-layout .detail-contain {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: scroll;
+}
+.detail-layout .detail-contain header {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  border-bottom: 1px solid #F0F0F0;
+}
+.detail-layout .detail-contain header a {
+  height: 100%;
+  line-height: 0.88rem;
+  padding-top: 0px;
+  color: #20CE9C;
+  font-size: 0.34rem;
+}
+.detail-layout .detail-contain header a:last-child {
+  float: right;
+  padding-right: 0.2rem;
+}
+.detail-layout .detail-contain header a:last-child i {
+  font-size: 0.34rem;
+}
+.detail-layout .detail-contain header h1 {
+  height: 100%;
+  font-size: 0.34rem;
+  line-height: 0.88rem;
+}
+.detail-layout .detail-contain main .detail-main-img {
+  background-color: white;
+  padding-bottom: 0.3rem;
+}
+.detail-layout .detail-contain main .detail-main-img img {
+  width: 100%;
+  height: 4.8rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe {
+  margin: 0 0.3rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .describe {
+  color: #333333;
+  line-height: 50px;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .describe .sel-icon {
+  display: inline-block;
+  background: url("../images/ziying@2x.png") no-repeat;
+  width: 1.13rem;
+  height: 0.36rem;
+  position: relative;
+  top: 0.08rem;
+  border-radius: 0.04rem;
+  background-size: 1.13rem 0.36rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .describe span {
+  font-size: 0.32rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .guidePrice {
+  font-size: 0.26rem;
+  color: #999999;
+  line-height: 0.5rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle {
+  width: 6.88rem;
+  height: 1.4rem;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: #f3f5f7;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .firstPay,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .monthPay,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .expectCount {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .firstPay p,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .monthPay p,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .expectCount p {
+  margin: 0;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .firstPay p:nth-of-type(1),
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .monthPay p:nth-of-type(1),
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .expectCount p:nth-of-type(1) {
+  font-size: 0.26rem;
+  color: #666666;
+  line-height: 0.3rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .firstPay p:nth-of-type(2),
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .monthPay p:nth-of-type(2),
+.detail-layout .detail-contain main .detail-main-img .detail-describe .detail-payStyle .expectCount p:nth-of-type(2) {
+  font-size: 0.34rem;
+  color: #ff6156;
+  padding-top: 0.22rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .discounts {
+  margin-top: 0.2rem;
+  margin-bottom: 0.32rem;
+}
+.detail-layout .detail-contain main .detail-main-img .detail-describe .discounts .purchaseTax,
+.detail-layout .detail-contain main .detail-main-img .detail-describe .discounts .oneYuarInsurance {
+  padding: 0.1rem;
+  height: 0.44rem;
+  background: #20ce9c;
+  border-radius: 0.04rem;
+  font-size: 0.24rem;
+  color: white;
+  line-height: 0.5rem;
+}
+.detail-layout .detail-contain main .detail-main-img .tsetQualification {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  padding: 0 0.3rem;
+  padding-bottom: 0.3rem;
+  background: rgba(32, 206, 156, 0.3);
+}
+.detail-layout .detail-contain main .detail-main-img .tsetQualification span {
+  font-size: 0.3rem;
+  color: #20ce9c;
+}
+.detail-layout .detail-contain main .detail-main-img .tsetQualification span .info-icon {
+  position: relative;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain,
+.detail-layout .detail-contain main .detail-buyCar-option,
+.detail-layout .detail-contain main .detail-buyCar-lightspot, .detail-layout .detail-contain main .detail-buyCar-fourStep, .detail-layout .detail-contain main .detail-buyCar-illustrate {
+  margin-top: 0.2rem;
+  width: 100%;
+  background-color: white;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain > P,
+.detail-layout .detail-contain main .detail-buyCar-option > P,
+.detail-layout .detail-contain main .detail-buyCar-lightspot > P, .detail-layout .detail-contain main .detail-buyCar-fourStep > P, .detail-layout .detail-contain main .detail-buyCar-illustrate > P {
+  padding: 0.4rem 0 0.1rem 0;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain > P span,
+.detail-layout .detail-contain main .detail-buyCar-option > P span,
+.detail-layout .detail-contain main .detail-buyCar-lightspot > P span, .detail-layout .detail-contain main .detail-buyCar-fourStep > P span, .detail-layout .detail-contain main .detail-buyCar-illustrate > P span {
+  margin-left: 0.15rem;
+  padding-left: 0.15rem;
+  font-size: 0.32rem;
+  color: #333333;
+  border-left: 0.08rem solid #20CE9C;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.2rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style span {
+  font-size: 0.22rem;
+  display: inline-block;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.06rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style span:nth-of-type(1) {
+  width: 2.16rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  color: white;
+  background-color: #20ce9c;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style span:nth-of-type(2) {
+  width: 0.98rem;
+  height: 0.88rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .buyCartAdvantage div.Style span:nth-of-type(3) {
+  width: 2.16rem;
+  height: 0.88rem;
+  background: #f3f5f7;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zero-center {
+  display: inline-block;
+  width: 0.98rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zero-center {
+  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1 p,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zero-center p {
+  width: 3rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1 p,
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p {
+  text-align: right;
+  font-size: 0.2rem;
+  color: #666666;
+  line-height: 0.3rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1 p:nth-of-type(1),
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p:nth-of-type(1) {
+  font-size: 0.28rem;
+  color: #20ce9c;
+  line-height: 0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.1rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-left-1 p:nth-of-type(2),
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p:nth-of-type(2) {
+  margin: 0;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p {
+  text-align: left;
+}
+.detail-layout .detail-contain main .detail-buyCar-explain .zeroBuy .zeroBuy-right-1 p:nth-of-type(1) {
+  color: #666666;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain {
+  height: 8.72rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain ul li {
+  height: 0.88rem;
+  border-bottom: 0.01rem solid #F0F0F0;
+  padding: 0 0.32rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain ul li span {
+  display: inline-block;
+  height: 100%;
+  line-height: 0.88rem;
+  font-size: 0.26rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain ul li .specification {
+  color: #666666;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .detail-option-explain ul li .parameter {
+  color: #999999;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .lookOverMore {
+  width: 6.88rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  margin: 0.3rem auto;
+  text-align: center;
+  background-color: #f3f5f7;
+  font-size: 0.26rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-option .lookOverMore a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #666666;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList .lightspot-explain {
+  padding: 0 0.3rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList .lightspot-explain img {
+  width: 100%;
+  height: 4.8rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList .lightspot-explain p:nth-of-type(1) {
+  font-size: 0.32rem;
+  color: #666666;
+  line-height: 0.3rem;
+  margin-bottom: 0.26rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-lightspot .detail-lightspot .lightspotList .lightspot-explain p:nth-of-type(2) {
+  font-size: 0.26rem;
+  color: rgba(51, 51, 51, 0.7);
+  line-height: 0.36rem;
+  padding-bottom: 0.1rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li {
+  margin: 0 0.31rem;
+  padding-top: 0.4rem;
+  border-bottom: 0.01rem solid #F0F0F0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li i {
+  max-width: 0.8rem;
+  width: 0.8rem;
+  padding: 0.15rem;
+  color: #20CE9C;
+  font-size: 0.65rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li span {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: inline-block;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li span p {
+  padding-left: 0.2rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li span p:nth-of-type(1) {
+  font-size: 0.28rem;
+  color: #666666;
+  margin: 0;
+  padding-bottom: 0.1rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-fourStep .fourStep ul li span p:nth-of-type(2) {
+  font-size: 0.24rem;
+  color: #999999;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate {
+  width: 100%;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList {
+  border-bottom: 1px solid #F0F0F0;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList tr {
+  padding-bottom: 0.2rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList tr td {
+  padding-top: 0.3rem;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList .list {
+  padding-right: 0.2rem;
+  padding-left: 0.4rem;
+  width: 2rem;
+  font-size: 0.28rem;
+  color: #666666;
+}
+.detail-layout .detail-contain main .detail-buyCar-illustrate .detail-illustrate .illustrateList .info {
+  font-size: 0.24rem;
+  padding: 0.2rem 0.2rem 0.2rem 0;
+  line-height: 0.3rem;
+  color: #999999;
+}
+.detail-layout footer {
+  width: 100%;
+  height: 0.98rem;
+}
+.detail-layout footer .linkStyle {
+  width: 100%;
+  height: 100%;
+}
+.detail-layout footer .linkStyle ul {
+  width: 100%;
+  height: 100%;
+}
+.detail-layout footer .linkStyle ul li {
+  width: 33.333%;
+  height: 100%;
+}
+.detail-layout footer .linkStyle ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.98rem;
+}
+.detail-layout footer .linkStyle ul li a i {
+  width: 0.3rem;
+  height: 0.3rem;
+  color: #20CE9C;
+}
+.detail-layout footer .linkStyle ul li:last-child {
+  background-color: #20CE9C;
+  color: white;
+}
+
+.more-layout {
+  margin-top: 0.88rem;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: white;
+}
+.more-layout .more-contain {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: scroll;
+}
+.more-layout .more-contain header {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.more-layout .more-contain header a {
+  height: 100%;
+  line-height: 0.88rem;
+  padding-top: 0px;
+  color: #20ce9c;
+}
+.more-layout .more-contain header h1 {
+  height: 100%;
+  font-size: 0.34rem;
+  line-height: 0.88rem;
+}
+.more-layout .more-contain main .detail-buyCar-more {
+  margin-top: 0.2rem;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  color: #3f4359;
+  font-weight: 500;
+  position: relative;
+  border-bottom: 0.01rem solid #f0f0f0;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title > span {
+  margin-left: 0.2rem;
+  font-size: 0.32rem;
+  color: #333333;
+  padding-left: 0.1rem;
+  border-left: 0.04rem solid #20ce9c;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips {
+  height: 100%;
+  float: left;
+  margin-right: 0.25rem;
+  line-height: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips .yuan1 {
+  width: 0.12rem;
+  height: 0.12rem;
+  border-radius: 50%;
+  background: #20ce9c;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips .yuan2 {
+  width: 0.12rem;
+  height: 0.12rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid #20ce9c;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips .tip-word {
+  float: left;
+  height: 100%;
+  padding-left: 0.1rem;
+  line-height: 1rem;
+  font-size: 0.24rem;
+  margin: 0;
+  color: #999999;
+}
+.more-layout .more-contain main .detail-buyCar-more .config-title .confit-tip .tips .line {
+  width: 0.05rem;
+  height: 0.05rem;
+  background: #20ce9c;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain {
+  width: 100%;
+  height: 100%;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain table {
+  width: 100%;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList {
+  border-bottom: 1px solid #f0f0f0;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList tr {
+  padding-bottom: 0.2rem;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList tr td {
+  padding-top: 0.3rem;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList .list {
+  padding-right: 0.2rem;
+  padding-left: 0.3rem;
+  font-size: 0.26rem;
+  color: #666666;
+}
+.more-layout .more-contain main .detail-buyCar-more .detail-more-explain .parameterList .info {
+  font-size: 0.24rem;
+  padding: 0.2rem 0.2rem 0.2rem 0;
+  line-height: 0.3rem;
+  color: #999999;
+  text-align: right;
+  padding-right: 0.3rem;
+}
+.more-layout footer {
+  width: 100%;
+  height: 0.98rem;
+}
+.more-layout footer .linkStyle {
+  width: 100%;
+  height: 100%;
+}
+.more-layout footer .linkStyle ul {
+  width: 100%;
+  height: 100%;
+}
+.more-layout footer .linkStyle ul li {
+  width: 33.333%;
+  height: 100%;
+}
+.more-layout footer .linkStyle ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.98rem;
+}
+.more-layout footer .linkStyle ul li a i {
+  width: 0.3rem;
+  height: 0.3rem;
+  color: #20ce9c;
+}
+.more-layout footer .linkStyle ul li:last-child {
+  background-color: #20ce9c;
+  color: white;
+}
+
+.order-layout .order-contain header {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  border-bottom: 1px solid #F0F0F0;
+}
+.order-layout .order-contain header a {
+  height: 100%;
+  line-height: 0.88rem;
+  padding-top: 0px;
+  color: #20CE9C;
+  font-size: 0.5rem;
+}
+.order-layout .order-contain header h1 {
+  height: 100%;
+  font-size: 0.34rem;
+  line-height: 0.88rem;
+}
+.order-layout .order-contain .carList {
+  margin-top: 0.88rem;
+}
+.order-layout .order-contain .carList .carList-item {
+  background-color: #ffffff;
+  width: 7.5rem;
+  height: 3.52rem;
+  margin-bottom: 0.2rem;
+}
+.order-layout .order-contain .carList .carList-item .orderInfo {
+  border-bottom: 0.01rem solid #F0F0F0;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  padding: 0 0.32rem;
+}
+.order-layout .order-contain .carList .carList-item .orderInfo .orderNum {
+  font-size: 0.24rem;
+  color: #999999;
+}
+.order-layout .order-contain .carList .carList-item .orderInfo .orderStatus {
+  font-size: 0.26rem;
+  color: #333333;
+}
+.order-layout .order-contain .carList .carList-item .item-info {
+  margin: 0.3rem 0.32rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-l {
+  width: 2.7rem;
+  height: 2.2rem;
+  margin-right: 0.3rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 0.1rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .carOptions {
+  font-size: 0.26rem;
+  line-height: 0.5rem;
+  color: gray;
+  padding-bottom: 0.35rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .carOptions .sel-icon {
+  display: inline-block;
+  background: url("../images/ziying@2x.png") no-repeat;
+  background-size: 1.13rem 0.37rem;
+  width: 1.13rem;
+  height: 0.37rem;
+  position: relative;
+  top: 0.06rem;
+  border-radius: 0.04rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .guidePrice {
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .payStyle {
+  color: #ff6156;
+  font-size: 0.24rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .payStyle .firstPay i {
+  font-size: 0.34rem;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .payStyle .monthPay {
+  font-size: 0.24rem;
+  padding-right: 0.1rem;
+  color: #999999;
+}
+.order-layout .order-contain .carList .carList-item .item-info .item-r .orderTime {
+  padding-top: 0.3rem;
+  font-size: 0.2rem;
+  color: #999999;
+}
+
+.byStages-layout {
+  width: 100%;
+  height: 100%;
+}
+.byStages-layout .byStages-contain {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.byStages-layout .byStages-contain > header {
+  height: 0.88rem;
+}
+.byStages-layout .byStages-contain > header .dianhua {
+  float: right;
+  padding-right: 0.2rem;
+}
+.byStages-layout .byStages-contain > header a {
+  display: inline-block;
+  height: 100%;
+  line-height: 0.88rem;
+  padding-top: 0;
+  font-size: 0.6rem;
+  color: #20CE9C;
+}
+.byStages-layout .byStages-contain > header a:last-child {
+  font-size: 0.4rem;
+}
+.byStages-layout .byStages-contain > header a:last-child i {
+  display: block;
+  font-size: 0.4rem;
+}
+.byStages-layout .byStages-contain > header h1 {
+  height: 100%;
+  line-height: 0.88rem;
+  font-size: 0.34rem;
+}
+.byStages-layout .byStages-contain .contain-browser {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.byStages-layout .byStages-contain .browser {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  margin-top: 0.88rem
+  /*选择地区*/
+  /*选择地区弹层*/
+  /*遮罩层*/
+}
+.byStages-layout .byStages-contain .browser > p {
+  width: 100%;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  text-align: center;
+  font-size: 0.22rem;
+  color: #666666;
+  margin: 0;
+}
+.byStages-layout .byStages-contain .browser .express-area {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  padding-left: 0.3rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+.byStages-layout .byStages-contain .browser .express-area a {
+  display: block;
+}
+.byStages-layout .byStages-contain .browser .express-area dl {
+  position: relative;
+  color: #4d525d;
+}
+.byStages-layout .byStages-contain .browser .express-area dl dt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.28rem;
+}
+.byStages-layout .byStages-contain .browser .express-area dl dd {
+  padding-top: 0rem;
+  margin-left: 2.1rem;
+  text-align: justify;
+  font-size: 0.26rem;
+  color: rgba(75, 73, 73, 0.9);
+}
+.byStages-layout .byStages-contain .browser .express-area-box, .byStages-layout .byStages-contain .browser .bank-select {
+  width: 100%;
+  height: 70%;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: 0;
+  z-index: 15;
+  background-color: #fff;
+  color: #4d525d;
+  display: none;
+}
+.byStages-layout .byStages-contain .browser .bank-select {
+  z-index: 16;
+  height: 65%;
+  overflow-y: scroll;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li {
+  float: left;
+  width: 33.33%;
+  height: 0.88rem;
+  text-align: center;
+  line-height: 0.88rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li span {
+  font-size: 0.28rem;
+  color: #666666;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 0.1rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.gongshangyinhang {
+  background: url("../images/gh@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.nongyeyinhang {
+  background: url("../images/nh@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.jiansheyinhang {
+  background: url("../images/jh@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.zhaoshangyinhang {
+  background: url("../images/zs@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.jiaotongyinhang {
+  background: url("../images/jt@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.zhonghang {
+  background: url("../images/zh@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.pufayinhang {
+  background: url("../images/pf@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.youzhengyinhang {
+  background: url("../images/yz@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.guangdayinhang {
+  background: url("../images/gd@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.pinganyinhang {
+  background: url("../images/pn@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.minshengyinhang {
+  background: url("../images/ms@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.xingyeyinhang {
+  background: url("../images/xy@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.huaxiayinhang1 {
+  background: url("../images/hx@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.guangfayinhang {
+  background: url("../images/gf@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .bank-select .bankBox ul li i.zhongxinyinhang {
+  background: url("../images/zx@2x.png") no-repeat;
+  background-size: 0.4rem 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header, .byStages-layout .byStages-contain .browser .bank-select header {
+  position: relative;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header h3, .byStages-layout .byStages-contain .browser .bank-select header h3 {
+  text-align: center;
+  font-size: 0.2rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header .back,
+.byStages-layout .byStages-contain .browser .express-area-box header .close, .byStages-layout .byStages-contain .browser .bank-select header .close {
+  position: absolute;
+  top: 0;
+  width: 0.3rem;
+  height: 0.3rem;
+  top: 0.14rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header .back {
+  display: none;
+  left: 0.2rem;
+  background: url("../images/back.png") no-repeat center;
+  background-size: 0.2rem 0.2rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box header .close, .byStages-layout .byStages-contain .browser .bank-select header .close {
+  right: 0.2rem;
+  background: url("../images/close-area.png") no-repeat center;
+  background-size: 0.2rem 0.2rem;
+}
+.byStages-layout .byStages-contain .browser .express-area-box article .bank-select article {
+  height: 100%;
+  overflow-y: scroll;
+}
+.byStages-layout .byStages-contain .browser .area-list {
+  margin-bottom: 1rem;
+}
+.byStages-layout .byStages-contain .browser .area-list li {
+  border-bottom: 1px solid #e2e2e2;
+  text-align: justify;
+  font-size: 0.18rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  padding-left: 0.1rem;
+}
+.byStages-layout .byStages-contain .browser .city-mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1, .byStages-layout .byStages-contain .browser .posionalInfo-2 {
+  z-index: 11;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul {
+  overflow-y: scroll;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  background-color: #ffffff;
+  border-bottom: 0.01rem solid #F0F0F0;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li span, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li span {
+  width: 1.8rem;
+  display: inline-block;
+  font-size: 0.28rem;
+  margin-left: 0.32rem;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li input, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li input {
+  width: 3rem;
+  font-size: 0.26rem;
+  outline: none;
+  border: none;
+  padding: 0 0 0 0.2rem;
+  margin: 0;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li button {
+  width: 2rem;
+  height: 0.88rem;
+  line-height: 0.8rem;
+  font-size: 0.26rem;
+  outline: none;
+  border: none;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-1 ul li button.active, .byStages-layout .byStages-contain .browser .posionalInfo-2 ul li button.active {
+  color: #20CE9C;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-2 {
+  margin-top: 0.2rem;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang {
+  position: relative;
+}
+.byStages-layout .byStages-contain .browser .posionalInfo-2 .yinhang i {
+  float: right;
+  padding-right: 0.32rem;
+  font-size: 0.5rem;
+  color: #20CE9C;
+}
+.byStages-layout .byStages-contain .browser .agreement {
+  margin-top: 0.3rem;
+}
+.byStages-layout .byStages-contain .browser .agreement button.result {
+  display: block;
+  width: 6.68rem;
+  margin: 0 auto;
+  height: 0.98rem;
+  background-color: #20CE9C;
+  color: #ffffff;
+  font-size: 0.32rem;
+  margin-top: 0.5rem;
+}
+.byStages-layout .byStages-contain .browser .agreement label {
+  padding-left: 0.4rem;
+}
+.byStages-layout .byStages-contain .browser .agreement label input {
+  width: 0.2rem;
+  height: 0.2rem;
+}
+.byStages-layout .byStages-contain .browser .agreement label span {
+  font-size: 0.24rem;
+  color: #999999;
+}
+
+.city-layout {
+  width: 100%;
+  height: 100%;
+}
+.city-layout .city-contain {
+  margin-top: 0.88rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.city-layout header {
+  height: 0.88rem;
+}
+.city-layout header .dianhua {
+  float: right;
+  padding-right: 0.2rem;
+}
+.city-layout header a.icon-l {
+  display: inline-block;
+  height: 100%;
+  line-height: 0.88rem;
+  padding-top: 0;
+  font-size: 0.6rem;
+  color: #20CE9C;
+}
+.city-layout header h1 {
+  height: 100%;
+  line-height: 0.88rem;
+  font-size: 0.34rem;
+}
+
+.none {
+  display: none;
+}
+
+.loan_jm1 {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.loan_jm_spa1 {
+  width: 39%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1em;
+  color: #666;
+  display: block;
+  float: left;
+}
+
+.loan_jm_l1 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 40px;
+}
+
+.wbk_srn {
+  width: 57%;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: #FFF;
+  float: left;
+  padding-left: 3%;
+  line-height: 40px;
+  color: #ADADAD;
+  font-size: 1.1em;
+  background-size: 45%;
+  background-position: center;
+  background: #fff;
+}
+
+.wbk_srn b {
+  width: 30px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: #FFF;
+  float: left;
+  padding-left: 3%;
+  line-height: 40px;
+  color: #ADADAD;
+  font-size: 1.1em;
+}
+
+/*显示点击是哪个字母*/
+.showLetter {
+  position: fixed;
+  color: #20CE9C;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: #00C7C7 1px solid;
+  text-align: center;
+  display: none;
+}
+
+.showLetter span {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+/*城市弹层*/
+.container {
+  width: 100%;
+}
+
+.letter {
+  width: auto;
+  position: fixed;
+  top: 10%;
+  right: 0.2rem;
+  text-align: center;
+}
+
+.letter ul {
+  list-style-type: none;
+  padding-bottom: 0.15rem;
+}
+
+.letter ul li a {
+  text-decoration: none;
+  color: #20CE9C;
+  font-size: 0.3rem;
+  height: 0.3rem;
+}
+
+.letter ul li {
+  height: 0.3rem;
+}
+
+.city {
+  width: 100%;
+  overflow: hidden;
+}
+
+.city-list {
+  width: 100%;
+}
+
+.city-list .city-letter {
+  font-size: 0.24rem;
+  display: inline-block;
+  padding-top: 0.15rem;
+  padding-bottom: 0.05rem;
+  border-bottom: 0.01rem solid #e8ecf1;
+  width: 100%;
+  padding: 0 0.2rem;
+}
+
+.city-list p {
+  font-size: 0.3rem;
+  color: #afafaf;
+  width: 100%;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  border-bottom: 1px solid #e8ecf1;
+  cursor: pointer;
+  background-color: white;
+  margin: 0;
+  padding: 0 0.3rem;
+}
+
+.UISelect {
+  margin-top: 0.05rem;
+}
+
+.purchaseAgreement-layout {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain {
+  margin-top: 0.88rem;
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: scroll;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain header {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain header a {
+  height: 100%;
+  line-height: 0.88rem;
+  padding-top: 0px;
+  color: #20ce9c;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain header h1 {
+  height: 100%;
+  font-size: 0.34rem;
+  line-height: 0.88rem;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain header > span.phone-icon {
+  width: 0.5rem;
+  float: right;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain header > span.phone-icon a:nth-of-type(1) {
+  float: right;
+  width: 0.5rem;
+  height: 0.88rem;
+  position: relative;
+  left: -0.2rem;
+  color: #20ce9c;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain header > span.phone-icon a:nth-of-type(1) i {
+  font-size: 0.5rem;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain main {
+  width: 100%;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain main > span {
+  display: block;
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  background-color: #f0f0f0;
+  color: #333333;
+  text-align: center;
+  font-size: 0.28rem;
+  background-color: #f3f5f7;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain main .personalInformation {
+  width: 100%;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain main .personalInformation ul {
+  background-color: white;
+  width: 100%;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain main .personalInformation ul li {
+  position: relative;
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.28rem;
+  border-bottom: 1px solid rgba(201, 195, 195, 0.5);
+}
+.purchaseAgreement-layout .purchaseAgreement-contain main .personalInformation ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #20ce9c;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain main .personalInformation ul li a i {
+  display: inline-block;
+  margin-left: 0.2rem;
+  width: 0.31rem;
+  height: 0.31rem;
+  position: relative;
+  top: 0.05rem;
+}
+.purchaseAgreement-layout .purchaseAgreement-contain main .personalInformation ul li a > span {
+  padding-left: 0.1rem;
+}
+.purchaseAgreement-layout footer {
+  width: 100%;
+  height: 0.98rem;
+}
+.purchaseAgreement-layout footer .linkStyle {
+  width: 100%;
+  height: 100%;
+}
+.purchaseAgreement-layout footer .linkStyle ul {
+  width: 100%;
+  height: 100%;
+}
+.purchaseAgreement-layout footer .linkStyle ul li {
+  width: 33.333%;
+  height: 100%;
+}
+.purchaseAgreement-layout footer .linkStyle ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.98rem;
+}
+.purchaseAgreement-layout footer .linkStyle ul li a i {
+  width: 0.3rem;
+  height: 0.3rem;
+  color: #20ce9c;
+}
+.purchaseAgreement-layout footer .linkStyle ul li:last-child {
+  background-color: #20ce9c;
+  color: white;
+}
+
+.setting-layout {
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+}
+.setting-layout .setting-contain {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.setting-layout .setting-contain header {
+  width: 100%;
+  height: 0.88rem;
+  text-align: center;
+  border-bottom: 1px solid #F0F0F0;
+}
+.setting-layout .setting-contain header a {
+  height: 100%;
+  float: left;
+  line-height: 0.88rem;
+}
+.setting-layout .setting-contain header a i {
+  padding-left: 0.3rem;
+  color: #20CE9C;
+  font-size: 0.3rem;
+}
+.setting-layout .setting-contain header h3 {
+  height: 100%;
+  display: inline-block;
+  line-height: 0.88rem;
+  font-size: 0.34rem;
+  -webkit-transform: translateX(-0.3rem);
+      -ms-transform: translateX(-0.3rem);
+          transform: translateX(-0.3rem);
+  margin: 0;
+}
+.setting-layout .setting-contain main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.setting-layout .setting-contain main .settingList {
+  width: 100%
+  /*选择地区弹层*/
+}
+.setting-layout .setting-contain main .settingList ul.list {
+  width: 100%;
+}
+.setting-layout .setting-contain main .settingList ul.list li {
+  height: 0.88rem;
+  background-color: #ffffff;
+  width: 100%;
+  margin-bottom: 0.3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.setting-layout .setting-contain main .settingList ul.list li span {
+  font-size: 0.28rem;
+  margin-left: 0.3rem;
+}
+.setting-layout .setting-contain main .settingList ul.list li .mui-switch {
+  margin-right: 0.3rem;
+}
+.setting-layout .setting-contain main .settingList ul.list li .mui-switch.mui-active {
+  border-color: #20CE9C;
+  background-color: #20CE9C;
+}
+.setting-layout .setting-contain main .settingList ul.list li .versions {
+  margin-right: 0.3rem;
+}
+.setting-layout .setting-contain main .settingList .share-select {
+  display: none;
+  width: 100%;
+  height: 70%;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: -200%;
+  z-index: 15;
+  background-color: #fff;
+  color: #4d525d;
+}
+.setting-layout .setting-contain main .settingList .share-select header {
+  position: relative;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+.setting-layout .setting-contain main .settingList .share-select header h2 {
+  text-align: center;
+  line-height: 0.44rem;
+}
+.setting-layout .setting-contain main .settingList .share-select header .close {
+  position: absolute;
+  top: 0;
+  width: 0.3rem;
+  height: 0.3rem;
+  top: 0.14rem;
+}
+.setting-layout .setting-contain main .settingList .share-select header .close {
+  right: 0.2rem;
+  background: url("../images/close-area.png") no-repeat center;
+  background-size: 0.2rem 0.2rem;
+}
+.setting-layout .setting-contain main .settingList .share-select article {
+  height: 100%;
+  overflow-y: scroll;
+}
+.setting-layout .setting-contain main .settingList .share-select {
+  z-index: 16;
+  height: 65%;
+  overflow-y: scroll;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  line-height: 0.88rem;
+  margin: 0 0.5rem 0.3rem 0.5rem;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li span {
+  font-size: 0.28rem;
+  color: #666666;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i {
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: 0.1rem;
+  left: 0.16rem;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.WeChatFriend {
+  background: url("../images/weixin@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.friendCircle {
+  background: url("../images/wFriend@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.QQfriend {
+  background: url("../images/qq@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.QQZone {
+  background: url("../images/qqZone@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.sinaBlog {
+  background: url("../images/sinaBlog@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .settingList .share-select .shareBox ul.share-list li i.copyLink {
+  background: url("../images/copyLink@2x.png") no-repeat;
+}
+.setting-layout .setting-contain main .share-mask {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.setting-layout .setting-contain main .outLogin {
+  display: block;
+  width: 90%;
+  height: 0.88rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+  border-radius: 0.06rem;
+  background-color: #cccaca;
+  font-size: 0.34rem;
+}
+
+.login-layout, .appointment-layout {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.login-layout header, .appointment-layout header {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  padding-left: 0.3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.login-layout header i::before, .appointment-layout header i::before {
+  font-size: 0.32rem;
+  color: #20CE9C;
+}
+.login-layout .login-contain, .login-layout .appointment-contain, .appointment-layout .login-contain, .appointment-layout .appointment-contain {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.login-layout .login-contain .login-logo, .login-layout .login-contain .appointment-logo, .login-layout .appointment-contain .login-logo, .login-layout .appointment-contain .appointment-logo, .appointment-layout .login-contain .login-logo, .appointment-layout .login-contain .appointment-logo, .appointment-layout .appointment-contain .login-logo, .appointment-layout .appointment-contain .appointment-logo {
+  width: 100%;
+  height: 3rem;
+}
+.login-layout .login-contain .login-logo i, .login-layout .login-contain .appointment-logo i, .login-layout .appointment-contain .login-logo i, .login-layout .appointment-contain .appointment-logo i, .appointment-layout .login-contain .login-logo i, .appointment-layout .login-contain .appointment-logo i, .appointment-layout .appointment-contain .login-logo i, .appointment-layout .appointment-contain .appointment-logo i {
+  display: block;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  position: relative;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url("../images/login@2x.png");
+  background-size: 1.2rem 1.2rem;
+}
+.login-layout .login-contain .tip, .login-layout .appointment-contain .tip, .appointment-layout .login-contain .tip, .appointment-layout .appointment-contain .tip {
+  width: 100%;
+  font-size: 0.26rem;
+  color: #999999;
+  text-align: center;
+}
+.login-layout .login-contain .inputPhoneNum, .login-layout .appointment-contain .inputPhoneNum, .appointment-layout .login-contain .inputPhoneNum, .appointment-layout .appointment-contain .inputPhoneNum {
+  width: 6.88rem;
+  height: 0.98rem;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+}
+.login-layout .login-contain .inputPhoneNum input, .login-layout .appointment-contain .inputPhoneNum input, .appointment-layout .login-contain .inputPhoneNum input, .appointment-layout .appointment-contain .inputPhoneNum input {
+  width: 100%;
+  height: 100%;
+  background: #f3f5f7;
+  border-radius: 6px;
+  font-size: 0.28rem;
+}
+.login-layout .login-contain button, .login-layout .appointment-contain button, .appointment-layout .login-contain button, .appointment-layout .appointment-contain button {
+  display: block;
+  width: 6.88rem;
+  height: 0.98rem;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+  font-size: 0.34rem;
+  color: #ffffff;
+  background-color: #20CE9C;
+}
+
+.aboutUs-layout {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+.aboutUs-layout .aboutUs-contain {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.aboutUs-layout .aboutUs-contain header {
+  width: 100%;
+  height: 0.88rem;
+  text-align: center;
+  border-bottom: 1px solid #F0F0F0;
+}
+.aboutUs-layout .aboutUs-contain header a {
+  height: 100%;
+  float: left;
+  line-height: 0.88rem;
+}
+.aboutUs-layout .aboutUs-contain header a i {
+  padding-left: 0.3rem;
+  color: #20CE9C;
+  font-size: 0.3rem;
+}
+.aboutUs-layout .aboutUs-contain header h3 {
+  height: 100%;
+  display: inline-block;
+  line-height: 0.88rem;
+  font-size: 0.34rem;
+  -webkit-transform: translateX(-0.3rem);
+      -ms-transform: translateX(-0.3rem);
+          transform: translateX(-0.3rem);
+  margin: 0;
+}
+.aboutUs-layout .aboutUs-contain .ytaoche-describe {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 auto;
+  width: 6.98rem;
+  height: 100%;
+}
+.aboutUs-layout .aboutUs-contain .ytaoche-describe p {
+  font-size: 0.26rem;
+  color: #666666;
+  line-height: 0.36rem;
+  margin-top: 0.3rem;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.index-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.index-container .main-contain {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: scroll;
+  margin-top: 0.88rem;
+}
+.index-container .main-contain .y-header {
+  height: 0.88rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 998;
+}
+.index-container .main-contain .y-header > a {
+  float: left;
+  display: block;
+  margin-left: 0.2rem;
+  height: 100%;
+  width: 1.8rem;
+  background: url("../images/logoW.png") no-repeat left 0;
+  background-size: 1.6rem 0.88rem;
+}
+.index-container .main-contain .y-header .location {
+  display: inline-block;
+  width: 1.5rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+}
+.index-container .main-contain .y-header .location a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.24rem;
+  color: #20CE9C;
+}
+.index-container .main-contain .y-header .location a i {
+  position: relative;
+  top: 0.02rem;
+}
+.index-container .main-contain .y-header > span.phone-icon {
+  width: 0.6rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  float: right;
+}
+.index-container .main-contain .y-header > span.phone-icon a:nth-of-type(1) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #20CE9C;
+}
+.index-container .main-contain .y-header > span.phone-icon a:nth-of-type(1) i {
+  color: #20CE9C;
+  font-size: 0.3rem;
+}
+.index-container .main-contain .main-banner {
+  width: 100%;
+  height: 2.22rem;
+}
+.index-container .main-contain .main-banner .mui-slider {
+  width: 100%;
+  height: 100%;
+}
+.index-container .main-contain .main-banner .mui-slider .mui-slider-loop {
+  height: 100%;
+  width: 100%;
+}
+.index-container .main-contain .main-banner .mui-slider .mui-slider-loop img {
+  max-height: 2.22rem;
+  height: 100%;
+  width: 100%;
+}
+.index-container .main-contain .itemList {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 0.1rem;
+}
+.index-container .main-contain .itemList .item-brand {
+  width: 100%;
+}
+.index-container .main-contain .itemList .item-brand ul {
+  width: 100%;
+  padding-top: 0.1rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.index-container .main-contain .itemList .item-brand ul li {
+  width: 0.98rem;
+  height: 0.88rem;
+  margin: 0 0.1rem;
+}
+.index-container .main-contain .itemList .item-brand ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.index-container .main-contain .itemList .item-brand ul li a i {
+  text-align: center;
+  line-height: 0.4rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-top: 0.1rem;
+}
+.index-container .main-contain .itemList .item-brand ul li a img {
+  margin-top: 0.1rem;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.index-container .main-contain .itemList .item-brand ul li a p {
+  padding-top: 0.1rem;
+  margin-bottom: 0;
+  font-size: 0.22rem;
+}
+.index-container .main-contain .itemList .item-price {
+  width: 100%;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+.index-container .main-contain .itemList .item-price ul {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.index-container .main-contain .itemList .item-price ul li {
+  height: 0.6rem;
+  padding: 0 0.1rem;
+  text-align: center;
+}
+.index-container .main-contain .itemList .item-price ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #666666;
+  font-size: 0.22rem;
+}
+.index-container .main-contain .itemList .item-selectCar {
+  padding: 0 0.31rem;
+  height: 0.88rem;
+  width: 100%;
+}
+.index-container .main-contain .itemList .item-selectCar .mui-input-clear {
+  width: 4.72rem;
+  height: 100%;
+  margin-bottom: 0;
+  font-size: 0.3rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.index-container .main-contain .itemList .item-selectCar .mui-btn {
+  width: 2.16rem;
+  height: 100%;
+  border-left: none;
+  border-right: none;
+  font-size: 0.3rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #20CE9C;
+  color: white;
+}
+.index-container .main-contain .itemList .item-testQualification {
+  padding: 0 0.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  width: 7.5rem;
+  height: 0.88rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index-container .main-contain .itemList .item-testQualification button {
+  font-size: 0.3rem;
+  width: 3.34rem;
+  height: 100%;
+  color: #20CE9C;
+  background-color: white;
+}
+.index-container .main-contain .itemList .item-testQualification button:nth-of-type(1) {
+  margin-right: 0.2rem;
+  color: #ffffff;
+  background-color: #20CE9C;
+}
+.index-container .main-contain .item-hotActivity {
+  background-color: #ffffff;
+  margin-top: 0.2rem;
+  padding-bottom: 0.1rem;
+}
+.index-container .main-contain .item-hotActivity > p {
+  padding: 0.33rem 0 0.2rem 0;
+  text-align: center;
+  font-size: 0.34rem;
+  color: #333333;
+}
+.index-container .main-contain .item-hotActivity .hotActivityList {
+  width: 100%;
+  margin: 0 auto;
+}
+.index-container .main-contain .item-hotActivity .hotActivityList ul {
+  width: 6.88rem;
+  margin: 0 auto;
+}
+.index-container .main-contain .item-hotActivity .hotActivityList ul li {
+  width: 100%;
+  height: 3.8rem;
+  background-color: #20CE9C;
+  margin-bottom: 0.2rem;
+}
+.index-container .main-contain .item-hotActivity .hotActivityList ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index-container .main-contain .item-hotCar {
+  background-color: #ffffff;
+  margin-top: 0.2rem;
+}
+.index-container .main-contain .item-hotCar > p {
+  padding: 0.33rem 0 0.2rem 0;
+  text-align: center;
+  font-size: 0.34rem;
+  color: #333333;
+}
+.index-container .main-contain .item-hotCar .hotCar {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+.index-container .main-contain .item-hotCar .hotCar ul {
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li {
+  float: left;
+  width: 3.34rem;
+  height: 4.06rem;
+  box-shadow: 0px 0px 5px #f2f2f2;
+  margin-bottom: 0.2rem;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li img {
+  width: 2.96rem;
+  height: 2.2rem;
+  margin: 0 auto;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .option-t {
+  font-size: 0.26rem;
+  color: #666666;
+  padding-top: 0.3rem;
+  line-height: 0.3rem;
+  padding-left: 0.1rem;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .pay-b {
+  padding-top: 0.2rem;
+  color: #999999;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .pay-b .pay-l {
+  color: #ff6156;
+  padding-left: 0.1rem;
+  font-size: 0.24rem;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .pay-b .pay-l i {
+  font-size: 0.34rem;
+  font-weight: 600;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li .pay-b .pay-r {
+  font-size: 0.24rem;
+  float: right;
+  padding-right: 0.1rem;
+}
+.index-container .main-contain .item-hotCar .hotCar ul li {
+  margin-left: 0.28rem;
+}
+.index-container .main-contain .item-hotCar .lookMoreCar {
+  height: 1.08rem;
+  background-color: #FAFAFA;
+  line-height: 1.08rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index-container .main-contain .item-hotCar .lookMoreCar a {
+  display: block;
+  margin: 0 auto;
+  width: 2rem;
+  height: 0.68rem;
+  font-size: 0.24rem;
+  color: white;
+  background-color: #20CE9C;
+  text-align: center;
+  line-height: 0.68rem;
+  border-radius: 0.04rem;
+}
+
+footer {
+  background-color: #ffffff;
+  width: 100%;
+  height: 0.98rem;
+  border-top: 1px solid #aaaaaa;
+}
+footer ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+footer ul li {
+  width: 33.333%;
+  height: 100%;
+}
+footer ul li a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.22rem;
+  color: #666666;
+  width: 100%;
+  height: 100%;
+}
+footer ul li a span.icon-font {
+  font-size: 0.4rem;
+}
+footer ul li.activeGREEN a {
+  color: #20CE9C;
+}
