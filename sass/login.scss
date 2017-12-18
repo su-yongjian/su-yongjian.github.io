@@ -1,5 +1,6 @@
 $ytcGreen: #20CE9C;
 $ytcWhite: #ffffff; 
+$ytcGray: #F0F0F0 ;
 .login-layout , .appointment-layout {
     background-color: $ytcWhite;
     width: 100%;
@@ -12,7 +13,7 @@ $ytcWhite: #ffffff;
         height: p2r(88);
         line-height: p2r(88);
         padding-left: p2r(30);
-        border-bottom: 1px solid rgba(0,0,0,.3);
+        border-bottom: p2r(1) solid $ytcGray;
         i::before {
             font-size: p2r(32);
             color: $ytcGreen;

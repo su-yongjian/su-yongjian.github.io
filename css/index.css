@@ -2484,7 +2484,7 @@ img {
   height: 0.88rem;
   line-height: 0.88rem;
   padding-left: 0.3rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0.01rem solid #F0F0F0;
 }
 .login-layout header i::before, .appointment-layout header i::before {
   font-size: 0.32rem;
