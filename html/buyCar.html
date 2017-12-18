@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="../css/iconfont.css">
     <link rel="stylesheet" type="text/css" href="../lib/mui/css/mui.min.css" />
     <link rel="stylesheet" href="../css/index.css">
-
+    <!-- 引入模板引擎js -->
+    <script src="../js/template.js"></script>
     <script src="../js/jquery-2.1.4.js"></script>
 </head>
 
@@ -311,14 +312,8 @@
 
     </div>
 </body>
-<script src="./lib/mui/js/mui.min.js"></script>
+<script src="../js/buyCart.js"></script>
 <script>
-    //获得slider插件对象
-    var gallery = mui('.mui-slider');
-    gallery.slider({
-        interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
-    });
-
     (function () {
         var isIPhone = !!window.navigator.appVersion.match(/iphone/gi);
         if (isIPhone && devicePixelRatio === 2) {
