@@ -1,0 +1,409 @@
+@import 'normalize6.0.scss';
+@import 'base.scss';
+@import "buyCar.scss";
+@import "mine.scss";
+@import "carDetail.scss";
+@import "parameters.scss";
+@import "myOrder.scss";
+@import "./byStagesBuyCar.scss";
+@import "./city.scss";
+@import "./purchaseAgreement.scss";
+@import "./setting.scss";
+@import "./login.scss";
+@import "./aboutUs.scss";
+
+$ytcGreen: #20CE9C;
+$ytcWhite: #ffffff; 
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+.index-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    // 头部
+    .y-header {
+        height: p2r(88);
+        // position: fixed;
+        // top: 0;
+        width: 100%;
+        z-index: 9985456465456;
+        >a {
+            // float: left;
+            // margin: 0 auto;
+            transform: translateX(50%);
+            display: inline-block;
+            margin-left: p2r(20);
+            height: 100%;
+            width: p2r(180);
+            background: url("../images/logoW.png") no-repeat left 0;
+            background-size: p2r(160) p2r(88);
+        }
+        .location {
+            float:left;
+            width: p2r(200);
+            height: p2r(88);
+            line-height:p2r(88);
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                @include font-dpr(24px);
+                padding-left: p2r(10);
+                color: $ytcGreen;
+                i {
+                    position: relative;
+                    top: p2r(2);
+                    @include font-dpr(30px);
+                    left:p2r(-10)
+                }
+            }
+        }
+        >span.phone-icon {
+            width: p2r(60);
+            height: p2r(88);
+            line-height: p2r(88);
+            float: right;
+            a:nth-of-type(1) {
+                display: block;
+                width: 100%;
+                height: 100%;
+                color: $ytcGreen;
+                i {
+                    color: $ytcGreen;
+                    @include font-dpr(20px);
+                }
+            }
+        }
+    }
+    .main-contain {
+        flex: 1;
+        overflow-y: scroll;
+        // margin-top: p2r(88);
+        
+        .main-banner {
+            width: 100%;
+            height: p2r(222);
+            .mui-slider {
+                width: 100%;
+                height: 100%;
+                .mui-slider-loop {
+                    height: 100%;
+                    width: 100%;
+                    img {
+                        max-height: p2r(222);
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        } 
+        // width: 100%;
+        // height: p2r(420);
+        .itemList {
+            width: 100%;
+            // height: p2r(420);
+            background-color: white;
+            padding-bottom: p2r(10);
+            .item-brand {
+                width: 100%;
+                ul {
+                    width: 100%;
+                    padding-top: p2r(10);
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-around;
+                    li {
+                        width: p2r(98);
+                        height: p2r(88);
+                        margin: 0 p2r(10); // padding-bottom: p2r(46);
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            i {
+                                text-align: center;
+                                line-height: p2r(40);
+                                width: p2r(40);
+                                height: p2r(40);
+                                margin-top: p2r(10);
+                            }
+                            img {
+                                margin-top: p2r(10);
+                                width: p2r(50);
+                                height: p2r(50);
+                            }
+                            p {
+                                padding-top: p2r(10);
+                                margin-bottom: 0;
+                                @include font-dpr(12px);
+                            }
+                        }
+                    }
+                }
+            }
+            .item-price {
+                width: 100%;
+                // height: p2r(88);
+                margin-bottom: p2r(20);
+                margin-top: p2r(20);
+                ul {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-around;
+                    li {
+                        height: p2r(60);
+                        padding: 0 p2r(10);
+                        text-align: center;
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            color: rgba(102, 102, 102, 1);
+                            @include font-dpr(12px);
+                        }
+                    }
+                }
+            }
+            .item-selectCar {
+                padding: 0 p2r(20);
+                height: p2r(88);
+                width: 100%;
+                .mui-input-clear {
+                    width: 70%;
+                    height: 100%;
+                    margin-bottom: 0;
+                    @include font-dpr(12px);
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+                .mui-btn {
+                    width: 30%;
+                    height: 100%;
+                    border-left: none;
+                    border-right: none;
+                    @include font-dpr(16px);
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    background-color: $ytcGreen;
+                    color:rgba(255,255,255,1);
+                }
+            }
+            .item-testQualification {
+                width: 100%;
+                padding: 0 p2r(30);
+                margin-top: p2r(20);
+                margin-bottom: p2r(20);
+                height: p2r(88);
+                display: flex;
+                justify-content: space-between;
+                button:nth-of-type(1) {
+                    @include font-dpr(16px);
+                    width: 49%;
+                    float: left;
+                    height: 100%;
+                    color: white;
+                    background-color: $ytcGreen;
+                }
+                button:nth-of-type(2) {
+                    @include font-dpr(16px);
+                    width: 49%;
+                    float: right;
+                    height: 100%;
+                    color: $ytcGreen;
+                    background-color: white;
+                }
+            }
+        } // 热门活动
+        .item-hotActivity {
+            width: 100%;
+            background-color: $ytcWhite;
+            margin-top: p2r(20);
+            padding-bottom: p2r(10);
+            >p {
+                padding: p2r(33) 0 p2r(20) 0;
+                text-align: center;
+                @include font-dpr(16px);
+                color: rgba(51, 51, 51, 1);
+            }
+            .hotActivityList {
+                width: 100%;
+                margin: 0 auto;
+                ul {
+                    width: 96%;
+                    margin: 0 auto;
+                    li {
+                        width: 100%;
+                        height: p2r(380);
+                        background-color: $ytcGreen;
+                        margin-bottom: p2r(20);
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: p2r(380);
+                        }
+                    }
+                }
+            }
+        } // 热门车型
+        .item-hotCar {
+            background-color: $ytcWhite;
+            margin-top: p2r(20);
+            >p {
+                padding: p2r(33) 0 p2r(20) 0;
+                text-align: center;
+                @include font-dpr(12px);
+                color: rgba(51, 51, 51, 1);
+            }
+            .hotCar {
+                width: 100%;
+                margin: 0 auto;
+                background-color: white;
+                ul {
+                    background-color: white;
+                    margin: 0 auto;
+                    // padding: 0 p2r(31);
+                    width: 100%;
+
+                    li:nth-of-type(2n) {
+                        padding-right: p2r(20);
+                        a {
+                            float: right;   
+                        }
+                    }
+                     li:nth-of-type(2n-1) {
+                       padding-left: p2r(20);
+                    }
+                    li:last-child{
+                        padding-bottom: 10px;
+                    }
+                    li {
+                        float: left;
+                        width: 50%;
+                        // height: p2r(406);
+                        margin-bottom: p2r(20);
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            width: 94%;
+                            height: p2r(406);
+                            box-shadow: 0px 0px 5px #999;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            div {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            height: p2r(220);
+                            margin: 0 auto;
+                        }
+                        .option-t {
+                            @include font-dpr(13px);
+                            color: rgba(102, 102, 102, 1);
+                            padding-top: p2r(40);
+                            line-height: p2r(30);
+                            padding-left: p2r(10);
+                            padding-right: p2r(10);
+                        }
+                        .pay-b {
+                            padding-bottom: p2r(30);
+                            
+                            color: rgba(153, 153, 153, 1);
+                            .pay-l {
+                                color: rgba(255, 97, 86, 1);
+                                padding-left: p2r(10);
+                                padding-right: p2r(10);
+                                @include font-dpr(12px);
+                                i {
+                                    @include font-dpr(18px);
+                                    font-weight: 600;
+                                }
+                            }
+                            .pay-r {
+                                @include font-dpr(12px);
+                                float: right;
+                                padding-right: p2r(10);
+                                padding-right: p2r(10);
+                            }
+                        }
+                    }
+                
+                }
+            }
+             // 查看更多车型btn
+            .lookMoreCar {
+                height: p2r(108);
+                background-color: #FAFAFA;
+                line-height: p2r(108);
+                // margin-bottom: p2r(60);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                a {
+                    display: block;
+                    margin: 0 auto;
+                    width: 50%;
+                    height: p2r(68);
+                    @include font-dpr(16px);
+                    color: rgba(255, 255, 255, 1);
+                    background-color: $ytcGreen;
+                    text-align: center;
+                    line-height: p2r(68);
+                    border-radius: p2r(4);
+                }
+            }
+        }
+    }
+}
+footer {
+    background-color: $ytcWhite;
+    width: 100%;
+    height:p2r(98);
+    border-top:1px solid #aaaaaa;
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        li {
+            width: 33.333%;
+            height: 100%;
+            
+            a {
+                text-decoration: none;   
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                @include font-dpr(16px);
+                color:rgba(102,102,102,1);
+                width: 100%;
+                height: 100%;
+                span.icon-font {
+                    @include font-dpr(16px);
+                }
+            }
+        }
+        li.activeGREEN {
+            a{
+                color: $ytcGreen; 
+                text-decoration: none;               
+            }
+        }
+    }
+}

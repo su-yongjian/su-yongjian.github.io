@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body ,html {
+    font-family: "PingFang SC";
+    color: #000;
+}
+// 去除下划线 点击高亮
+a,span {
+    text-decoration: none;
+    // 点击高亮
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+
+// 输入框
+input {
+    border: none;
+    outline: none;
+}
+
+// img 变为块
+img {
+    display: block;
+}
+
+//rem转换
+@function  p2r($size){
+    @return  ($size/750*10rem)
+};
+
+
+// 快速浮动
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after,{
+    content: '';
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+@mixin font-dpr($font-size) {
+    [data-dpr="1"] & {
+      font-size: $font-size * 1;
+    }
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+
+// @media screen and (min-width: 750px) {
+//     .mainCont {
+//         width: 1000px;
+//         margin: 0 auto;
+//         background: #EE2947;
+//     }
+// }
+
+// @media screen and (max-width: 750px) {
+//     .mainCont {
+//         width: 100%;
+//         /*no*/
+//         height: 100%;
+//         background: #EE2947;
+//     }
+// }

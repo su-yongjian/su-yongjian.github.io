@@ -1,0 +1,120 @@
+$ytcGreen: #20CE9C;
+$ytcWhite: #ffffff;
+$ytcGray: #F0F0F0;
+$ytcRed:rgba(255, 97, 86, 1);
+@mixin font-dpr($font-size) {
+    [data-dpr="1"] & {
+      font-size: $font-size * 1;
+    }
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+.order-layout{
+    .order-contain{
+        header {
+            width: 100%;
+            height: p2r(88);
+            line-height: p2r(88);
+            border-bottom: 1px solid $ytcGray;
+            a {
+                height: 100%;
+                line-height: p2r(88);
+                padding-top: 0px;
+                color: $ytcGreen;
+                @include font-dpr(20px);
+            }
+            h1 {
+                height: 100%;
+                @include font-dpr(18px);
+                line-height: p2r(88);
+            }
+        }
+        .carList {
+            width: 100%;
+            margin-top: p2r(88);
+            .carList-item {
+                background-color: $ytcWhite;
+                width: 100%;
+                height: p2r(350);
+                padding: p2r(10);
+                margin-bottom: p2r(10); // background-color: $ytcGreen;
+                .orderInfo{
+                    border-bottom: p2r(1) solid $ytcGray;
+                    height: p2r(60);
+                    line-height: p2r(60);
+                    padding:0 p2r(32);
+                    .orderNum{
+                        @include font-dpr(12px);
+                        color:rgba(153,153,153,1);
+                    }
+                    .orderStatus {
+                        @include font-dpr(14px);
+                        color:rgba(51,51,51,1);
+                    }
+                }
+                .item-info {
+                    width: 100%;
+                    height: p2r(280);
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: space-around;
+                    .item-l {
+                        width: 40%;
+                        height: p2r(220);
+                        margin: p2r(30);
+                    }
+                    .item-r {
+                        flex: 1;
+                        padding: p2r(10) p2r(10);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        .carOptions {
+                            @include font-dpr(14px);
+                            line-height: p2r(50);
+                            color:gray;
+                            padding: p2r(15) 0;
+                            .sel-icon{
+                                display: inline-block;
+                                background: url("../images/ziying@2x.png") no-repeat;
+                                background-size: p2r(113) p2r(37);
+                                width: p2r(113);
+                                height: p2r(34);
+                                position: relative;
+                                top: p2r(6);
+                                border-radius: p2r(4);
+                            }
+                        }
+                        .guidePrice {
+                            @include font-dpr(12px);
+                            line-height: p2r(40);
+                        }
+                        .payStyle {
+                            color: $ytcRed;
+                            @include font-dpr(14px);
+                            .firstPay {
+                                i {
+                                    @include font-dpr(12px);
+                                }
+                            }
+                            .monthPay {
+                                @include font-dpr(12px);
+                                padding-right: p2r(10);
+                                color: rgba(153, 153, 153, 1);
+                            }
+                        }
+                        .orderTime {
+                            padding-top: p2r(30);
+                             @include font-dpr(12px);
+                            color:rgba(153,153,153,1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
