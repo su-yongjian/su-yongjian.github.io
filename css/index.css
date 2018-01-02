@@ -3513,6 +3513,7 @@ html a:visited {
   margin: 0 0.13333rem;
 }
 .index-container .main-contain .itemList .item-brand ul li a {
+  text-decoration: none;
   display: block;
   width: 100%;
   height: 100%;
@@ -3890,6 +3891,7 @@ html a:visited {
 }
 .index-container .main-contain .item-hotCar .lookMoreCar a {
   display: block;
+  text-decoration: none;
   margin: 0 auto;
   width: 50%;
   height: 0.90667rem;
@@ -3907,6 +3909,9 @@ html a:visited {
 }
 [data-dpr="3"] .index-container .main-contain .item-hotCar .lookMoreCar a {
   font-size: 48px;
+}
+.index-container .main-contain .item-hotCar .lookMoreCar a:visited {
+  text-decoration: none;
 }
 
 footer {
@@ -3970,7 +3975,13 @@ footer ul li a {
 [data-dpr="3"] footer ul li a span.icon-font {
   font-size: 48px;
 }
+footer ul li a:visited {
+  text-decoration: none;
+}
 footer ul li.activeGREEN a {
   color: #20CE9C;
+  text-decoration: none;
+}
+footer ul li.activeGREEN a:visited {
   text-decoration: none;
 }
