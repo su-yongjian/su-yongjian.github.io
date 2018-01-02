@@ -13,7 +13,9 @@ a,span {
     // 点击高亮
     -webkit-tap-highlight-color: transparent;
 }
-
+a:visited {
+ text-decoration: none;
+}
 ul,ol{
     list-style: none;
 }
