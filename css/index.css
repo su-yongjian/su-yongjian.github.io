@@ -3388,7 +3388,7 @@ html a:visited {
 .index-container .y-header {
   height: 1.17333rem;
   width: 100%;
-  z-index: 9985456465456;
+  z-index: 9984;
 }
 .index-container .y-header > a {
   -webkit-transform: translateX(50%);
